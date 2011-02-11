@@ -1,0 +1,50 @@
+/* .typro
+    @author     Jan Pecha, <janpecha@email.cz>
+    @version    1.0.0
+    @category   All Media
+*/
+@media all {
+    body {
+        line-height: 1.5;
+        font-size: 80%;
+        /*font-family: Arial, Helvetica, sans-serif;*/
+        font-family: Verdana, 'Arial CE', 'Helvetica CE', Arial, Helvetica, sans-serif;
+    }
+    
+    p {
+        text-align: left;
+        margin-bottom: 1em;
+        /*letter-spacing: 1px;        /* TODO: 11.2.2011 - GUTTE?*/
+    }
+    
+    pre {
+        font-family: "Courier New";
+        margin-bottom: 1em;
+    }
+    
+    h1,h2,h3,h4,h5,h6 {
+        font-family: "Trebuchet MS", sans-serif;
+        font-weight: bold;
+        margin-bottom: 0.15em;
+        line-height: 1.4;
+    }
+
+    h1 {
+        font-size: 250%;
+    }
+    h2 {
+        font-size: 210%;
+    }
+    h3 {
+        font-size: 180%;
+    }
+    h4 {
+        font-size: 140%;
+    }
+    h5 {
+        font-size: 120%;
+    }
+    h6 {
+        font-size: 100%;
+    }
+}

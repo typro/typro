@@ -1,0 +1,10 @@
+/* .typro
+    @author     Jan Pecha, <janpecha@email.cz>
+    @version    1.0.0
+    @category   Visual
+*/
+@media all {
+    pre {
+        padding-left: 1em;
+    }
+}

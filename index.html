@@ -7,11 +7,27 @@
 	  <meta name="author" content="Jan Pecha (c) 2010" />
 	  <!--<link rel="stylesheet" type="text/css" media="screen" href="./css/screen.css" />
 	  <link rel="stylesheet" type="text/css" media="print" href="./css/print.css" />-->
-	  <link rel="stylesheet" type="text/css" media="all" href="./typro.css" />
+	  <link rel="stylesheet" type="text/css" media="all" href="./typro.reset.css" />
+	  <link rel="stylesheet" type="text/css" media="all" href="./typro.all.css" />
+	  <link rel="stylesheet" type="text/css" media="all" href="./typro.print.css" />
+	  <link rel="stylesheet" type="text/css" media="all" href="./typro.visual.css" />
+	  <!--<link rel="stylesheet" type="text/css" media="all" href="./typro.czech.css" />-->
+	  <!--<link rel="stylesheet" type="text/css" media="all" href="./typro.css" />-->
+	  
 	  <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
 	  <title>.typro</title>
   </head>
   <body>
+    <!--
+        * obrazky vedle sebe
+        * obrazky (pri ceskem odstavci, ?border -> reset?)        
+        *+ruzne odstavce (cesky, anglofonni, cesky 2)
+        * seznamy
+        * vypis terminalu
+        * zdrojovy kod
+        * promenna
+        * segment kodu (<code>)
+    -->
     <div id="telo">
         <h1>.typro</h1>
         <p>Lorem ipsum dolor sit amet consectetuer in non a felis pellentesque. Eu at justo ante lobortis Ut dui Duis et at tellus. Lacus fringilla ut nunc semper laoreet pretium congue eget eget ut. Penatibus nunc In convallis laoreet sem id semper magna vitae porttitor. Pretium lacinia Fusce Vestibulum justo In Praesent facilisis iaculis nunc augue. Justo ridiculus orci at at In Vestibulum a.</p>
@@ -19,12 +35,40 @@
         <p>Tincidunt justo est ipsum at sociis platea in Pellentesque pulvinar sapien. Nam condimentum aliquam pretium pretium pede magna interdum massa turpis rutrum. Pretium lacinia Nulla dictumst justo enim neque pede est enim Nam. Malesuada leo nibh Morbi malesuada urna metus sapien semper malesuada mi. Curabitur justo id Ut id lorem.</p>
         <p>At interdum quis dictumst Donec Nulla lacus felis elit eu enim. Risus dictum ut non Duis enim Sed odio tempus Curabitur Suspendisse. Arcu libero nec Quisque et ante dolor Mauris tincidunt pretium nec. Eget enim tincidunt Vestibulum semper Aliquam a tellus felis nascetur congue. Laoreet quis urna ac felis adipiscing condimentum wisi cursus mus eget. Nam non nibh nibh ante Vestibulum vitae mattis.</p>
         <h2>Risus dictum</h2>
-        <pre>Ahoj
-aůlkjsfd
-aslůkdfůlaskjfůlaskjf
-asdfkůja ůlksdjfůlkajsdfůlkajs d
-fjaskdfj laksdjf aslkd fj
-asdf aslůkd fj</pre>
+        <pre>// Zde je v proměnné string (tečka je operátor spojování řetězců)
+$retez = "Ahoj, světe" . ', mám se dobře' . " a nevadí, že střídám oddělovače";
+ 
+// Zde je v proměnné číslo (int)
+$cislo = 100;
+ 
+// Do proměnné je možné dát pole, které obsahuje jak čísla, tak znaky či další pole
+$pole = array('a', 'b', 1, 2, array('první' => 'podpole', 'vytištěno'));
+ 
+// Nenahlásí chybu (jenom varování) a vytiskne 'Array'
+print($pole);
+<!-- 
+// Vytiskne obsah proměnné pole
+print_r($pole);
+ 
+// Test porovnání
+$cislo = 100;
+$retez = '100';
+ 
+// Toto porovnání ('==') platí díky automatické typové konverzi
+if ($retez == $cislo)
+{
+  echo 'Jsou stejné';
+}
+
+// Ale porovnání pomocí '===' neplatí, neboť nejsou stejné typy
+if ($retez === $cislo)
+{
+  echo 'Jsou stejné';
+}
+else
+{
+  echo 'To by nešlo';
+}--></pre>
         <h3>Integer cursus</h3>
         <p>Netus sed eu pretium vel sociis dolor sed malesuada neque pretium. Metus hendrerit eu mauris pretium adipiscing urna Proin lobortis laoreet urna. Suscipit Curabitur venenatis lorem sapien Integer et velit metus ante Cras. Interdum netus facilisis velit magna interdum lobortis condimentum vel Phasellus nibh. Nibh Ut ut molestie Curabitur augue Morbi In interdum ante pede. Nisl nec Aenean pulvinar congue ante orci.</p>
         <h4>Duis et at tellus</h4>
