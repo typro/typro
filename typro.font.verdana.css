@@ -1,0 +1,11 @@
+/**
+* .typro
+* @author		Jan Pecha, <janpecha@email.cz>
+* @version		2.1.0
+* @category		All Media
+*/
+@media all {
+	body {
+		font-family: Verdana, 'Arial CE', 'Helvetica CE', Arial, Helvetica, sans-serif;
+	}
+}
