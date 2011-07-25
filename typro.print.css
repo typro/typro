@@ -1,10 +1,18 @@
 /* .typro
-    @author     Jan Pecha, <janpecha@email.cz>
-    @version    1.0.0
-    @category   Print Media
+	@author		Jan Pecha, <janpecha@email.cz>
+	@version	1.0.0
+	@category	Print Media
 */
 @media print {
-    body {
-        font-family: Georgia, 'Times New CE', 'Times CE', 'Times New Roman', Times, serif;
-    }
+	body {
+		font-family: Georgia, 'Times New CE', 'Times CE', 'Times New Roman', Times, serif;
+	}
+	
+	body *, .noprintable {
+		display: none;
+	}
+	
+	.printable, .printable * {
+		display: block;
+	}
 }

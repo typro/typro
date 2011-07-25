@@ -1,16 +1,27 @@
 /* CSS Document */
 
 #telo {
-    width: 770px;
-    margin-left: auto;
-    margin-right: auto;
+	width: 770px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
 }
 
 p {
-    
+	
+}
+/*
+h1,h2,h3,h4,h5,h6 {
+	background:#222;
+	color: white;
+	color: gold;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    background:#222;
-    color: white;
+#telo {
+	background: gold;
+	background: white;
 }
+
+body {
+	background: #222;
+}*/

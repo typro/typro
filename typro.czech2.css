@@ -7,11 +7,6 @@
 @media all {
 	p {
 		text-indent: 2em;
-		margin-bottom: 0;
-	}
-	
-	h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
-		text-indent: 0em;
 	}
 
 	h1 {

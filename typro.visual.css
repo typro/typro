@@ -1,10 +1,84 @@
 /* .typro
-    @author     Jan Pecha, <janpecha@email.cz>
-    @version    1.0.0
-    @category   Visual
+	@author		Jan Pecha, <janpecha@email.cz>
+	@version	1.0.0
+	@category	Visual
 */
 @media all {
-    pre {
-        padding-left: 1em;
-    }
+	pre {
+		padding: 0.5em 0;
+		padding-left: 1em;
+		background: #F0F0F0;
+		border: 1px dashed #D0D0D0;
+		overflow: auto;
+	}
+	
+	code {
+		background: #E7E7E7;
+		padding: 0em 1px;
+	}
+	
+	table {
+		border-collapse: collapse;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+/*	th {*/
+/*		background: #aaa;*/
+/*	}*/
+	
+	td, th {
+		border: 1px solid #ddd;
+	}
+	
+	blockquote {
+/*		padding-left: 2em;*/
+/*		padding-right: 2em;*/
+/*		padding: 1em 2em 0.5em;*/
+/*		margin-bottom: 2em;*/
+/*		padding-bottom: 1em;*/
+		padding: 1em 2em 0.1em;
+		margin-left: 2em;
+		margin-right: 2em;
+		margin-bottom: 1em;
+		font-family: 'Times New Roman CE', 'Times New CE', 'Times CE', 'Times New Roman', Times, serif;
+		font-family: Georgia;
+/*		color: #444;*/
+/*		color: #222;*/
+/*		font-size: 110%;*/
+/*		font-size: 105%;*/
+/*		background: #fff;*/
+/*		color: #fff;*/
+/*		font-weight: bold;*/
+		border-left-color: #aaa;
+		border-left-style: solid;
+/*		border-left-width: 4px;*/
+		margin-left: 0.7em;
+		padding-bottom: 0.1em;
+		padding-left: 1.3em;
+		padding-right: 1.3em;
+		padding-top: 1em;
+		line-height: 1.6em;
+		margin: 1.5em 0.7em;
+		background: #ddd;
+	}
+
+	acronym {
+		border-bottom: 1px dotted silver;
+	}
+	
+	.noborder td, .noborder th {
+		border-width: 0;
+	}
+}
+
+@media print {
+	pre, code {
+		background: transparent;
+		border: none;
+	}
+	
+/*	 {
+		background: transparent;
+	}*/
 }

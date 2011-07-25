@@ -1,50 +1,104 @@
 /* .typro
-    @author     Jan Pecha, <janpecha@email.cz>
-    @version    1.0.0
-    @category   All Media
+	@author		Jan Pecha, <janpecha@email.cz>
+	@version	1.0.0
+	@category	All Media
 */
 @media all {
-    body {
-        line-height: 1.5;
-        font-size: 80%;
-        /*font-family: Arial, Helvetica, sans-serif;*/
-        font-family: Verdana, 'Arial CE', 'Helvetica CE', Arial, Helvetica, sans-serif;
-    }
-    
-    p {
-        text-align: left;
-        margin-bottom: 1em;
-        /*letter-spacing: 1px;        /* TODO: 11.2.2011 - GUTTE?*/
-    }
-    
-    pre {
-        font-family: "Courier New";
-        margin-bottom: 1em;
-    }
-    
-    h1,h2,h3,h4,h5,h6 {
-        font-family: "Trebuchet MS", sans-serif;
-        font-weight: bold;
-        margin-bottom: 0.15em;
-        line-height: 1.4;
-    }
-
-    h1 {
-        font-size: 250%;
-    }
-    h2 {
-        font-size: 210%;
-    }
-    h3 {
-        font-size: 180%;
-    }
-    h4 {
-        font-size: 140%;
-    }
-    h5 {
-        font-size: 120%;
-    }
-    h6 {
-        font-size: 100%;
-    }
+	body {
+		line-height: 1.5;
+		font-size: 90%;
+		/*font-family: Arial, Helvetica, sans-serif;*/
+		font-family: 'Arial CE', 'Helvetica CE', Arial, Verdana, Helvetica, sans-serif;	/* 5.6.2011 - Arial CE jako vychozi pismo, nahradil Verdanu */
+		/*font-family: Verdana, 'Arial CE', 'Helvetica CE', Arial, Helvetica, sans-serif;*/	/* 9.6.2011 - Verdana vychozi pismo */
+	}
+	
+	p {
+		text-align: left;
+		/*letter-spacing: 1px;  */      /* TODO: 11.2.2011 - GUTTE?*/
+	}
+	
+	p, pre, ul, ol, table, dl {
+		margin-bottom: 1em;
+	}
+	
+	ul ul, ol ol, ul ol, ol ul {
+		margin-bottom: 0em;
+	}
+	
+	ul, ol, dd {
+		margin-left: 2em;
+	}
+	
+	ul {
+		list-style-type: disc;
+	}
+	
+	ol {
+		list-style-type: decimal;
+	}
+	
+	pre, code {
+		font-family: "Courier New"; /* TODO: 12.2.2011 - DOPLNIT PLNOU DEFINICI */
+	}
+	
+	h1,h2,h3,h4,h5,h6 {
+/*		font-family: "Trebuchet MS", sans-serif;*/
+		font-family: "Trebuchet MS", "Geneva CE", "lucida", sans-serif;
+		font-weight: bold;
+		margin-bottom: 0.15em;
+		line-height: 1.4;
+	}
+	
+	h1 {
+		font-size: 250%;
+	}
+	
+	h2 {
+		font-size: 210%;
+	}
+	
+	h3 {
+		font-size: 180%;
+	}
+	
+	h4 {
+		font-size: 140%;
+	}
+	
+	h5 {
+		font-size: 120%;
+	}
+	
+	h6 {
+		font-size: 100%;
+	}
+	/******************************** 5.6.2011 ****/
+	strong {
+		font-weight: bold;
+	}
+	
+	th {
+		font-weight: bold;
+	}
+	
+	td, th {
+		padding: 0.2em 0.8em;
+	}
+	
+	blockquote {
+		font-style: italic;
+	}
+	
+	ins {
+		font-style: italic;
+		text-decoration: none;
+	}
+	/******************************** 30.6.2011 ****/
+	th p, td p {
+		text-indent: 0;
+	}
+	/********************************* 2.7.2011 ****/
+	em {
+		font-style: italic;
+	}
 }
