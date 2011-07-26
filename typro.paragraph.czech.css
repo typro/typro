@@ -1,0 +1,23 @@
+/**
+ * .typro Czech Paragraph
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011
+ * @license		http://janpecha.iunas.cz/typro/license
+ * @link		http://janpecha.iunas.cz/typro/
+ * @version		2.1.0
+ * @package		All Media - Paragraph
+ */
+@media all {
+	p {
+		margin-bottom: 0;
+	}
+
+	h1 {
+		margin-top: 0;
+	}
+	
+	h2, h3, h4, h5, h6 {
+		margin-top: 1em;
+	}
+}
