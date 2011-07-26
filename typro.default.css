@@ -1,8 +1,13 @@
-/* .typro
-	@author		Jan Pecha, <janpecha@email.cz>
-	@version	1.0.0
-	@category	All Media
-*/
+/**
+ * .typro Default
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011
+ * @license		http://janpecha.iunas.cz/typro/license
+ * @link		http://janpecha.iunas.cz/typro/
+ * @version		2.1.0
+ * @package		All Media
+ */
 @media all {
 	body {
 		line-height: 1.5;
@@ -41,7 +46,7 @@
 		font-family: "Courier New"; /* TODO: 12.2.2011 - DOPLNIT PLNOU DEFINICI */
 	}
 	
-	h1,h2,h3,h4,h5,h6 {
+	h1, h2, h3, h4, h5, h6 {
 /*		font-family: "Trebuchet MS", sans-serif;*/
 		font-family: "Trebuchet MS", "Geneva CE", "lucida", sans-serif;
 		font-weight: bold;
@@ -93,6 +98,10 @@
 		font-style: italic;
 		text-decoration: none;
 	}
+	
+	del {
+		text-decoration: line-through;
+	}
 	/******************************** 30.6.2011 ****/
 	th p, td p {
 		text-indent: 0;
@@ -100,5 +109,17 @@
 	/********************************* 2.7.2011 ****/
 	em {
 		font-style: italic;
+	}
+	
+	fieldset {
+		border: 1px solid silver;
+		margin-bottom: 1em;
+		padding: 0.6em 1em 1em;
+	}
+	
+	legend {
+		margin-left: 0.5em;
+		padding: 0 0.4em;
+/*		background: silver;*/
 	}
 }

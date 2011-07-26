@@ -1,9 +1,13 @@
 /**
-* .typro
-* @author		Jan Pecha, <janpecha@email.cz>
-* @version		2.1.0
-* @category		All Media
-*/
+ * .typro Verdana as default font
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011
+ * @license		http://janpecha.iunas.cz/typro/license
+ * @link		http://janpecha.iunas.cz/typro/
+ * @version		2.1.0
+ * @package		All Media
+ */
 @media all {
 	body {
 		font-family: Verdana, 'Arial CE', 'Helvetica CE', Arial, Helvetica, sans-serif;

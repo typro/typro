@@ -1,8 +1,13 @@
-/* .typro
-	@author		Jan Pecha, <janpecha@email.cz>
-	@version	1.0.0
-	@category	Visual
-*/
+/**
+ * .typro Visual design
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011
+ * @license		http://janpecha.iunas.cz/typro/license
+ * @link		http://janpecha.iunas.cz/typro/
+ * @version		2.1.0
+ * @package		All Media - Visual
+ */
 @media all {
 	pre {
 		padding: 0.5em 0;
@@ -15,6 +20,10 @@
 	code {
 		background: #E7E7E7;
 		padding: 0em 1px;
+	}
+	
+	pre code {
+		background-color: transparent;
 	}
 	
 	table {
@@ -77,8 +86,4 @@
 		background: transparent;
 		border: none;
 	}
-	
-/*	 {
-		background: transparent;
-	}*/
 }
