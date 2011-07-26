@@ -1,9 +1,24 @@
 <?php
+	/**
+	 * .typro Compressor
+	 * 
+	 * @author		Jan Pecha,	<janpecha@email.cz>
+	 * @copyright	Jan Pecha, 2011
+	 * @license		http://janpecha.iunas.cz/typro/license
+	 * @link		http://janpecha.iunas.cz/typro/
+	 * @version		2.1.0
+	 * @package		Compressor
+	 */
 	
+	/**
+	 * CSS Compressor
+	 * 
+	 * @link		https://github.com/nette/build-tools/blob/master/tasks/minifyJs.php
+	 * @param		string css file
+	 * @package		Compressor
+	 */
 	function css_Compressor($s)
 	{
-	// CSS compressor
-	// https://github.com/nette/build-tools/blob/master/tasks/minifyJs.php
 		$s = preg_replace('#/\*.*?\*/#s', '', $s); // remove comments
 		$s = preg_replace('#\s+#', ' ', $s); // compress space
 		$s = preg_replace('# ([^0-9a-z.\#*-])#i', '$1', $s);
@@ -28,29 +43,48 @@
 		{
 			$file = trim($file);
 			
+			$types = array(
+				'#reset' => 'typro.reset.css',
+				'#default' => 'typro.reset.css',
+				'#font.verdana' => 'typro.font.verdana.css',
+				'#paragraph.czech' => 'typro.paragraph.czech.css',
+				'#paragraph.indent' => 'typro.paragraph.indent.css',
+				'#paragraph.indent-no-first' => 'typro.paragraph.indent-no-first.css',
+				'#print' => 'typro.print.css',
+				'#visual' => 'typro.visual.css',
+			)
+			
 			if(strlen($file) && $file[0] === "#")
 			{
-				switch($file)
+				if(isset($types[$file]))
 				{
-					case '#reset':
-						$file = __DIR__ . '/typro.reset.css';
-						break;
-					
-					case '#all':
-						$file = __DIR__ . '/typro.all.css';
-						break;
-					
-					case '#czech3':
-						$file = __DIR__ . '/typro.czech3.css';
-						break;
-					
-					case '#visual':
-						$file = __DIR__ . '/typro.visual.css';
-						break;
-					
-					default:
-						continue;
+					$file = __DIR__ . '/' . $types[$file];
 				}
+				else
+				{
+					continue;
+				}
+#				switch($file)
+#				{
+#					case '#reset':
+#						$file = __DIR__ . '/typro.reset.css';
+#						break;
+#					
+#					case '#default':
+#						$file = __DIR__ . '/typro.all.css';
+#						break;
+#					
+#					case '#czech':
+#						$file = __DIR__ . '/typro.czech3.css';
+#						break;
+#					
+#					case '#visual':
+#						$file = __DIR__ . '/typro.visual.css';
+#						break;
+#					
+#					default:
+#						continue;
+#				}
 			}
 #			else
 			{
