@@ -29,6 +29,49 @@
 		return $s;
 	}
 	
+	$types = array(
+		'#reset' => array(
+			'file' => 'typro.reset.css',
+			'desc' => 'CSS reset',
+			'show' => true,
+		),
+		'#default' => array(
+			'file' => 'typro.default.css',
+			'desc' => 'default style',
+			'show' => true,
+		),
+		'#font.verdana' => array(
+			'file' => 'typro.font.verdana.css',
+			'desc' => 'Verdana as default font',
+			'show' => false,
+		),
+		'#paragraph.czech' => array(
+			'file' => 'typro.paragraph.czech.css',
+			'desc' => 'czech paragraph',
+			'show' => true,
+		),
+		'#paragraph.indent' => array(
+			'file' => 'typro.paragraph.indent.css',
+			'desc' => 'paragraph indent',
+			'show' => true,
+		),
+		'#paragraph.indent-no-first' => array(
+			'file' => 'typro.paragraph.indent-no-first.css',
+			'desc' => 'no indent after heading',
+			'show' => true,
+		),
+		'#print' => array(
+			'file' => 'typro.print.css',
+			'desc' => 'print style',
+			'show' => true,
+		),
+		'#visual' => array(
+			'file' => 'typro.visual.css',
+			'desc' => 'visual style',
+			'show' => true,
+		),
+	);
+	
 	if(isset($_POST['files']))
 	{
 		$files = str_replace("\r\n", "\n", $_POST['files']);
@@ -43,22 +86,11 @@
 		{
 			$file = trim($file);
 			
-			$types = array(
-				'#reset' => 'typro.reset.css',
-				'#default' => 'typro.reset.css',
-				'#font.verdana' => 'typro.font.verdana.css',
-				'#paragraph.czech' => 'typro.paragraph.czech.css',
-				'#paragraph.indent' => 'typro.paragraph.indent.css',
-				'#paragraph.indent-no-first' => 'typro.paragraph.indent-no-first.css',
-				'#print' => 'typro.print.css',
-				'#visual' => 'typro.visual.css',
-			)
-			
 			if(strlen($file) && $file[0] === "#")
 			{
-				if(isset($types[$file]))
+				if(isset($types[$file]['file']))
 				{
-					$file = __DIR__ . '/' . $types[$file];
+					$file = __DIR__ . '/' . $types[$file]['file'];
 				}
 				else
 				{
@@ -121,10 +153,10 @@
 			file_put_contents(__DIR__ . '/' . date('hisdmy') . '.css', css_Compressor($content_of_all));
 		}
 	}
-	else
-	{
-		echo 'ni';
-	}
+#	else
+#	{
+#		echo 'ni';
+#	}
 /*	<link rel="stylesheet" href="{$basePath}/css/screen.css" type="text/css" media="screen,projection,tv" />
 	<link rel="stylesheet" href="{$basePath}/css/print.css" type="text/css" media="print" />
 	<link rel="stylesheet" href="{$basePath}/css/lightbox.css" type="text/css" media="screen" />
@@ -141,16 +173,44 @@
 	 	}
 	 	else
 	 	{
-	 		echo "#reset\n#all\n#czech3\n#visual\n";
+#	 		echo "#reset\n#default\n#czech\n#indent\n#indent-no-first\n#visual\n";
+			foreach($types as $key => $type)
+			{
+				if(isset($type['show']) && $type['show'] == true)
+				{
+					echo htmlspecialchars("$key\n");
+				}
+			}
 	 	}
 	 
 	?></textarea></p>
 	<p>
 		<small>
-			#reset - typro.reset.css<br>
-			#all - typro.all.css<br>
-			#czech3 - typro.czech3.css<br>
-			#visual - typro.visual.css<br>
+			<?php
+				foreach($types as $key => $type)
+				{
+					$file = '';
+					
+					if(isset($type['file']))
+					{
+						$file = $type['file'];
+					}
+					
+					$desc = '';
+					
+					if(isset($type['desc']))
+					{
+						$desc = ' - ' . $type['desc'];
+					}
+					
+					echo '<code'.(($file != '') ? ' title="'.htmlspecialchars($file).'"' : '').'>' . htmlspecialchars($key) . '</code>' . htmlspecialchars($desc) . "<br>\n";
+				}
+#			#reset - typro.reset.css<br>
+#			#all - typro.all.css<br>
+#			#czech3 - typro.czech3.css<br>
+#			#visual - typro.visual.css<br>
+			?>
+
 		</small>
 	</p>
 	<p><input type="submit" name="send" value="Komprimovat" /></p>
