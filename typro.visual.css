@@ -71,6 +71,11 @@
 		margin: 1.5em 0.7em;
 		background: #ddd;
 	}
+	
+	img {
+		border: 1px solid silver;
+		padding: 4px;
+	}
 
 	acronym {
 		border-bottom: 1px dotted silver;
@@ -85,5 +90,9 @@
 	pre, code {
 		background: transparent;
 		border: none;
+	}
+	
+	img {
+		border-width: 0;
 	}
 }
