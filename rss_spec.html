@@ -1,0 +1,556 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+  <head>
+	  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	  <meta name="author" content="Jan Pecha (c) 2011" />
+	  <!--<link rel="stylesheet" type="text/css" media="screen" href="./css/screen.css" />
+	  <link rel="stylesheet" type="text/css" media="print" href="./css/print.css" />-->
+	  <link rel="stylesheet" type="text/css" media="all" href="./typro.reset.css" />
+	  <link rel="stylesheet" type="text/css" media="all" href="./typro.default.css" />
+<!--	  <link rel="stylesheet" type="text/css" media="all" href="./typro.print.css" />-->
+	  <link rel="stylesheet" type="text/css" media="all" href="./typro.visual.css" />
+	  
+	  <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+	  <title>RSS 2.0 Specification</title>
+  </head>
+  <body>
+	<div id="telo">
+		  <h1 id="toc-specifikace-rss-2-0">Specifikace RSS 2.0</h1>
+		  <p>
+			<em>
+			  Jedná se o neúplný překlad textu 
+			  <a href="http://cyber.law.harvard.edu/rss/rss.html">RSS 2.0 Specification (RSS
+		2.0 at Harvard Law)</a>
+			  .
+			</em>
+		  </p>
+		  <p>
+			<del><em>Poznámka: elementy, které musí
+		být uvedeny, jsou zvýrazněny tučně.</em></del>
+		  </p>
+		  <h2 id="toc-definice-xml">Definice XML</h2>
+		  <p>
+			Všechny RSS dokumenty musí být v souladu s 
+			<strong>XML 1.0</strong>
+			.
+		V definici XML je vhodné uvést atribut 
+			<em>encoding</em>
+			.
+		  </p>
+		  <pre><code>&lt;?xml version="1.0" encoding="utf-8"?></code></pre>
+		  <h2 id="toc-element-rss">Element RSS</h2>
+		  <p>
+			Za definicí XML následuje element 
+			<strong><code>&lt;rss></code></strong>
+			, který
+		obsahuje vlastní položky RSS kanálu. Element musí obsahovat atribut
+
+			<strong>
+			  <em>version</em>
+			</strong>
+			, ten musí mít hodnotu
+
+			<strong>2.0</strong>
+			.
+		  </p>
+		  <pre><code>&lt;rss version="2.0"></code></pre>
+		  <h2 id="toc-element-channel">Element Channel</h2>
+		  <p>
+			Element 
+			<strong>
+			  <em>channel</em>
+			</strong>
+			 je jediným potomkem elementu
+
+			<em>&lt;rss></em>
+			 (
+			<em>zdroj?</em>
+			). Obsahuje 
+			<em>metadata</em>
+			 a vlastní
+
+			<em>položky</em>
+			 (články, komentáře, …). Element obsahuje následující
+		potomky:
+		  </p>
+		  <h3 id="toc-povinne-elementy">Povinné elementy</h3>
+		  <dl>
+			<dt>
+			  <strong>title</strong>
+			</dt>
+			<dd>jméno kanálu (webu)</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			   GoUpstate.com News Headlines
+			</dd>
+			<dt>
+			  <strong>link</strong>
+			</dt>
+			<dd>url na webovou stránku (mělo by korespondovat s kanálem)</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			  <a href="http://www.goupstate.com/">http://www.goupstate.com/</a>
+			</dd>
+			<dt>
+			  <strong>description</strong>
+			</dt>
+			<dd>popis kanálu (fráze, věta)</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			   The latest news from GoUpstate.com, a
+			Spartanburg Herald-Journal Web site.
+			</dd>
+		  </dl>
+		  <h3 id="toc-volitelne-elementy">Volitelné elementy</h3>
+		  <dl>
+			<dt>
+			  <strong>language</strong>
+			</dt>
+			<dd>jazyk, ve kterém je kanál psán</dd>
+			<dd>
+			  možné hodnoty: 
+			  <a href="http://cyber.law.harvard.edu/rss/languages.html">kódy jazyků</a>
+			  , nebo
+	
+			  <a href="http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes">definice
+			kódů od W3C</a>
+			</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			   cs
+			</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			   en-us
+			</dd>
+			<dt>
+			  <strong>copyright</strong>
+			</dt>
+			<dd>poznámka o autorských právech vztahujících se na obsah v kanálu</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			   Copyright 2002, Spartanburg Herald-Journal
+			</dd>
+			<dt>
+			  <strong>managingEditor</strong>
+			</dt>
+			<dd>emailová adresa osoby, která je zodpovědná za obsah v kanálu</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			  <a href="mailto:geo@herald.com">
+				geo@
+				<!-- -->
+				herald.com
+			  </a>
+			   (George
+			Matesky)
+			</dd>
+			<dt>
+			  <strong>webMaster</strong>
+			</dt>
+			<dd>emailová adresa osoby, která je zodpovědná za technické aspekty
+			týkající se kanálu</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			  <a href="mailto:betty@herald.com">
+				betty@
+				<!-- -->
+				herald.com
+			  </a>
+			   (Betty
+			Guernsey)
+			</dd>
+			<dt>
+			  <strong>pubDate</strong>
+			</dt>
+			<dd>
+			  datum, kdy byl obsah v kanálu publikován (lze chápat jako datum kdy byl
+			do kanálu přidán nový obsah (
+			  <em>zdroj?</em>
+			  ))
+			</dd>
+			<dd>
+			  více informací o formátu data a času v samostatném oddílu 
+			  <a href="#toc-datum-a-cas">Datum a čas</a>
+			</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			   Sat, 07 Sep 2002 00:00:01 GMT
+			</dd>
+			<dt>
+			  <strong>lastBuildDate</strong>
+			</dt>
+			<dd>čas, kdy byl obsah kanálu naposledy změněn</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			   Sat, 07 Sep 2002 09:42:31 GMT
+			</dd>
+			<dt>
+			  <strong>category</strong>
+			</dt>
+			<dd>specifikuje jednu nebo více kategorií, které kanálu patří</dd>
+			<dd>
+			  řídí se stejnými pravidly jako element 
+			  <em>category</em>
+			  
+			v elementu 
+			  <em>item</em>
+			</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			  
+			&lt;category>New­spapers&lt;/cate­gory>
+			</dd>
+			<dd style="color:red">
+			  <strong>TODO</strong>
+			  : více vysvětlit
+			</dd>
+			<dt>
+			  <strong>generator</strong>
+			</dt>
+			<dd>řetězec označující program použitý pro generování kanálu</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			   MightyInHouse Content System v2.3
+			</dd>
+			<dt>
+			  <strong>docs</strong>
+			</dt>
+			<dd>URL, která odkazuje na dokumentaci formátu použitého
+			v souboru RSS</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			  <a href="http://blogs.law.harvard.edu/tech/rss">http://blogs.law.harvard.edu/tech/rss</a>
+			</dd>
+			<dt>
+			  <strong>cloud</strong>
+			</dt>
+			<dd style="color:red">
+			  <strong>TODO</strong>
+			  : doplnit
+			</dd>
+			<dd>
+			  více info 
+			  <a href="http://cyber.law.harvard.edu/rss/rss.html#ltcloudgtSubelementOfLtchannelgt">zde</a>
+			  
+			[en]
+			</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			  <pre><code>&lt;cloud domain="rpc.sys.com" port="80" path="/RPC2" registerProcedure="pingMe" protocol="soap"/></code></pre>
+			</dd>
+			<dt>
+			  <strong>ttl</strong>
+			</dt>
+			<dd>počet minut, které udávají, jak dlouho může být kanál kešován
+			před obnovou ze serveru</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			   &lt;ttl>60&lt;/ttl>
+			</dd>
+			<dt>
+			  <strong>rating</strong>
+			</dt>
+			<dd>PICS rating kanálu</dd>
+			<dd>
+			  více informací na stránkách W3C: 
+			  <a href="http://www.w3.org/PICS/">PICS</a>
+			</dd>
+			<dt>
+			  <strong>skipHours</strong>
+			</dt>
+			<dd>informace pro agregátor</dd>
+			<dd>specifikuje kolik hodin může agregátor vynechat kontrolu kanálu</dd>
+			<dt>
+			  <strong>skipDays</strong>
+			</dt>
+			<dd>informace pro agregátor</dd>
+			<dd>specifikuje kolik dní může agregátor vynechat kontrolu kanálu</dd>
+		  </dl>
+		  <p>
+			Element 
+			<em>channel</em>
+			 obsahuje ještě následující potomky:
+		  </p>
+		  <h3 id="toc-element-image">Element Image</h3>
+		  <p>
+			<em>Volitelný.</em>
+			 Specifikuje GIF, JPEG nebo PNG obrázek, který může
+		být zobrazen společně s kanálem.
+		  </p>
+		  <p>
+			Obsahuje následující 
+			<strong>povinné</strong>
+			 elementy:
+		  </p>
+		  <dl>
+			<dt>
+			  <strong>url</strong>
+			</dt>
+			<dd>URL obrázku</dd>
+			<dt>
+			  <strong>title</strong>
+			</dt>
+			<dd>popis obrázku</dd>
+			<dd>
+			  při zobrazení v HTML dokumentu měl hodnotu přebrat atribut 
+			  <em>alt</em>
+			  
+			elementu 
+			  <em>img</em>
+			  .
+			</dd>
+			<dt>
+			  <strong>link</strong>
+			</dt>
+			<dd>
+			  URL stránky, která se otevře po kliknutí na obrázek (
+			  <em>ok?</em>
+			  )
+			</dd>
+			<dt>
+			  <strong>description</strong>
+			</dt>
+			<dd>
+			  (
+			  <em>určitě povinný?</em>
+			  )
+			</dd>
+			<dd>
+			  text, který by měl přebrat atribut 
+			  <em>title</em>
+			   odkazu, který obaluje
+			obrázek ve formátu HTML
+			</dd>
+		  </dl>
+		  <p>
+			Dále následující 
+			<strong>ne</strong>
+			povinné elementy:
+		  </p>
+		  <dl>
+			<dt>
+			  <strong>width</strong>
+			</dt>
+			<dd>číslo, šířka obrázku v pixelech</dd>
+			<dd>maximum je 144</dd>
+			<dd>výchozí hodnota 88</dd>
+			<dt>
+			  <strong>height</strong>
+			</dt>
+			<dd>číslo, výška obrázku v pixelech</dd>
+			<dd>maximum je 400</dd>
+			<dd>výchozí hodnota 31</dd>
+		  </dl>
+		  <h3 id="toc-element-item">Element Item</h3>
+		  <p>Definuje jednu položku RSS kanálu. Počet položek není omezen.</p>
+		  <p>
+			Jeden z následujích elementů musí být 
+			<strong>vždy</strong>
+		
+		uveden:
+		  </p>
+		  <dl>
+			<dt>
+			  <strong>title</strong>
+			</dt>
+			<dd>titulek položky</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			   Venice Film Festival Tries to Quit Sinking
+			</dd>
+			<dt>
+			  <strong>description</strong>
+			</dt>
+			<dd>anotace položky</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			   Some of the most heated chatter at the Venice
+			Film Festival this week was about the way that the arrival of the stars at the
+			Palazzo del Cinema was being staged.
+			</dd>
+		  </dl>
+		  <p>
+			Ostatní elementy jsou 
+			<strong>ne</strong>
+			povinné:
+		  </p>
+		  <dl>
+			<dt>
+			  <strong>link</strong>
+			</dt>
+			<dd>URL položky</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			  <a href="http://nytimes.com/2004/12/07FEST.html">http://nytimes.com/…/07FEST.html</a>
+			</dd>
+			<dt>
+			  <strong>author</strong>
+			</dt>
+			<dd>e-mailová adresa autora položky</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			  <a href="mailto:lawyer@boyer.net">
+				lawyer@
+				<!-- -->
+				boyer.net
+			  </a>
+			   (Lawyer
+			Boyer)
+			</dd>
+			<dt>
+			  <strong>category</strong>
+			</dt>
+			<dd>jedna nebo více kategorií</dd>
+			<dd style="color:red">
+			  <strong>TODO:</strong>
+			   doplnit
+			</dd>
+			<dt>
+			  <strong>comments</strong>
+			</dt>
+			<dd>URL stránky s komentáři, které patří k dané položce</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			  <a href="http://www.myblog.org/cgi-local/mt/mt-comments.cgi?entry_id=290">http://www.myblog.org/…comments.cgi?…</a>
+			</dd>
+			<dt>
+			  <strong>enclosure</strong>
+			</dt>
+			<dd>popis multimediálního objektu připojeného k položce</dd>
+			<dd style="color:red">
+			  <strong>TODO:</strong>
+			   doplnit
+			</dd>
+			<dt>
+			  <strong>guid</strong>
+			</dt>
+			<dd>
+			  <em>
+				velice 
+				<strong>důležitý</strong>
+				 element
+			  </em>
+			</dd>
+			<dd>řetězec unikátně identifikující položku</dd>
+			<dd>
+			  lze uvést atribut 
+			  <em>isPermaLink</em>
+			   nastavený na hodnotu 
+			  <em>true</em>
+			  
+			(výchozí hodnota), nebo 
+			  <em>false</em>
+			</dd>
+			<dd>
+			  atribut 
+			  <em>isPermaLink</em>
+			   specifikuje zda je hodnota elementu
+	
+			  <em>guid</em>
+			   trvalým odkazem na položku
+			</dd>
+			<dd>
+			  <em>velice často URL položky (URL se nemění příliš často)</em>
+			</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			  <a href="http://inessential.com/2002/09/01.php#a2">http://inessential.com/2002/09/01.php#a2</a>
+			</dd>
+			<dt>
+			  <strong>pubDate</strong>
+			</dt>
+			<dd>kdy byla položka publikována</dd>
+			<dd>
+			  viz 
+			  <a href="#toc-datum-a-cas">Datum a čas</a>
+			</dd>
+			<dd>
+			  <strong>Příklad:</strong>
+			   Sun, 19 May 2002 15:21:36 GMT
+			</dd>
+			<dt>
+			  <strong>source</strong>
+			</dt>
+			<dd>RSS kanál, ze kterého položka pochází</dd>
+		  </dl>
+		  <h3 id="toc-element-textinput">Element TextInput</h3>
+		  <p>Definuje textové pole. Účel je záhadou. Můžete takto definovat
+		vyhledávací políčko, nebo poskytnout čtenářům možnost zpětné vazby.
+		Ve spoustě případů je tento element ignorován.</p>
+		  <p>
+			Obsahuje následující 
+			<strong>povinné</strong>
+			 elementy:
+		  </p>
+		  <dl>
+			<dt>
+			  <strong>title</strong>
+			</dt>
+			<dd>popisek odesílacího tlačítka</dd>
+			<dt>
+			  <strong>description</strong>
+			</dt>
+			<dd>popis textového pole</dd>
+			<dt>
+			  <strong>name</strong>
+			</dt>
+			<dd>název textového objektu v textovém poli</dd>
+			<dt>
+			  <strong>link</strong>
+			</dt>
+			<dd>URL CGI skriptu</dd>
+		  </dl>
+		  <h2 id="toc-datum-a-cas">Datum a čas</h2>
+		  <p>
+			Všechny zápisy data a času odpovídají specifikaci 
+			<a href="http://asg.web.cmu.edu/rfc/rfc822.html">RFC 822</a>
+			, s vyjímkou roku,
+		který může být zapsán dvěma nebo čtyřmi číslicemi (upřednostněny
+		jsou čtyři číslice).
+		  </p>
+		  <p>
+			Formát podle 
+			<a href="http://asg.web.cmu.edu/rfc/rfc822.html">RFC
+		822</a>
+			 vypadá následovně:
+		  </p>
+		  <pre><code>Mon, 15 Aug 05 15:52:01 +0000</code></pre>
+		  <p>
+			<em>
+			  Poznámka: Při generování data v PHP lze použít konstanty
+
+			  <strong>DateTime::RFC822</strong>
+			   či 
+			  <strong>DATE_RFC822</strong>
+			  .
+			</em>
+		  </p>
+		  <h2 id="toc-zdroj">Zdroj</h2>
+		  <ul>
+			<li>
+			  <a href="http://cyber.law.harvard.edu/rss/rss.html">RSS 2.0 Specification
+			(RSS 2.0 at Harvard Law)</a>
+			</li>
+		  </ul>
+		  <h3 id="toc-ostatni-zdroje">Ostatní zdroje</h3>
+		  <ul>
+			<li>
+			  <a href="http://cyber.law.harvard.edu/rss/languages.html">Kódy
+			jazyků</a>
+			</li>
+			<li>
+			  <a href="http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes">Language
+			codes W3C</a>
+			</li>
+			<li>
+			  <a href="http://asg.web.cmu.edu/rfc/rfc822.html">RFC 822</a>
+			</li>
+			<li>
+			  <a href="http://www.w3.org/PICS/">PICS</a>
+			</li>
+		  </ul>
+		  <!-- by Texy2! -->
+	</div>
+  </body>
+</html>
