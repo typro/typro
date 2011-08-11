@@ -12,17 +12,13 @@
 	body {
 		line-height: 1.5;
 		font-size: 90%;
-		/*font-family: Arial, Helvetica, sans-serif;*/
 		font-family: 'Arial CE', 'Helvetica CE', Arial, Verdana, Helvetica, sans-serif;	/* 5.6.2011 - Arial CE jako vychozi pismo, nahradil Verdanu */
-		/*font-family: Verdana, 'Arial CE', 'Helvetica CE', Arial, Helvetica, sans-serif;*/	/* 9.6.2011 - Verdana vychozi pismo */
-	}
-	
-	p {
 		text-align: left;
-		/*letter-spacing: 1px;  */      /* TODO: 11.2.2011 - GUTTE?*/
 	}
 	
-	p, pre, ul, ol, table, dl {
+	/* margin bottom */
+	address, dl, p, pre, ol, table, ul {	/* TODO: ??address */
+/*		margin-top: 1em;*/
 		margin-bottom: 1em;
 	}
 	
@@ -42,12 +38,57 @@
 		list-style-type: decimal;
 	}
 	
-	pre, code {
-		font-family: "Courier New"; /* TODO: 12.2.2011 - DOPLNIT PLNOU DEFINICI */
+	/* font size */
+	sub, sup, small {
+		font-size: smaller;
+/*		font-size: 80%;*/
 	}
 	
+	big {
+		font-size: larger;
+	}
+	
+	/* vertical align */
+	sub {
+		vertical-align: sub;
+	}
+	
+	sup {
+		vertical-align: super;
+	}
+	
+	/* monospace font */
+	code, kbd, pre, samp, tt, var, listing {
+		font-family: 'Courier New CE', 'Courier CE', 'Courier New', Courier, monospace;
+	}
+	
+	/* italic */
+	address, blockquote, cite, dfn, em, i, ins, q, var {
+		font-style: italic;
+	}
+	
+	/* bold */
+	b, kbd, strong, th {
+		font-weight: bold;
+	}
+	
+	/* underline */
+	a, u {
+		text-decoration: underline;
+	}
+	
+	/* line through */
+	del, s, strike {
+		text-decoration: line-through;
+	}
+	
+	/* text decoration */
+	ins {
+		text-decoration: none;
+	}
+	
+	/* heading */
 	h1, h2, h3, h4, h5, h6 {
-/*		font-family: "Trebuchet MS", sans-serif;*/
 		font-family: "Trebuchet MS", "Geneva CE", "lucida", sans-serif;
 		font-weight: bold;
 		margin-bottom: 0.15em;
@@ -77,40 +118,19 @@
 	h6 {
 		font-size: 100%;
 	}
-	/******************************** 5.6.2011 ****/
-	strong {
-		font-weight: bold;
-	}
 	
-	th {
-		font-weight: bold;
-	}
-	
+	/* table */
 	td, th {
-		padding: 0.2em 0.8em;
+		padding: 0.2em 0.6em;
 	}
-	
-	blockquote {
-		font-style: italic;
-	}
-	
-	ins {
-		font-style: italic;
-		text-decoration: none;
-	}
-	
-	del {
-		text-decoration: line-through;
-	}
+
 	/******************************** 30.6.2011 ****/
-	th p, td p {
-		text-indent: 0;
-	}
+/*	th p, td p {*/
+/*		text-indent: 0;*/
+/*	}*/
 	/********************************* 2.7.2011 ****/
-	em {
-		font-style: italic;
-	}
-	
+
+	/* forms */
 	fieldset {
 		border: 1px solid silver;
 		margin-bottom: 1em;
@@ -121,5 +141,10 @@
 		margin-left: 0.5em;
 		padding: 0 0.4em;
 /*		background: silver;*/
+	}
+	
+	/* other */
+	center {
+		text-align: center;
 	}
 }
