@@ -24,6 +24,7 @@
 		$s = preg_replace('# ([^0-9a-z.\#*-])#i', '$1', $s);
 		$s = preg_replace('#([^0-9a-z%)]) #i', '$1', $s);
 		$s = str_replace(';}', '}', $s); // remove leading semicolon
+//-		$s = str_replace(' ', "\n", $s); // better editing and buffering// blbost - generuje nevalidni CSS
 		$s = trim($s);
 		
 		return $s;
@@ -68,6 +69,11 @@
 		'#visual' => array(
 			'file' => 'typro.visual.css',
 			'desc' => 'visual style',
+			'show' => true,
+		),
+		'#layout' => array(
+			'file' => 'typro.layout.css',
+			'desc' => 'universal layout',
 			'show' => true,
 		),
 	);
@@ -150,7 +156,7 @@
 		
 		if($content_of_all !== '')
 		{
-			file_put_contents(__DIR__ . '/' . date('hisdmy') . '.css', css_Compressor($content_of_all));
+			file_put_contents(__DIR__ . '/' . date('his_dmy') . '.css', css_Compressor($content_of_all));
 		}
 	}
 #	else
