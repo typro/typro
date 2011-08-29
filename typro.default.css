@@ -10,7 +10,7 @@
  */
 @media all {
 	body {
-		line-height: 1.5;
+		line-height: 1.6;
 		font-size: 90%;
 		font-family: 'Arial CE', 'Helvetica CE', Arial, Verdana, Helvetica, sans-serif;	/* 5.6.2011 - Arial CE jako vychozi pismo, nahradil Verdanu */
 		text-align: left;
@@ -36,6 +36,11 @@
 	
 	ol {
 		list-style-type: decimal;
+	}
+	
+	/* overflow */
+	pre {
+		overflow: auto;
 	}
 	
 	/* font size */
@@ -143,7 +148,7 @@
 /*		background: silver;*/
 	}
 	
-	/* other */
+	/* other - deprecated */
 	center {
 		text-align: center;
 	}
