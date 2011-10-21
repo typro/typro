@@ -1,0 +1,37 @@
+/**
+ * .typro Align
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011
+ * @license		http://janpecha.iunas.cz/typro/license
+ * @link		http://janpecha.iunas.cz/typro/
+ * @version		2.1.0
+ * @package		All Media
+ */
+@media all {
+	.left {
+		float: left;
+	}
+	
+	.right {
+		float: right;
+	}
+	
+	.center {
+		margin-left: auto;
+		margin-right: auto;
+		/* TODO: display: block; */
+	}
+	
+	img.left, img.right {
+		margin-top: 0.5em;
+	}
+	
+	img.left { /* TODO: ?? vlastni modul */
+		margin-right: 1em;
+	}
+	
+	img.right {
+		margin-left: 1em;
+	}
+}
