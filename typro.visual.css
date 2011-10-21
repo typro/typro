@@ -14,17 +14,21 @@
 		padding-left: 1em;
 /*		background: #F0F0F0;*/
 		background-color: #fafafa;
-		border: 1px dashed #D0D0D0;
+		border: 1px dashed #d0d0d0;
 		overflow: auto;
 	}
 	
 	code {
-		background: #E7E7E7;
-		padding: 0em 1px;
+		background-color: #eee;
+/*		background: #E7E7E7;*/
+		padding: 1px 2px;
+		margin-left: 1px;
+		margin-right: 1px;
 	}
 	
 	pre code {
 		background-color: transparent;
+		padding: 0;
 	}
 	
 	table {
@@ -48,9 +52,9 @@
 /*		margin-bottom: 2em;*/
 /*		padding-bottom: 1em;*/
 		padding: 1em 2em 0.1em;
-		margin-left: 2em;
-		margin-right: 2em;
-		margin-bottom: 1em;
+/*		margin-left: 2em;*/
+/*		margin-right: 2em;*/
+/*		margin-bottom: 1em;*/
 		font-family: 'Times New Roman CE', 'Times New CE', 'Times CE', 'Times New Roman', Times, serif;
 		font-family: Georgia;	/* TODO: rozmyslet, popr. doplnit plnou definici */
 /*		color: #444;*/
@@ -62,24 +66,26 @@
 /*		font-weight: bold;*/
 		border-left-color: #aaa;
 		border-left-style: solid;
-/*		border-left-width: 4px;*/
-		margin-left: 0.7em;
+		border-left-width: 4px;
+		border-left-color: #e6e6e6;
+/*		border-top: 4px solid #ddd;*/
+/*		margin-left: 0.7em;*/
 		padding-bottom: 0.1em;
 		padding-left: 1.3em;
 		padding-right: 1.3em;
 		padding-top: 1em;
-		line-height: 1.6em;
-		margin: 1.5em 0.7em;
-		background: #ddd;
+/*		line-height: 1.6em;*/
+/*		margin: 1.5em 0.7em;*/
+		background-color: #fafafa;
 	}
 	
 	img {
 		border: 1px solid silver;
-		padding: 4px;
+		padding: 3px;
 	}
 
-	acronym, abbr {
-		border-bottom: 1px dotted silver;
+	acronym[title], abbr[title] {
+		border-bottom: 1px dotted gray;
 	}
 	
 	.noborder td, .noborder th {
