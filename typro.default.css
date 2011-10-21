@@ -7,18 +7,18 @@
  * @link		http://janpecha.iunas.cz/typro/
  * @version		2.1.0
  * @package		All Media
+ * @todo		21.10.2011 - th p, td p {text-indent: 0;}
  */
 @media all {
 	body {
 		line-height: 1.6;
 		font-size: 90%;
-		font-family: 'Arial CE', 'Helvetica CE', Arial, Verdana, Helvetica, sans-serif;	/* 5.6.2011 - Arial CE jako vychozi pismo, nahradil Verdanu */
+		font-family: 'Arial CE', 'Helvetica CE', Arial, Verdana, Helvetica, sans-serif;
 		text-align: left;
 	}
 	
 	/* margin bottom */
-	address, dl, p, pre, ol, table, ul {	/* TODO: ??address */
-/*		margin-top: 1em;*/
+	address, dl, p, pre, ol, table, ul {
 		margin-bottom: 1em;
 	}
 	
@@ -52,7 +52,6 @@
 	/* font size */
 	sub, sup, small {
 		font-size: smaller;
-/*		font-size: 80%;*/
 	}
 	
 	big {
@@ -135,12 +134,6 @@
 		padding: 0.2em 0.6em;
 	}
 
-	/******************************** 30.6.2011 ****/
-/*	th p, td p {*/
-/*		text-indent: 0;*/
-/*	}*/
-	/********************************* 2.7.2011 ****/
-
 	/* forms */
 	fieldset {
 		border: 1px solid silver;
@@ -151,7 +144,6 @@
 	legend {
 		margin-left: 0.2em;
 		padding: 0 0.4em;
-/*		background: silver;*/
 	}
 	
 	/* other */

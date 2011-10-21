@@ -12,7 +12,6 @@
 	pre {
 		padding: 0.5em 0;
 		padding-left: 1em;
-/*		background: #F0F0F0;*/
 		background-color: #fafafa;
 		border: 1px dashed #d0d0d0;
 		overflow: auto;
@@ -20,7 +19,6 @@
 	
 	code {
 		background-color: #eee;
-/*		background: #E7E7E7;*/
 		padding: 1px 2px;
 		margin-left: 1px;
 		margin-right: 1px;
@@ -46,36 +44,16 @@
 	}
 	
 	blockquote {
-/*		padding-left: 2em;*/
-/*		padding-right: 2em;*/
-/*		padding: 1em 2em 0.5em;*/
-/*		margin-bottom: 2em;*/
-/*		padding-bottom: 1em;*/
 		padding: 1em 2em 0.1em;
-/*		margin-left: 2em;*/
-/*		margin-right: 2em;*/
-/*		margin-bottom: 1em;*/
-		font-family: 'Times New Roman CE', 'Times New CE', 'Times CE', 'Times New Roman', Times, serif;
-		font-family: Georgia;	/* TODO: rozmyslet, popr. doplnit plnou definici */
-/*		color: #444;*/
-/*		color: #222;*/
-/*		font-size: 110%;*/
-/*		font-size: 105%;*/
-/*		background: #fff;*/
-/*		color: #fff;*/
-/*		font-weight: bold;*/
+		font-family: Georgia, 'Times New CE', 'Times CE', 'Times New Roman', Times, serif;
 		border-left-color: #aaa;
 		border-left-style: solid;
 		border-left-width: 4px;
 		border-left-color: #e6e6e6;
-/*		border-top: 4px solid #ddd;*/
-/*		margin-left: 0.7em;*/
 		padding-bottom: 0.1em;
 		padding-left: 1.3em;
 		padding-right: 1.3em;
 		padding-top: 1em;
-/*		line-height: 1.6em;*/
-/*		margin: 1.5em 0.7em;*/
 		background-color: #fafafa;
 	}
 	
