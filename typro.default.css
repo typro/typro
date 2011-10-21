@@ -38,6 +38,12 @@
 		list-style-type: decimal;
 	}
 	
+	/* extra margin */
+	blockquote {
+		margin-bottom: 2em;
+		margin-top: 2em;
+	}
+		
 	/* overflow */
 	pre {
 		overflow: auto;
@@ -125,7 +131,7 @@
 	}
 	
 	/* table */
-	td, th {
+	td, th, caption {
 		padding: 0.2em 0.6em;
 	}
 
@@ -143,9 +149,17 @@
 	}
 	
 	legend {
-		margin-left: 0.5em;
+		margin-left: 0.2em;
 		padding: 0 0.4em;
 /*		background: silver;*/
+	}
+	
+	/* other */
+	hr {
+		background: #eee;
+		height: 1px;
+		border-width: 0;
+		border-top: 1px solid #aaa;
 	}
 	
 	/* other - deprecated */
