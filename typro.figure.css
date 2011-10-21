@@ -1,0 +1,48 @@
+/**
+ * .typro Figure
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011
+ * @license		http://janpecha.iunas.cz/typro/license
+ * @link		http://janpecha.iunas.cz/typro/
+ * @version		2.1.0
+ * @package		All Media
+ */
+
+/**
+	Example:
+	
+	<div class="figure">
+		<img src="http://example.com/path/to/image.gif" alt="">
+		<p>Toto je <i>popiska</i> pod obrázkem</p>
+	</div>
+ */
+
+@media all {
+	.figure img + p {
+		text-indent: 0;
+	}
+	
+	.figure {
+		font-size: 90%;
+		margin-left: 1em;
+		margin-right: 1em;
+/*		background: silver;*/
+	}
+	
+	.figure img {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0.5em;
+		display: block;
+	}
+	
+	.figure.left {
+		margin-left: 0;
+	}
+	
+	.figure.right {
+		margin-right: 0;
+	}
+}
+
