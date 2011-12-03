@@ -7,7 +7,7 @@
  * @link		http://janpecha.iunas.cz/typro/
  * @version		2.1.0
  * @package		All Media
- * @todo		21.10.2011 - th p, td p {text-indent: 0;}
+ * @todo		21.10.2011 - ?? th p, td p {text-indent: 0;}
  */
 @media all {
 	body {
@@ -136,7 +136,7 @@
 
 	/* forms */
 	fieldset {
-		border: 1px solid silver;
+		border: 1px solid #bbb;
 		margin-bottom: 1em;
 		padding: 0.6em 1em 1em;
 	}
