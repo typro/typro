@@ -1,0 +1,63 @@
+/**
+ * .typro Hover menu
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011
+ * @license		http://janpecha.iunas.cz/typro/license
+ * @link		http://janpecha.iunas.cz/typro/
+ * @version		2.1.0
+ * @package		All Media - Hover Menu
+ */
+@media all {
+	.hover-menu {
+		background: red;
+		margin-bottom: 1em;
+	}
+	
+	ul.hover-menu {
+		margin-left: 0;
+	}
+	
+	.hover-menu .hover-menu-sub {
+		float: left;
+		padding-left: 1em;
+		padding-right: 1em;
+		position: relative;
+		list-style-type: none;	
+	}
+	
+	.hover-menu .hover-menu-sub:hover {
+		background: #eee;
+	}
+	
+	.hover-menu .hover-menu-sub .hover-menu-items {
+		display: none;
+		position: absolute;
+		background: green;
+		min-width: 100%;
+		padding: 0.4em 1em;
+		left: 0;
+		z-index: 1000;
+	}
+	
+	.hover-menu .hover-menu-sub ul.hover-menu-items {
+/*		list-style-position: inside;*/
+		padding-left: 2em;
+		margin-left: 0;
+	}
+	
+	.hover-menu .hover-menu-sub:hover .hover-menu-items {
+		display: block;
+	}
+	
+	.hover-menu-end {
+		clear: both;
+		visibility: hidden;
+	}
+}
+
+@media print {
+	.hover-menu {
+		display: none;
+	}
+}
