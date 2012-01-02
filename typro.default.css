@@ -132,6 +132,7 @@
 	/* table */
 	td, th, caption {
 		padding: 0.2em 0.6em;
+		text-align: left;
 	}
 
 	/* forms */
