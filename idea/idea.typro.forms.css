@@ -1,0 +1,23 @@
+/**
+ * .typro Form
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011
+ * @license		http://janpecha.iunas.cz/typro/license
+ * @link		http://janpecha.iunas.cz/typro/
+ * @version		2.1.0
+ * @package		All Media
+ */
+@media all {
+	input, textarea {
+		background: #f8f8f8;
+		border: 1px solid #aaa;
+		outline: 0;
+		padding: 0.3em 0.4em;
+/*		border-top: 2px groove #ccc;*/
+	}
+	
+	input:focus, textarea:focus {
+		outline: 2px solid #77aaff;
+	}
+}
