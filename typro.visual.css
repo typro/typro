@@ -3,16 +3,18 @@
  * 
  * @author		Jan Pecha,	<janpecha@email.cz>
  * @copyright	Jan Pecha, 2011
- * @license		http://janpecha.iunas.cz/typro/license
- * @link		http://janpecha.iunas.cz/typro/
+ * @license		http://typro.iunas.cz/license
+ * @link		http://typro.iunas.cz/
  * @version		2.1.0
  * @package		All Media - Visual
- * @todo		04.11.2011 - projit kod, smazat duplicity, sjednotit vlastnosti
+ * @todo		04.11.2011 - projit kod, smazat duplicity, sjednotit vlastnosti [3.1.2012 - skoro hotovo - overit funkcnost]
  */
 @media all {
 	pre {
-		padding: 0.5em 0;
-		padding-left: 1em;
+/*		padding: 0.5em 1em;*/
+		padding: 0.6em 0.7em;
+/*		padding-right: 10em;*/
+/*		padding-left: 1em;*/
 		background-color: #fafafa;
 		border: 1px dashed #d0d0d0;
 		overflow: auto;
@@ -45,16 +47,18 @@
 	}
 	
 	blockquote {
-		padding: 1em 2em 0.1em;
+/*		padding: 1em 2em 0.1em;*/
 		font-family: Georgia, 'Times New CE', 'Times CE', 'Times New Roman', Times, serif;
-		border-left-color: #aaa;
-		border-left-style: solid;
-		border-left-width: 4px;
-		border-left-color: #e6e6e6;
-		padding-bottom: 0.1em;
-		padding-left: 1.3em;
-		padding-right: 1.3em;
-		padding-top: 1em;
+/*		border-left-color: #aaa;*/
+/*		border-left-style: solid;*/
+/*		border-left-width: 4px;*/
+/*		border-left-color: #e6e6e6;*/
+		border-left: 4px solid #e6e6e6;
+/*		padding-bottom: 0.1em;*/
+/*		padding-left: 1.3em;*/
+/*		padding-right: 1.3em;*/
+/*		padding-top: 1em;*/
+		padding: 1em 1.3em 0.1em;
 		background-color: #fafafa;
 	}
 	
