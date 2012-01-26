@@ -1,0 +1,169 @@
+/** iunas.cz layout style
+ * 
+ * @author	Jan Pecha, <janpecha@email.cz>
+ * @version	2012.01.25-1
+ */
+
+body {
+	background: #555;
+	background: #483e37;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+#header, #content, #menu, #footer {
+/*	padding: 1em;*/
+}
+
+
+#wrapper {
+	min-width: 760px;
+	max-width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fff;
+/*	border: 2px solid #e3e3e3;*/
+/*	border-top-width: 0;*/
+/*--	padding: 1em 1em 0.2em;*/
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-top: 1px solid silver;
+	position: relative;
+	margin-bottom: 2em;
+/*	padding: 1em 1em 0.2em;*/
+	padding-bottom: 0.1em;
+}
+
+#header {
+/*--	margin-bottom: 1em;*/
+/*	background: #ddd;*/
+}
+
+#logo {
+	display: block;
+	text-decoration: none;
+	width: 214px;
+	height: 74px;
+	background: url("../images/logo.png") no-repeat;
+/*	margin-top: 1em;*/
+}
+
+#logo span {
+	visibility: hidden;
+}
+
+#middle {
+/*--	position: relative;*/
+	margin-bottom: 5em;
+}
+
+#content, #menu {
+/*	margin-bottom: 5em;*/
+}
+
+#content {
+/*	background: gray;*/
+}
+
+#content.nonfull {
+/*--	margin-left: 16em;*/
+/*	float: right;*/
+}
+
+#content p.description {
+	color: gray;
+	font-style: italic;
+	font-family: Georgia, sans-serif;
+	font-size: 101%;
+}
+
+#menu {
+/*--	float: left;*/
+	width: 13em;
+/*	background: silver;*/
+/*	position: absolute;*/
+/*--	z-index: 10;*/
+/*	top: 0;*/
+/*--margin-top: 1em;*/
+/*--padding-left: 0;*/
+}
+
+/*#menu.right {*/
+/*	float: right;*/
+/*}*/
+
+#menu a {
+	display: block;
+	background: #f4f4f4;
+	margin-bottom: 0.2em;
+	padding: 0.4em 0.8em;
+}
+
+#menu a.tuto, #menu a:hover {
+	background-color: #ddd;
+}
+
+#footer {
+	font-size: 90%;
+	clear: both;
+	color: gray;
+/*	padding: 0.1em 1em;*/
+/*	background: #eee;*/
+/*	margin-bottom: 0em;*/
+/*	border-top: 1px solid #ddd;*/
+/*	padding-top: 1em;*/
+/*	padding: 0 1em;*/
+/*	border-spacing: 0;*/
+}
+
+/* testing offset */
+#footer .grid-col {
+/*	border-left: 16em solid transparent;*/
+	padding-left: 16em;
+}
+
+#footer p {
+	text-indent: 0;
+}
+
+hr {
+	border-color: #ddd;
+}
+
+/* custom?? */
+h1, h2, h3, h4, h5, h6 {
+	color: #0044aa;
+	color: #444;
+}
+
+/* iunas panel */
+#iunas_bar {
+	background: #333;
+	font-size: 90%;
+	color: #fff;
+/*	margin-bottom: 1em;*/
+	padding: 0.3em 0.8em;
+	border: 1px solid transparent;
+	border-width: 1px 0;
+/*	border-bottom-color: gray;*/
+	border-bottom-color: #444;
+	
+}
+
+#iunas_bar a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#iunas_logo {
+	display: block;
+	width: 63px;
+	height: 17px; /* TODO: opravit */
+	background: url("../images/ilogo.png") no-repeat;
+}
+
+#iunas_logo span {
+	visibility: hidden;
+}
+
+/* \iunas panel */
