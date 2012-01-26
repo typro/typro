@@ -1,0 +1,51 @@
+/**
+ * .typro Grid
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011-2012
+ * @license		http://typro.iunas.cz/license
+ * @link		http://typro.iunas.cz/
+ * @version		2.1.0
+ * @package		All Media
+ */
+@media all {
+	.grid-wrapper {
+		display: table;
+	}
+	.grid-row {
+		background: #ddd;
+/*		display: table-row;*/
+/*		border: 1px solid pink;*/
+/*		width: 50%;*/
+/*		outline: 1px solid red;*/
+/*		padding: 1em;*/
+		margin-bottom: 1em;
+/*		border-spacing: 1em;*/
+		border-collapse: separate;
+/*		border: 1px solid blue;*/
+	}
+	
+	.grid-col {
+		background: #aaa;
+		padding: 1em;
+/*		padding: 1em;*/
+		display: table-cell;
+/*		border: 1px solid red;*/
+/*		border: 1px solid pink;*/
+/*		margin: 10em;*/
+/*		border-left: 10em solid transparent;*/
+/*		margin-left: 10em !important;*/
+/*		outline: 1px solid green;*/
+	}
+	
+	/* widths */
+/*	.grid-w-10 {*/
+/*		width: 10%;*/
+/*	}*/
+/*	*/
+/*	.grid-w-20 {*/
+/*		width: 20%;*/
+/*	}*/
+	
+/*	.grid-*/
+}
