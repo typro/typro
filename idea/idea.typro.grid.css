@@ -9,33 +9,102 @@
  * @package		All Media
  */
 @media all {
-	.grid-wrapper {
-		display: table;
+	body {
+		padding: 1em;
 	}
+	
 	.grid-row {
 		background: #ddd;
+/*		width: 100%;*/
+		
+		outline: 1px dashed green;
+/*		max-width: 1024px;*/
+/*		white-space: nowrap;*/
+		padding: 0;
+		margin: 0;
+		margin-bottom: 1em;
+		margin-top: 1em; /* TODO: ?? -*/
+/*		position: relative;*/
+/*		clear: both;*/
 /*		display: table-row;*/
 /*		border: 1px solid pink;*/
 /*		width: 50%;*/
 /*		outline: 1px solid red;*/
 /*		padding: 1em;*/
-		margin-bottom: 1em;
+/*		margin-bottom: 1em;*/
 /*		border-spacing: 1em;*/
-		border-collapse: separate;
+/*		border-collapse: separate;*/
 /*		border: 1px solid blue;*/
+/*		clear: both;*/
 	}
 	
+	/* omezeni - u .grid-row uz nebudeme moci pouzit :after na neco jineho (uzivatel na neco jineho) */
+	.grid-row:after
+	{
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+	
+/*	*/
+/*	.clearer {*/
+/*		clear: both;*/
+/*	}*/
+	
 	.grid-col {
-		background: #aaa;
-		padding: 1em;
+		white-space: normal;
 /*		padding: 1em;*/
-		display: table-cell;
+		float: left;
+/*		width: 40%;*/
+/*		width: 20%;*/
+		display: inline;
+/*		display: inline-block;*/
+/*		display: table-cell;*/
+/*		outline: 1px dashed red;*/
+/*		margin-left: 14em;*/
+/*		float: left;*/
+/*		width: 50%;*/
+		vertical-align: top;
+		background: #ffeeee;
+		border-width: 0;
+/*		outline: 0;*/
+		padding: 0;
+		margin: 0;
+/*		padding: 1em;*/
+/*		background: #aaa;*/
+/*		padding: 1em;*/
+/*		padding: 1em;*/
+/*		display: table-cell;*/
 /*		border: 1px solid red;*/
 /*		border: 1px solid pink;*/
 /*		margin: 10em;*/
 /*		border-left: 10em solid transparent;*/
 /*		margin-left: 10em !important;*/
 /*		outline: 1px solid green;*/
+	}
+	
+	#content {
+/*		width: 80%;*/
+/*		margin-left: 4em;*/
+	}
+	
+	#menu {
+		width: 20%;
+		width: 140px;
+	}
+	
+	#header .grid-col {
+		width: 20%;
+	}
+	
+	#content {
+/*		float:none;*/
+/*		width: 60%;*/
+/*		margin-left: 150px;*/
+/*		margin-right: 150px;*/
+/*		margin-left: 20%; /* offset */
 	}
 	
 	/* widths */

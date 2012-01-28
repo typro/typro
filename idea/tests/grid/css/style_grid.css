@@ -1,7 +1,7 @@
 /** iunas.cz layout style
  * 
  * @author	Jan Pecha, <janpecha@email.cz>
- * @version	2012.01.25-1
+ * @version	2012.01.26-1
  */
 
 body {
@@ -28,10 +28,12 @@ body {
 	border-bottom-left-radius: 6px;
 	border-bottom-right-radius: 6px;
 	border-top: 1px solid silver;
-	position: relative;
-	margin-bottom: 2em;
+	padding: 1em;
+	padding-bottom: 1em;
+/*	position: relative;*/
+/*	margin-bottom: 2em;*/
 /*	padding: 1em 1em 0.2em;*/
-	padding-bottom: 0.1em;
+/*	padding-bottom: 0.1em;*/
 }
 
 #header {
@@ -54,7 +56,7 @@ body {
 
 #middle {
 /*--	position: relative;*/
-	margin-bottom: 5em;
+/*	margin-bottom: 5em;*/
 }
 
 #content, #menu {
@@ -78,8 +80,10 @@ body {
 }
 
 #menu {
+	background: #ddd;
+	width: 14em;
 /*--	float: left;*/
-	width: 13em;
+/*	width: 13em;*/
 /*	background: silver;*/
 /*	position: absolute;*/
 /*--	z-index: 10;*/
@@ -105,7 +109,7 @@ body {
 
 #footer {
 	font-size: 90%;
-	clear: both;
+/*	clear: both;*/
 	color: gray;
 /*	padding: 0.1em 1em;*/
 /*	background: #eee;*/
@@ -119,7 +123,7 @@ body {
 /* testing offset */
 #footer .grid-col {
 /*	border-left: 16em solid transparent;*/
-	padding-left: 16em;
+/*	padding-left: 16em;*/
 }
 
 #footer p {
