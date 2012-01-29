@@ -21,148 +21,116 @@
 <!--	<link rel="stylesheet" media="all" href="./css/style_grid.css" type="text/css">-->
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 	
-	<title>Gridni to! - Písničky z pohádek</title>
+	<title>Gridni to! - Typro Framework</title>
 </head>
 <body style="background-color: #222;background-color:#eee;">
 	<div class="blind">
 		<a href="http://www.ippi.cz/klavesove-zkratky/zakladni.html" accesskey="1">Klávesové zkratky na tomto webu - základní</a>
 		<a href="#content" accesskey="0">Na obsah stránky</a>
 	</div>
-	<div id="iunas_bar"><a href="#http://homepage" id="iunas_logo"><span>iunas.cz</span></a></div>
-	
 	
 	<div id="wrapper">
 		<div id="header" class="grid-row">
-			<div class="grid-col">
-				<a href="#homepage" rel="home" id="logo"><span>Homepage</span></a>
+			<div class="grid-col"  style="margin-left:150px;">
+				<div class="grid-cell"><a href="#homepage" rel="home" id="logo"><span>Homepage</span></a></div>
 			</div>
 		</div>
 		
-		<div id="middle" class="grid-row">
-			<div id="content" class="grid-col"><!-- nonfull -->
-				<h1>Lorem ipsum dolor sit amet</h1>
-				<p class="description">
-					Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.
-					Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.
-					Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.
-					Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.
-				</p>
-				
-				<p>
-					Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.
-					Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.
-					Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.
-					Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.
-				</p>
-			</div>
-			<div id="menu" class="grid-col">
-<!--				<div style="padding:1em;">-->
-				<a href="" class="tuto">Homepage</a>
-				<a href="">Homepage</a>
-				<a href="">Homepage</a>
-<!--				</div>-->
-			</div>
-			<div id="menu" class="grid-col">
-<!--				<div style="padding:1em;">-->
-				<a href="" class="tuto">Homepage</a>
-				<a href="">Homepage</a>
-				<a href="">Homepage</a>
-<!--				</div>-->
-			</div>
-<!--			<div class="grid-col">-->
-<!--				<a href="" class="tuto">Homepage</a>-->
-<!--				<a href="">Homepage</a>-->
-<!--				<a href="">Homepage</a>-->
-<!--			</div>-->
-		</div>
+		<style>
+		body {
+			padding: 1em;
+		}
+		.grid-col, .grid-rcol, .grid-fluid {
+			background: #fee;
+			outline: 1px dashed gray;
+		}
+		</style>
 		
-		<div id="middle" class="grid-row">
-			<div id="menu" class="grid-col">
-				<a href="" class="tuto">Homepage</a>
-				<a href="">Homepage</a>
-				<a href="">Homepage</a>
+		<div class="grid-row" style="min-width: 300px;">
+			<div class="grid-col" style="width: 150px;">
+				<div class="grid-cell">Col 1</div> 
 			</div>
 			
-			<div id="content" class="grid-col"><!-- nonfull -->
-				<h1>Lorem ipsum dolor sit amet</h1>
-				<p class="description">
-					Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.
-					Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.
-					Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.
-					Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.
-				</p>
-				
-				<p>
-					Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.
-					Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.
-					Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.
-					Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.
-				</p>
-				
+			<div class="grid-rcol" style="width: 50px;">
+				<div class="grid-cell">Col</div>
+				<div class="grid-cell">2</div>
+			</div>
+			
+			<div class="grid-fluid"><div class="grid-cell">
+				<h1>Grid Test</h1>
+				style="margin-left:<br>150px;<br> margin-right:<br> 50px;min-width:<br> 200px;">
+				<br>Fluid <br>block<br>asdfsdf</div>
 				<div class="grid-row">
-					<div class="grid-col">
-					Ahoj
+					<div class="grid-col" style="width: 150px;">
+						<div class="grid-cell">Col 1</div> 
+					</div>
+			
+					<div class="grid-rcol" style="width: 50px;">
+						<div class="grid-cell">Col</div>
+						<div class="grid-cell">2</div>
 					</div>
 					
-					<div class="grid-col">
-						Tě bájo
+					<div class="grid-fluid"><div class="grid-cell"> style="margin-left:<br>150px;<br> margin-right:<br> 50px;min-width:<br> 200px;">
+						<br>Fluid <br>block<br>asdfsdf</div>
+						<div class="grid-row">
+							<div class="grid-col" style="width: 150px;">
+								<div class="grid-cell">Col 1</div> 
+							</div>
+			
+							<div class="grid-rcol" style="width: 50px;">
+								<div class="grid-cell">Col</div>
+								<div class="grid-cell">2</div>
+							</div>
+							
+							<div class="grid-fluid">
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
-		<div id="middlening" class="grid-row">
-		   <div id="sidebar" class="grid-col">
-		   Left column content...
-		   </div>
-		   <div id="sidebar" style="float:right" class="grid-col">
-		   Left column content...
-		   </div>
-		   <div id="mainer">
-		   Right column content... Right column content... Right column content... 
-		   Right column content... Right column content... Right column content... 
-		   Right column content... Right column content... Right column content... 
-		   Right column content... Right column content... Right column content... 
-		   Right column content... Right column content... Right column content... 
-		   Right column content... Right column content... Right column content... 
-		   Right column content... Right column content... Right column content... 
-		   Right column content... Right column content... Right column content... 
-		   Right column content... Right column content... Right column content...
-		   	<div class="grid-row">
-		   		<div class="grid-col" style="width: 10%;overflow:hidden">
-		   			Heelo
-		   		</div>
-		   		
-		   		<div style="margin-left: 10%;background:gold;">
-		   			HELLOW 2
-		   		</div>
-		   	</div>
-		   </div>
-		</div>
-		
-		<style>
-		#middlening {
-      }
-   #sidebar {
-      width: 200px;
-      padding:0;
-      outline: 1px dashed red;
-      }
-   #mainer {
-		margin-left: 200px;
-		margin-right: 200px;
-		outline: 1px dashed red;
-      }
-		</style>
-		
+
 		<div id="footer" class="grid-row">
 			<div class="grid-col" style="margin-left:150px;">
-				<p>&copy; Iunas.cz, 2011-2012. Všechna práva vyhrazena.<br>
-				<a href="#">O nás</a>
-				<a href="#">Nápověda</a>
-				<a href="#">Překladatelé</a>
-				<a href="#">Registrace</a>
-				<a href="#">Ochrana soukromí</a>
+				<p>&copy; Jan Pecha, 2012<br>
+					Typro Framework, v2.1<br>
+					<a href="#">Homepage</a>
+					<a href="#">About</a>
+					<a href="#">Ideas</a>
+					<a href="#">Download</a>
 				</p>
 			</div>
 		</div>

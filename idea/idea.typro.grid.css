@@ -7,114 +7,137 @@
  * @link		http://typro.iunas.cz/
  * @version		2.1.0
  * @package		All Media
+ *
+ * @todo		28.01.2012 - ??pridat .grid-row {margin-top: 1em;}
+ * @todo		28.01.2012 - ??odstranit .grid-row {margin-bottom:}
  */
 @media all {
-	body {
-		padding: 1em;
-	}
-	
 	.grid-row {
-		background: #ddd;
-/*		width: 100%;*/
-		
-		outline: 1px dashed green;
-/*		max-width: 1024px;*/
-/*		white-space: nowrap;*/
 		padding: 0;
-		margin: 0;
-		margin-bottom: 1em;
-		margin-top: 1em; /* TODO: ?? -*/
-/*		position: relative;*/
-/*		clear: both;*/
-/*		display: table-row;*/
-/*		border: 1px solid pink;*/
-/*		width: 50%;*/
-/*		outline: 1px solid red;*/
-/*		padding: 1em;*/
-/*		margin-bottom: 1em;*/
-/*		border-spacing: 1em;*/
-/*		border-collapse: separate;*/
-/*		border: 1px solid blue;*/
-/*		clear: both;*/
+		margin: 0 0 1em;
+		border-width: 0;
 	}
 	
-	/* omezeni - u .grid-row uz nebudeme moci pouzit :after na neco jineho (uzivatel na neco jineho) */
-	.grid-row:after
-	{
+	.grid-row:after {
 		content: ".";
 		display: block;
 		height: 0;
-		clear: both;
 		visibility: hidden;
 	}
 	
-/*	*/
-/*	.clearer {*/
-/*		clear: both;*/
-/*	}*/
+	.grid-clear, .grid-row:after {
+		clear: both;
+	}
 	
-	.grid-col {
-		white-space: normal;
-/*		padding: 1em;*/
-		float: left;
-/*		width: 40%;*/
-/*		width: 20%;*/
-		display: inline;
-/*		display: inline-block;*/
-/*		display: table-cell;*/
-/*		outline: 1px dashed red;*/
-/*		margin-left: 14em;*/
-/*		float: left;*/
-/*		width: 50%;*/
-		vertical-align: top;
-		background: #ffeeee;
-		border-width: 0;
-/*		outline: 0;*/
+	.grid-col, .grid-rcol, .grid-fluid {
+		overflow: hidden;
 		padding: 0;
 		margin: 0;
-/*		padding: 1em;*/
-/*		background: #aaa;*/
-/*		padding: 1em;*/
-/*		padding: 1em;*/
-/*		display: table-cell;*/
-/*		border: 1px solid red;*/
-/*		border: 1px solid pink;*/
-/*		margin: 10em;*/
-/*		border-left: 10em solid transparent;*/
-/*		margin-left: 10em !important;*/
-/*		outline: 1px solid green;*/
+		border-width: 0;
 	}
 	
-	#content {
-/*		width: 80%;*/
-/*		margin-left: 4em;*/
+	.grid-col, .grid-rcol {
+		display: inline;
+		float: left;
 	}
 	
-	#menu {
-		width: 20%;
-		width: 140px;
+	.grid-rcol {
+		float: right;
 	}
 	
-	#header .grid-col {
-		width: 20%;
+	.grid-fluid {
+		
 	}
 	
-	#content {
-/*		float:none;*/
-/*		width: 60%;*/
-/*		margin-left: 150px;*/
-/*		margin-right: 150px;*/
-/*		margin-left: 20%; /* offset */
+	.grid-cell {
+		padding: 1em;
+		overflow: auto;
 	}
 	
 	/* widths */
-/*	.grid-w-10 {*/
-/*		width: 10%;*/
-/*	}*/
-/*	*/
-/*	.grid-w-20 {*/
-/*		width: 20%;*/
-/*	}*/
+	.grid-wp75 {
+		width: 75%;
+	}
 	
-/*	.grid-*/
+	.grid-wp50 {
+		width: 50%;
+	}
+	
+	.grid-wp25 {
+		width: 25%;
+	}
+	
+	.grid-wp80 {
+		width: 80%;
+	}
+	
+	.grid-wp60 {
+		width: 60%;
+	}
+	
+	.grid-wp40 {
+		width: 40%;
+	}
+	
+	.grid-wp20 {
+		width: 20%;
+	}
+	
+	/* offsets */
+	.grid-of75 {
+		margin-left: 75%;
+	}
+	
+	.grid-of50 {
+		margin-left: 50%;
+	}
+	
+	.grid-of25 {
+		margin-left: 25%;
+	}
+	
+	.grid-of80 {
+		margin-left: 80%;
+	}
+	
+	.grid-of60 {
+		margin-left: 60%;
+	}
+	
+	.grid-of40 {
+		margin-left: 40%;
+	}
+	
+	.grid-of20 {
+		margin-left: 20%;
+	}
+	
+	/* right offsets */
+	.grid-rof75 {
+		margin-right: 75%;
+	}
+	
+	.grid-rof50 {
+		margin-right: 50%;
+	}
+	
+	.grid-rof25 {
+		margin-right: 25%;
+	}
+	
+	.grid-rof80 {
+		margin-right: 80%;
+	}
+	
+	.grid-rof60 {
+		margin-right: 60%;
+	}
+	
+	.grid-rof40 {
+		margin-right: 40%;
+	}
+	
+	.grid-rof20 {
+		margin-right: 20%;
+	}
 }
