@@ -44,13 +44,21 @@
 		 * @return	void
 		 * @throws	\Exception	file error
 		 */
-		public function generate()
+		public function generate($addDate = false)
 		{
 			$content = '';
+			$header = '';
+			$date = date('YmdHis');
+			
+			if($addDate)
+			{
+				$header .= '/* ' . $date . ' */';
+			}
+			
 			// TODO: PATH
 			if(!is_string($this->filename))
 			{
-				$this->filename = 'min' . date('YmdHis') . '.css';
+				$this->filename = 'min' . $date . '.css';
 			}
 			
 			foreach($this->files as $file)
@@ -65,7 +73,7 @@
 				$content .= $_c;
 			}
 			
-			file_put_contents($this->filename, $this->compress($content));
+			file_put_contents($this->filename, $header . $this->compress($content));
 		}
 		
 		

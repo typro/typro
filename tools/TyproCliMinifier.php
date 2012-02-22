@@ -2,7 +2,7 @@
 	/**
 	 * @author		Jan Pecha
 	 * @license		http://typro.iunas.cz/license/
-	 * @version		2012.01.29-1
+	 * @version		2012.02.10-1
 	 */
 	
 	if(!($_SERVER['argc'] > 1))
@@ -14,12 +14,12 @@
 require: PHP 5.3+, CssMinifier.php
 
 usage:
-	./typroCliMinifier.php [args]
 	php -f typroCliMinifier.php -- [args]
 
 options:
 	-n <generated file name = 'min' . date('YmdHis') . 'css'>
 	-p <path to Typro directory = current directory>
+	-t add date and time on begin of file (-t or -t1 = ON; -t0 = OFF)
 	-f <CSS file 1> <CSS file 2> <CSS file 3> ...
 	   * <CSS file> = path to a CSS file
 	   * <Typro file> = @module.name (@default, @reset, @paragraph.indent,...)
@@ -38,6 +38,7 @@ author: Jan Pecha, <janpecha@email.cz>
 		$filename = null;
 		$typroFiles = array();
 		$files = array();
+		$addDateTime = true;
 		
 		if($typroDir === false)
 		{
@@ -71,6 +72,16 @@ author: Jan Pecha, <janpecha@email.cz>
 					elseif($arg == '-f')
 					{
 						$state = ST_FILES;
+					}
+					elseif($arg == '-t' || $arg == '-t1')
+					{
+						$addDateTime = true;
+						$state = ST_START;
+					}
+					elseif($arg == '-t0')
+					{
+						$addDateTime = false;
+						$state = ST_START;
 					}
 					else
 					{
@@ -135,7 +146,7 @@ author: Jan Pecha, <janpecha@email.cz>
 			$minifier->addFiles($typroFiles);
 			$minifier->addFiles($files);
 			
-			$minifier->generate();
+			$minifier->generate($addDateTime);
 		}
 		catch(\Exception $e)
 		{
