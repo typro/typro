@@ -8,13 +8,13 @@
  * @version		2.1.0
  * @package		All Media
  *
- * @todo		28.01.2012 - ??pridat .grid-row {margin-top: 1em;}
- * @todo		28.01.2012 - ??odstranit .grid-row {margin-bottom:}
+ * @todo		[XX]	28.01.2012 - ??pridat .grid-row {margin-top: 1em;}
+ * @todo		[ok]	28.01.2012 - ??odstranit .grid-row {margin-bottom:}
  */
 @media all {
 	.grid-row {
 		padding: 0;
-		margin: 0 0 1em;
+		margin: 0;
 		border-width: 0;
 	}
 	
