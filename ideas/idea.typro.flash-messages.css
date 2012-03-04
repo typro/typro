@@ -1,0 +1,114 @@
+/**
+ * .typro Flash Messages
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011-2012
+ * @license		http://typro.iunas.cz/license
+ * @link		http://typro.iunas.cz/
+ * @version		2.1.0
+ * @package		All Media
+ */
+@media all {
+	/* flash-message(ok|info|important|error) */
+	.flash-message,
+	.flash-message-ok,
+	.flash-message-info,
+	.flash-message-important,
+	.flash-message-error {
+		background-color: #eee;
+		padding: 1em;
+		margin-bottom: 1em;
+		border: 1px solid #ccc;
+		border-width: 0;
+		border-radius: 4px;
+		text-indent: 0;
+		position: relative; /* ! */
+/*		left: -2px;*/
+		margin-left: auto;
+		margin-right: auto;
+		
+		/* close icon */
+		min-width: 22px;
+		min-height: 22px;
+/*		width: 95%*/
+	}
+	
+	/* p */
+	.flash-message p,
+	.flash-message-ok p,
+	.flash-message-info p,
+	.flash-message-important p,
+	.flash-message-error p {
+		text-indent: inherit;
+	}
+	
+	/* .flash-message-close */
+	.flash-message .flash-message-close,
+	.flash-message-ok .flash-message-close,
+	.flash-message-info .flash-message-close,
+	.flash-message-important .flash-message-close,
+	.flash-message-error .flash-message-close {
+		background-color: transparent;
+		position: absolute;
+/*		display: block;*/
+		right: 8px;
+		top: 7px;
+		width: 12px;
+		height: 12px;
+		background-color: #888;
+		text-decoration: none;
+		overflow: hidden;
+	}
+	
+	/* .flash-message-close span */
+	.flash-message .flash-message-close span,
+	.flash-message-ok .flash-message-close span,
+	.flash-message-info .flash-message-close span,
+	.flash-message-important .flash-message-close span,
+	.flash-message-error .flash-message-close span {
+/*		display: none;*/
+		visibility: hidden;
+	}
+	
+	/* Colors */
+	.flash-message-ok {
+		background-color: #b8e088;
+		border-color: #ffe440;
+		border-color: #86bf42;
+	}
+	
+	.flash-message-info {
+		background-color: #b2d0ff;
+		border-color: #ffe440;
+		border-color: #90b5f0;
+	}
+	
+	.flash-message-important {
+		background-color: #ffef8e;
+		border-color: #ffe440;
+		border-color: #f0d63c;
+	}
+	
+/*	.flash-message-info {*/
+/*		background-color: #8ec3ff;*/
+/*		border-color: #ffe440;*/
+/*		border-color: #3c90f0;*/
+/*	}*/
+	
+	.flash-message-error {
+		background-color: #ffa18e;
+		border-color: #f0463c;
+		border-color: #f05a3c;
+	}
+}
+
+
+@media print {
+	.flash-message,
+	.flash-message-ok,
+	.flash-message-info,
+	.flash-message-important,
+	.flash-message-error {
+		display: none;
+	}
+}
