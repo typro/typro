@@ -42,3 +42,13 @@ Using experimental module
 	...
 </body>
 </html>
+
+
+Who uses Typro?
+---------------
+
+* http://typro.iunas.cz/
+* http://www.sluzatky.cz/
+* http://pohadkovyles.sluzatky.cz/
+* and more
+
