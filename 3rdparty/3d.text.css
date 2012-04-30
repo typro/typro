@@ -1,8 +1,0 @@
-/*Apply this class to some text to unlock the secrets of the third dimension!*/
-.3DText{
-font-family: Arial, sans-serif;
-line-height: 1em;
-color: #eeeeee;
-font-weight:bold;
-font-size: 149px;
-text-shadow:0px 0px 0 rgb(146,146,146), -1px 1px 0 rgb(78,78,78),-2px 2px 1px rgba(0,0,0,1),-2px 2px 1px rgba(0,0,0,0.5),0px 0px 1px rgba(0,0,0,.2);}
