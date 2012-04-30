@@ -83,6 +83,36 @@
 		width: 20%;
 	}
 	
+	/*---*/
+	
+	.grid-wp70 {
+		width: 70%;
+	}
+	
+	.grid-wp30 {
+		width: 30%;
+	}
+	
+	/*---*/
+	
+	.grid-wp10 {
+		width: 10%;
+	}
+	
+	.grid-wp90 {
+		width: 90%;
+	}
+	
+	/*---*/
+	
+	.grid-wp15 {
+		width: 15%;
+	}
+	
+	.grid-wp85 {
+		width: 85%;
+	}
+	
 	/* offsets */
 	.grid-of75 {
 		margin-left: 75%;
