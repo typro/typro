@@ -14,7 +14,7 @@
 require: PHP 5.3+, CssMinifier.php
 
 usage:
-	php -f typroCliMinifier.php -- [args]
+	php -f TyproCliMinifier.php -- [args]
 
 options:
 	-n <generated file name = 'min' . date('YmdHis') . 'css'>
@@ -158,6 +158,11 @@ author: Jan Pecha, <janpecha@email.cz>
 	}
 	
 
+	/**
+	 * @param	string
+	 * @param	string
+	 * @return	void
+	 */
 	function error($msg, $type = 'error')
 	{
 		echo "[$type] $msg\n";
