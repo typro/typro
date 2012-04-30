@@ -134,6 +134,10 @@
 		padding: 0.2em 0.6em;
 		text-align: left;
 	}
+	
+	form td, form tr {
+		border: none;
+	}
 
 	/* forms */
 	fieldset {
