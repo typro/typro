@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+	<meta name="description" content="description">
+	<meta name="keywords" content="keywords">
+	<meta name="author" content="Jan Pecha, http://janpecha.iunas.cz/">
+	
+	<link rel="stylesheet" media="all" href="../../../typro.reset.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../../typro.default.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../../typro.paragraph.indent.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../../typro.paragraph.indent-no-first.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../../typro.visual.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../../ideas/idea.typro.form.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../../typro.color.a.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../../typro.align.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../../typro.figure.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../../typro.print.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../../typro.blind.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../../tests/tests.style.css" type="text/css">
+<!--	<link rel="stylesheet" media="all" href="./css/style_grid.css" type="text/css">-->
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	
+	<title>Form Idea Test - Typro Framework</title>
+</head>
+<body>
+	<div class="blind">
+		<a href="http://www.ippi.cz/klavesove-zkratky/zakladni.html" accesskey="1">Klávesové zkratky na tomto webu - základní</a>
+		<a href="#content" accesskey="0">Na obsah stránky</a>
+	</div>
+	
+	<div id="wrapper">
+		<h1>Form Test <sup>2012-04-16</sup></h1>
+		<h2>Test 1</h2>
+		<form action="#" method="post">
+			<label for="test1-name">Jméno:</label> <input type="text" id="test1-name"><br>
+			<input type="submit" value="Save">
+		</form>
+		
+		<h2>Test 2</h2>
+		<form action="#" method="post">
+			<table>
+				<tr>
+					<td>
+						<label for="test2-name">Jméno:</label>
+					</td>
+					<td>
+						<input type="text" id="test2-name">
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" value="Save">
+					</td>
+				</tr>
+			</table>
+		</form>
+		
+		<h2>Test 3</h2>
+		<form action="#" method="post">
+			<table>
+				<tr>
+					<td>
+						<label for="test3-name">Jméno:</label>
+					</td>
+					<td>
+						<input type="text" id="test3-name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="test3-surname">Příjmení:</label>
+					</td>
+					<td>
+						<input type="text" id="test3-surname">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="test3-old">Věk:</label>
+					</td>
+					<td>
+						<input type="number" id="test3-old">
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="checkbox" id="test3-check"> <label for="test3-check">Souhlasím s podmínkami webu.</label>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="radio" name="sex" value="m" id="test3-sex-m"> <label for="test3-sex-m">Muž</label><br>
+						<input type="radio" name="sex" value="f" id="test3-sex-f"> <label for="test3-sex-f">Žena</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="test3-email">E-mail:</label>
+					</td>
+					<td>
+						<input type="email" id="test3-email">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="test3-date">Datum:</label>
+					</td>
+					<td>
+						<input type="date" id="test3-date">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="test3-text">Text:</label>
+					</td>
+					<td>
+						<textarea cols="80" rows="10" id="test3-text"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="test3-range">Rozsah:</label>
+					</td>
+					<td>
+						<input type="range" id="test3-range">
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" value="Save">
+						<input type="submit" value="Cancel">
+					</td>
+				</tr>
+			</table>
+		</form>
+		
+		<h2>Test 4</h2>
+		<form action="#" method="post">
+			<dl>
+				<dt>
+					<label for="test4-name">Jméno:</label>
+				</dt>
+				<dd>
+					<input type="text" id="test4-name">
+				</dd>
+				
+				<dt>
+					<label for="test4-surname">Příjmení:</label>
+				</dt>
+				<dd>
+					<input type="text" id="test4-surname" class="form-max-width">
+				</dd>
+				
+				<dt>
+					<label for="test4-old">Věk:</label>
+				</dt>
+				<dd>
+					<input type="number" id="test4-old">
+				</dd>
+				
+				<dt>
+					<label for="test4-email">E-mail:</label>
+				</dt>
+				<dd>
+					<input type="email" id="test4-email">
+				</dd>
+				
+				<dt>
+					<label for="test4-date">Datum:</label>
+				</dt>
+				<dd>
+					<input type="date" id="test4-date">
+				</dd>
+				
+				<dt>
+					<label for="test4-text">Text:</label>
+				</dt>
+				<dd>
+					<textarea class="form-max-width" cols="80" rows="10" id="test4-text"></textarea>
+				</dd>
+				
+				<dt>
+					<label for="test4-range">Rozsah:</label>
+				</dt>
+				<dd>
+					<input type="range" id="test4-range">
+				</dd>
+				
+				<dd>
+					<input type="submit" value="Save">
+					<input type="submit" value="Cancel">
+				</dd>
+			</dl>
+		</form>
+		
+		<h2>Test 5</h2>
+		<form action="#" method="post">
+			<dl>
+				<dt>
+					<label for="test5-name">Jméno:</label>
+				</dt>
+				<dd>
+					<input type="text" id="test5-name">
+				</dd>
+				
+				<dt>
+					<label for="test5-surname">Příjmení:</label>
+				</dt>
+				<dd>
+					<input type="text" id="test5-surname" class="form-max-width">
+				</dd>
+				
+				<dt>
+					<label for="test5-old">Věk:</label>
+				</dt>
+				<dd>
+					<input type="number" id="test5-old">
+				</dd>
+				
+				<dt>
+					<label for="test5-email">E-mail:</label>
+				</dt>
+				<dd>
+					<input type="email" id="test5-email">
+				</dd>
+				
+				<dt>
+					<label for="test5-date">Datum:</label>
+				</dt>
+				<dd>
+					<input type="date" id="test5-date">
+				</dd>
+				
+				<dt>
+					<label for="test5-text">Text:</label>
+				</dt>
+				<dd>
+					<textarea class="form-max-width" cols="80" rows="10" id="test5-text"></textarea>
+				</dd>
+				
+				<dt>
+					<label for="test5-range">Rozsah:</label>
+				</dt>
+				<dd>
+					<input type="range" id="test5-range">
+				</dd>
+				
+				<dt>
+					<input type="submit" value="Save">
+					<input type="submit" value="Cancel">
+				</dt>
+			</dl>
+		</form>
+		
+		<h2>Test 6</h2>
+		<form action="#" method="post">
+			<dl>
+				<dt>
+					<label for="test6-name">Jméno:</label>
+				</dt>
+				<dd>
+					<input type="text" id="test6-name">
+				</dd>
+				
+				<dt>
+					<label for="test6-surname">Příjmení:</label>
+				</dt>
+				<dd>
+					<input type="text" id="test6-surname" class="form-max-width">
+				</dd>
+				
+				<dt>
+					<label for="test6-old">Věk:</label>
+				</dt>
+				<dd>
+					<input type="number" id="test6-old">
+				</dd>
+				
+				<dt>
+					<label for="test6-email">E-mail:</label>
+				</dt>
+				<dd>
+					<input type="email" id="test6-email">
+				</dd>
+				
+				<dt>
+					<label for="test6-date">Datum:</label>
+				</dt>
+				<dd>
+					<input type="date" id="test6-date">
+				</dd>
+				
+				<dt>
+					<label for="test6-text">Text:</label>
+				</dt>
+				<dd>
+					<textarea class="form-max-width" cols="80" rows="10" id="test6-text"></textarea>
+				</dd>
+				
+				<dt>
+					<label for="test6-range">Rozsah:</label>
+				</dt>
+				<dd>
+					<input type="range" id="test6-range">
+				</dd>
+				
+				<dt><input type="hidden" name="send" value="ok">f</dt>
+				<dd>
+					<input type="submit" value="Save">
+					<input type="submit" value="Cancel">
+				</dd>
+			</dl>
+		</form>
+		
+		<div id="footer">
+			<p>&copy; Jan Pecha, 2012<br>
+				Typro Framework, v2.1<br>
+				<a href="#">Homepage</a>
+				<a href="#">About</a>
+				<a href="#">Ideas</a>
+				<a href="#">Download</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
