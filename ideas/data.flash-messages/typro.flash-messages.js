@@ -14,5 +14,6 @@ $(document).ready(function(){
 		'.flash-message-error .flash-message-close'
 	).click(function(){
 		$(this).parent().slideUp(300);
+		return false;
 	});
 });
