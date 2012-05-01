@@ -1,0 +1,20 @@
+/**
+ * .typro Classes
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011-2012
+ * @license		http://typro.iunas.cz/license
+ * @link		http://typro.iunas.cz/
+ * @version		2.1.0
+ * @package		All Media
+ */
+@media all {
+	.wide {
+		width: 100%;
+	}
+	
+	/* tables */
+	.no-border {
+		border: none;
+	}
+}
