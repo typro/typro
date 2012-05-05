@@ -71,6 +71,10 @@
 		border-bottom: 1px dotted gray;
 	}
 	
+	h1, h2, h3, h4, h5, h6 {
+		color: #333;
+	}
+	
 	.noborder td, .noborder th {
 		border-width: 0;
 	}
