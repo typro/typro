@@ -5,7 +5,7 @@
  * @copyright	Jan Pecha, 2011
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2.1.0
+ * @version		2012-05-06-1
  * @package		All Media
  */
 
@@ -24,13 +24,9 @@
 	}
 	
 	.figure {
-/*		font-size: 90%;*/
-/*		margin-left: 1em;*/
-/*		margin-right: 1em;*/
 		margin-left: auto;
 		margin-right: auto;
 		padding: 0.4em;
-/*		overflow: hidden;*/
 	}
 	
 	.figure img {
@@ -39,7 +35,6 @@
 		margin-bottom: 0.5em;
 		display: block;
 		max-width: 100%;
-/*		width: 90%;*/
 	}
 	
 	.figure.left {
@@ -52,13 +47,8 @@
 		margin-right: 0;
 	}
 	
-/*	.figure.left img, .figure.right img {*/
-/*		max-width: 90%;*/
-/*		width: 90%;*/
-/*	}*/
-	
 	h1, h2, h3, h4, h5, h6 {
-		clear: both; /* TODO: ?? */
+		clear: both; /* TODO: good idea?? */
 	}
 }
 
