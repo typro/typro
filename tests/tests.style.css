@@ -1,7 +1,7 @@
 /** CSS style for Typro Tests
  *
  * @author		Jan Pecha, <janpecha@email.cz>
- * @version		2012.03.04-1
+ * @version		2012-05-06-1
  */
 
 #wrapper {
@@ -21,6 +21,12 @@ h2 {
 	border-top: 1px solid silver;
 	padding-top: 0.4em;
 	margin-top: 1em;
+}
+
+h2.no-border {
+	border: none;
+	padding-top: 0;
+	margin-top: 0;
 }
 
 .test-menu {
