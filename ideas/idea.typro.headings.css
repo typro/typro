@@ -1,0 +1,40 @@
+/**
+ * .typro Headings
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011-2012
+ * @license		http://typro.iunas.cz/license
+ * @link		http://typro.iunas.cz/
+ * @version		2012-05-06-1
+ * @package		All Media
+ */
+@media all {
+	h1 {
+		letter-spacing: -3px;
+		font-size: 350%;
+	}
+	
+	h2, h3, h4, h5, h6 {
+		letter-spacing: -1px;
+	}
+	
+	h2 {
+		font-size: 302%;
+	}
+	
+	h3 {
+		font-size: 258%;
+	}
+	
+	h4 {
+		font-size: 214%;
+	}
+	
+	h5 {
+		font-size: 170%;
+	}
+	
+	h6 {
+		font-size: 125%;
+	}
+}
