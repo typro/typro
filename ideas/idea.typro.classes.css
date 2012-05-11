@@ -17,4 +17,9 @@
 	.no-border {
 		border: none;
 	}
+	
+	/* paragraphs */
+	.no-indent {
+		text-indent: 0;
+	}
 }
