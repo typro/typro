@@ -42,12 +42,17 @@
 		text-indent: inherit;
 	}
 	
+	/* p:last-child */
+	.flash-message p:last-child,
+	.flash-message-ok p:last-child,
+	.flash-message-info p:last-child,
+	.flash-message-important p:last-child,
+	.flash-message-error p:last-child {
+		margin-bottom: 0;
+	}
+	
 	/* .flash-message-close */
-	.flash-message .flash-message-close,
-	.flash-message-ok .flash-message-close,
-	.flash-message-info .flash-message-close,
-	.flash-message-important .flash-message-close,
-	.flash-message-error .flash-message-close {
+	.flash-message-close {
 		background-color: transparent;
 		position: absolute;
 /*		display: block;*/
@@ -55,7 +60,7 @@
 		top: 7px;
 		width: 12px;
 		height: 12px;
-		background-color: #888;
+/*		background-color: #888;*/
 		text-decoration: none;
 		overflow: hidden;
 	}
