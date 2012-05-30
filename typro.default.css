@@ -135,6 +135,10 @@
 		text-align: left;
 	}
 	
+	th {
+		text-align: center;
+	}
+	
 	form td, form tr {
 		border: none;
 	}
