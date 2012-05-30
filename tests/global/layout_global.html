@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+	<!-- Author info (Change it) -->
+	<meta name="author" content="Jan Pecha (2012), http://janpecha.iunas.cz/">
+	
+	<!-- Load Typro Files -->
+	<link rel="stylesheet" media="all" href="../../typro.reset.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../typro.default.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../typro.visual.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../typro.color.a.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../typro.align.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../typro.figure.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../typro.paragraph.indent.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../typro.paragraph.indent-no-first.css" type="text/css">
+	<!-- idea modules -->
+	<link rel="stylesheet" media="all" href="../../ideas/idea.typro.grid.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../ideas/idea.typro.classes.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../ideas/idea.typro.flash-messages.css" type="text/css">
+	<!-- \idea modules -->
+	<link rel="stylesheet" media="all" href="../../typro.print.css" type="text/css">
+	
+	<!-- Load Tests Stylesheet -->
+<!--	<link rel="stylesheet" media="all" href="../tests.style.css" type="text/css">-->
+	
+	<!-- Load Custom Stylesheets -->
+	<!-- <link rel="stylesheet" media="all" href="custom.css" type="text/css"> -->
+	
+	<!-- Specific Document Style -->
+	<style>
+		body {
+			background-color: #f8f8f8;
+			padding: 1.6em 1em 0;
+		}
+		
+		#wrapper {
+			max-width: 960px;
+			background-color: #fff;
+			margin: 2em auto;
+			border: 1px solid #ddd;
+			border-radius: 6px;
+		}
+		
+		#content {
+			margin: 1.6em;
+		}
+		
+		h2 {
+			border: none;
+			padding-top: 0;
+			margin-top: 1em;
+			position: relative;
+		}
+		
+		.nav-bar {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: #333;
+			border-bottom: 1px solid #888;
+			width: 100%;
+			display: block;
+		}
+		
+		.nav-bar .center {
+			max-width: 960px;
+			padding: 0 1em;
+		}
+		
+		.nav-bar a {
+			display: block;
+			float: left;
+			color: #eee;
+			text-decoration: none;
+			padding: 0.4em 1em;
+			border: 1px solid transparent;
+			border-width: 1px 1px 0;
+		}
+		
+		.nav-bar a:hover, .nav-bar a:target {
+			background-color: #444;
+			border-color: #484848;
+		}
+		
+		#footer {
+			border-top: 1px solid #ddd;
+			margin-top: 4em;
+			font-size: 90%;
+			padding: 1em 0.4em 0;
+			color: #555;
+		}
+		
+		#footer p:first-child {
+			text-indent: 0;
+		}
+		
+		pre {
+			border-radius: 4px;
+		}
+		
+		.flash-message-close {
+			background-color: transparent;
+			background-image: url("../../ideas/data.flash-messages/icon-close.gif");
+		}
+		
+		.flash-message-ok {
+			border-width: 1px;
+		}
+		
+		.test-ontop {
+			font-weight: normal;
+			text-decoration: none;
+			font-size: 40%;
+			position: absolute;
+			right: 0;
+			text-transform: capitalize;
+			top: 40%;
+		}
+		
+		.grid-wp32 {
+			width: 32%;
+		}
+		
+		.grid-wp68 {
+			width: 68%;
+		}
+		
+		.grid-off02 {
+			margin-left: 2%;
+		}
+		
+		.grid-margin {
+			margin-bottom: 1em;
+		}
+		
+		dt {
+			font-weight: bold;
+		}
+	</style>
+	
+	<!-- Scripts -->
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="../../ideas/data.flash-messages/typro.flash-messages.js"></script>
+	
+	<title>Typro Framework</title>
+</head>
+<body>
+<div id="wrapper">
+	<div id="content">
+		<h1>Typro Framework</h1>
+		
+		<!-- Test menu -->
+		<div class="test-menu nav-bar">
+			<div class="center">
+				<a href="#typography">Typography</a>
+				<a href="#tables">Tables</a>
+				<a href="#images">Images</a>
+				<a href="#figures">Figures</a>
+				<a href="#flash-messages">FlashMessages</a>
+				<a href="#grid">Grid</a>
+				<!-- ... -->
+			</div>
+		</div>
+		
+		<div class="flash-message-important">
+			<p><strong>Important!</strong> Work in progress.</p>
+		</div>
+		
+		<!-- Test #typography -->
+		<h2 id="typography">Typography <a href="#" class="test-ontop">On top</a></h2>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam bibendum elit eget erat. Aliquam erat volutpat. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Fusce consectetuer risus a nunc. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede. Aliquam ornare wisi eu metus. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Mauris dictum facilisis augue. Donec quis nibh at felis congue commodo. Integer tempor. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Maecenas libero.</p>
+
+		<p>Nam sed tellus id magna elementum tincidunt. Vestibulum fermentum tortor id mi. Aenean id metus id velit ullamcorper pulvinar. Vestibulum fermentum tortor id mi. Nam sed tellus id magna elementum tincidunt. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Sed ac dolor sit amet purus malesuada congue. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Aliquam ante. Nulla non lectus sed nisl molestie malesuada. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci.</p>
+		
+		<h3>Lists</h3>
+		<div class="grid-row grid-margin">
+			<div class="grid-col grid-wp32">
+				<h4>Unordered</h4>
+				<ul>
+					<li>Lorem ipsum
+					<li>Dolor sit amet
+					<li>Nam sed tellus
+				</ul>
+				
+				<ul>
+					<li>Lorem ipsum
+					<li>Dolor sit amet
+						<ul>
+							<li>Lorem ipsum
+							<li>Dolor sit amet
+							<li>Nam sed tellus
+						</ul>
+					<li>Nam sed tellus
+				</ul>
+			</div>
+			<div class="grid-col grid-wp32 grid-off02">
+				<h4>Ordered</h4>
+				<ol>
+					<li>Lorem ipsum
+					<li>Dolor sit amet
+					<li>Nam sed tellus
+				</ol>
+				
+				<ol>
+					<li>Lorem ipsum
+					<li>Dolor sit amet
+						<ol>
+							<li>Lorem ipsum
+							<li>Dolor sit amet
+							<li>Nam sed tellus
+						</ol>
+					<li>Nam sed tellus
+				</ol>
+			</div>
+			<div class="grid-col grid-wp32 grid-off02">
+				<h4>Ordered &amp; Unordered</h4>
+				<ol>
+					<li>Lorem ipsum
+					<li>Dolor sit amet
+						<ul>
+							<li>Vestibulum fermentum
+							<li>Aenean id
+							<li>Morbi imperdiet
+						</ul>
+					</li>
+					<li>Nam sed tellus
+				</ol>
+			</div>
+		</div>
+		
+		<h4>Definition list</h4>
+		<div class="grid-row">
+			<div class="grid-col grid-wp50">
+				<dl>
+					<dt>Maecenas aliquet</dt>
+					<dd>Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante.</dd>
+					<dt>Lorem ipsum dolor</dt>
+					<dd>Nam sed tellus id magna elementum tincidunt. Vestibulum fermentum tortor id mi.</dd>
+				</dl>
+				
+				<div class="flash-message-important">
+				<p>Ve výchozí podobě má element <code class="jush">&lt;dt></code> nastavenou normální tučnost písma. Toto chování můžete změnit ve svém stylopisu pomocí vlastnosti <code class="jush-css_pro">font-weight: bold;</code>.</p>
+				</div>
+			</div>
+			<div class="grid-col grid-wp50">
+				<div class="grid-cell">
+<pre><code class="jush-htm">&lt;dl>
+	&lt;dt>Maecenas aliquet&lt;/dt>
+	&lt;dd>
+		Maecenas fermentum, sem in pharetra
+		pellentesque, velit turpis volutpat ante.
+	&lt;/dd>
+	&lt;dt>Lorem ipsum dolor&lt;/dt>
+	&lt;dd>
+		Nam sed tellus id magna elementum
+		tincidunt. Vestibulum fermentum tortor
+		id mi.
+	&lt;/dd>
+&lt;/dl>
+</code></pre>
+				</div>
+			</div>
+		</div>
+		
+
+		<!-- Test #code -->
+		<h2 id="code">Code <a href="#" class="test-ontop">On top</a></h2>
+		<div class="grid-row">
+			<div class="grid-col grid-wp50">
+				<div class="grid-cell">
+					<h3>Inline</h3>
+					<p>Lorem ipsum dolor <code class="jush-css_pro">font-weight: bold;</code> sit amet.</p>
+					<p class="no-indent">Source:</p>
+					
+<pre><code class="jush">&lt;p>
+	Lorem ipsum dolor
+	&lt;code>font-weight: bold;&lt;/code>
+	sit  amet.
+&lt;/p></code></pre>
+				</div>
+			</div>
+			
+			<div class="grid-col grid-wp50">
+				<div class="grid-cell">
+					<h3>Block</h3>
+<pre><code class="jush">&lt;?php
+	echo "Hello";
+?></code></pre>
+					<p class="no-indent">Source:</p>
+<pre><code class="jush">&lt;pre>&lt;code>
+	&amp;lt;?php
+		echo "Hello";
+	?>
+&lt;/code>&lt;/pre></code></pre>
+				</div>
+			</div>
+
+		</div>
+		
+		
+		<!-- Test #tables -->
+		<h2 id="tables">Tables <a href="#" class="test-ontop">On top</a></h2>
+		<h3>Normal table</h3>
+		<div class="grid-row">
+			<div class="grid-col grid-wp50">
+				<div class="grid-cell">
+					<table>
+						<tr>
+							<td>1.</td>
+							<td>John</td>
+							<td>Doe</td>
+							<td>10,-</td>
+							<td><a href="#">Homepage</a></td>
+						</tr>
+			
+						<tr>
+							<td>2.</td>
+							<td>John</td>
+							<td>Constantine</td>
+							<td>45454,-</td>
+							<td><a href="#">Homepage</a></td>
+						</tr>
+			
+						<tr>
+							<td>3.</td>
+							<td>Jack</td>
+							<td>Sparrow</td>
+							<td>100215,-</td>
+							<td><a href="#">Homepage</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+			<div class="grid-col grid-wp50">
+				<div class="grid-cell">
+<pre><code class="jush">&lt;table>
+	&lt;tr>
+		&lt;td>1.&lt;/td>
+		&lt;td>John&lt;/td>
+		&lt;td>Doe&lt;/td>
+		&lt;td>10,-&lt;/td>
+		&lt;td>&lt;a href="#">Homepage&lt;/a>&lt;/td>
+	&lt;/tr>
+	...
+&lt;/table></code></pre>
+				</div>
+			</div>
+		</div>
+		
+		<h3>Table with head</h3>
+		<div class="grid-row">
+			<div class="grid-col grid-wp50">
+				<div class="grid-cell">
+					<table>
+						<tr>
+							<th>Position</th>
+							<th>Name</th>
+							<th>Surname</th>
+							<th>Price <sup>$</sup></th>
+							<th>Link</th>
+						</tr>
+						
+						<tr>
+							<td>1.</td>
+							<td>John</td>
+							<td>Doe</td>
+							<td>10,-</td>
+							<td><a href="#">Homepage</a></td>
+						</tr>
+			
+						<tr>
+							<td>2.</td>
+							<td>John</td>
+							<td>Constantine</td>
+							<td>45454,-</td>
+							<td><a href="#">Homepage</a></td>
+						</tr>
+			
+						<tr>
+							<td>3.</td>
+							<td>Jack</td>
+							<td>Sparrow</td>
+							<td>100215,-</td>
+							<td><a href="#">Homepage</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+			<div class="grid-col grid-wp50">
+				<div class="grid-cell">
+<pre><code class="jush">&lt;table>
+	&lt;tr>
+		&lt;th>Position&lt;/th>
+		&lt;th>Name&lt;/th>
+		&lt;th>Surname&lt;/th>
+		&lt;th>Price &lt;sup>$&lt;/sup>&lt;/th>
+		&lt;th>Link&lt;/th>
+	&lt;/tr>
+	&lt;tr>
+		&lt;td>1.&lt;/td>
+		...
+	&lt;/tr>
+	...
+&lt;/table></code></pre>
+				</div>
+			</div>
+		</div>
+		
+		
+		<h3>Table without border</h3>
+		<div class="grid-row">
+			<div class="grid-col grid-wp50">
+				<div class="grid-cell">
+					<table class="no-border">
+						<tr>
+							<td>1.</td>
+							<td>John</td>
+							<td>Doe</td>
+							<td>10,-</td>
+							<td><a href="#">Homepage</a></td>
+						</tr>
+			
+						<tr>
+							<td>2.</td>
+							<td>John</td>
+							<td>Constantine</td>
+							<td>45454,-</td>
+							<td><a href="#">Homepage</a></td>
+						</tr>
+			
+						<tr>
+							<td>3.</td>
+							<td>Jack</td>
+							<td>Sparrow</td>
+							<td>100215,-</td>
+							<td><a href="#">Homepage</a></td>
+						</tr>
+					</table>
+					
+					<p class="no-indent">And with head:</p>
+					
+					<table class="no-border">
+						<tr>
+							<th>Position</th>
+							<th>Name</th>
+							<th>Surname</th>
+							<th>Price <sup>$</sup></th>
+							<th>Link</th>
+						</tr>
+						
+						<tr>
+							<td>1.</td>
+							<td>John</td>
+							<td>Doe</td>
+							<td>10,-</td>
+							<td><a href="#">Homepage</a></td>
+						</tr>
+			
+						<tr>
+							<td>2.</td>
+							<td>John</td>
+							<td>Constantine</td>
+							<td>45454,-</td>
+							<td><a href="#">Homepage</a></td>
+						</tr>
+			
+						<tr>
+							<td>3.</td>
+							<td>Jack</td>
+							<td>Sparrow</td>
+							<td>100215,-</td>
+							<td><a href="#">Homepage</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+			<div class="grid-col grid-wp50">
+				<div class="grid-cell">
+<pre><code class="jush">&lt;table class="no-border">
+	&lt;tr>
+		&lt;td>1.&lt;/td>
+		&lt;td>John&lt;/td>
+		&lt;td>Doe&lt;/td>
+		&lt;td>10,-&lt;/td>
+		&lt;td>&lt;a href="#">Homepage&lt;/a>&lt;/td>
+	&lt;/tr>
+	...
+&lt;/table></code></pre>
+				</div>
+			</div>
+		</div>
+		
+		
+		<h2 id="flash-messages">Flash messages <a href="#" class="test-ontop">On top</a></h2>
+		<p>
+			Typro se snaží zjednodušit i tvorbu tzv. <em>flash messages</em>.
+			Nabízí styly pro <strong>různé typy</strong> zpráv a také
+			<strong>JavaScriptovou obsluhu</strong> uzavíracího tlačítka
+			(vyžaduje <a href="http://jquery.com/">jQuery</a>). Zprávy mají i
+			předpřipravený rámeček - stačí ho aktivovat pomocí <code class="jush-css_pro">border-width: 1px;</code> (viz např. u <code>flash-message-ok</code>).
+		</p>
+		<div class="flash-message">
+			<p>Any flash message</p>
+			<a href="#" class="flash-message-close" title="Close"><span>Close</span></a>
+		</div>
+<pre><code class="jush">&lt;div class="flash-message">
+	&lt;p>Any flash message&lt;/p>
+	&lt;a href="#" class="flash-message-close" title="Close">&lt;span>Close&lt;/span>&lt;/a>
+&lt;/div>
+</code></pre>
+
+		<div class="flash-message-ok">
+			<p>Any <strong>ok</strong> flash message with border.</p>
+			<a href="#" class="flash-message-close" title="Close"><span>Close</span></a>
+		</div>
+<pre><code class="jush">&lt;div class="flash-message-<strong>ok</strong>">
+	&lt;p>Any &lt;strong>ok&lt;/strong> flash message with border.&lt;/p>
+	&lt;a href="#" class="flash-message-close" title="Close">&lt;span>Close&lt;/span>&lt;/a>
+&lt;/div>
+</code></pre>
+
+		<div class="flash-message-info">
+			<p>Any <strong>info</strong> flash message</p>
+			<a href="#" class="flash-message-close" title="Close"><span>Close</span></a>
+		</div>
+<pre><code class="jush">&lt;div class="flash-message-<strong>info</strong>">
+	&lt;p>Any &lt;strong>info&lt;/strong> flash message&lt;/p>
+	&lt;a href="#" class="flash-message-close" title="Close">&lt;span>Close&lt;/span>&lt;/a>
+&lt;/div>
+</code></pre>
+
+		<div class="flash-message-important">
+			<p>Any <strong>important</strong> flash message</p>
+			<a href="#" class="flash-message-close" title="Close"><span>Close</span></a>
+		</div>
+<pre><code class="jush">&lt;div class="flash-message-<strong>important</strong>">
+	&lt;p>Any &lt;strong>important&lt;/strong> flash message&lt;/p>
+	&lt;a href="#" class="flash-message-close" title="Close">&lt;span>Close&lt;/span>&lt;/a>
+&lt;/div>
+</code></pre>
+
+		<div class="flash-message-error">
+			<p>Any <strong>error</strong> flash message</p>
+			<a href="#" class="flash-message-close" title="Close"><span>Close</span></a>
+		</div>
+<pre><code class="jush">&lt;div class="flash-message-<strong>error</strong>">
+	&lt;p>Any &lt;strong>error&lt;/strong> flash message&lt;/p>
+	&lt;a href="#" class="flash-message-close" title="Close">&lt;span>Close&lt;/span>&lt;/a>
+&lt;/div>
+</code></pre>
+
+		
+		<!-- Any footer (author infos, Typro Framework link),... -->
+		<div id="footer">
+			<div>
+				<p>&copy; Jan Pecha, 2012<br>
+					<a href="http://typro.iunas.cz/">Typro Framework</a>, v2.1<br>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="../jush.js"></script>
+<script type="text/javascript">
+jush.style('../jush.css');
+jush.create_links = false;
+jush.highlight_tag('code');
+</script>
+</body>
+</html>
