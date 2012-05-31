@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+	<!-- Author info (Change it) -->
+	<meta name="author" content="Jan Pecha (2012), http://janpecha.iunas.cz/">
+	
+	<!-- Load Typro Files -->
+	<link rel="stylesheet" media="all" href="../../typro.reset.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../typro.default.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../typro.paragraph.indent.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../typro.paragraph.indent-no-first.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../ideas/idea.typro.grid.css" type="text/css">
+	
+	<!-- ... -->
+	
+	<!-- Load Tests Stylesheet -->
+	<link rel="stylesheet" media="all" href="../tests.style.css" type="text/css">
+	
+	<!-- Load Custom Stylesheets -->
+	<!-- <link rel="stylesheet" media="all" href="custom.css" type="text/css"> -->
+	
+	<!-- Specific Document Style -->
+	<style>
+	.grid-cell {
+		border-radius: 4px;
+		border: 1px solid #ccc;
+		background-color: #f8f8f8;
+	}
+	</style>
+	
+	<title>paragraph.indent-no-first - Typro Framework</title>
+</head>
+<body>
+	<div id="wrapper">
+		<h1>paragraph.indent-no-first</h1>
+		
+		<!-- Test menu -->
+		<div class="test-menu">
+			<a href="#test-1">After heading</a>
+			<a href="#test-2">In table</a>
+			<a href="#test-3">In blockquote</a>
+			<a href="#test-4">In grid</a>
+			<!-- ... -->
+		</div>
+		
+		<!-- Test 1 -->
+		<h2 id="test-1">Test 1 - After heading <a href="#" class="test-ontop">On top</a></h2>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam rhoncus aliquam metus. Duis risus. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Fusce consectetuer risus a nunc. Nulla est. Sed convallis magna eu sem. In convallis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat.</p>
+
+		<p>Mauris elementum mauris vitae tortor. Integer malesuada. Mauris tincidunt sem sed arcu. Aliquam erat volutpat. Nunc tincidunt ante vitae massa. Nunc dapibus tortor vel mi dapibus sollicitudin. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Maecenas libero. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Nulla quis diam. Aenean placerat. Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede. Integer malesuada. Fusce suscipit libero eget elit. Maecenas lorem. Fusce tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.</p>
+		
+		
+		<!-- Test 2 -->
+		<h2 id="test-2">Test 2 - In table <a href="#" class="test-ontop">On top</a></h2>
+		<table>
+			<tr>
+				<td>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam rhoncus aliquam metus. Duis risus. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Fusce consectetuer risus a nunc. Nulla est. Sed convallis magna eu sem. In convallis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat.</p>
+					<p>Mauris elementum mauris vitae tortor. Integer malesuada. Mauris tincidunt sem sed arcu. Aliquam erat volutpat. Nunc tincidunt ante vitae massa. Nunc dapibus tortor vel mi dapibus sollicitudin. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Maecenas libero. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Nulla quis diam. Aenean placerat. Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede. Integer malesuada. Fusce suscipit libero eget elit. Maecenas lorem. Fusce tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.</p>
+				</td>
+				
+				<td>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+					<p>Mauris elementum mauris vitae tortor. Integer malesuada. Mauris tincidunt sem sed arcu.</p>
+				</td>
+			</tr>
+		
+			<tr style="text-align: inherit;">
+				<th style="text-align: inherit;">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam rhoncus aliquam metus. Duis risus. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Fusce consectetuer risus a nunc. Nulla est. Sed convallis magna eu sem. In convallis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat.</p>
+					<p>Mauris elementum mauris vitae tortor. Integer malesuada. Mauris tincidunt sem sed arcu. Aliquam erat volutpat. Nunc tincidunt ante vitae massa. Nunc dapibus tortor vel mi dapibus sollicitudin. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Maecenas libero. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Nulla quis diam. Aenean placerat. Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede. Integer malesuada. Fusce suscipit libero eget elit. Maecenas lorem. Fusce tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.</p>
+				</th>
+				
+				<th style="text-align: inherit;">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+					<p>Mauris elementum mauris vitae tortor. Integer malesuada. Mauris tincidunt sem sed arcu.</p>
+				</th>
+			</tr>
+		</table>
+		
+		
+		<!-- Test 3 -->
+		<h2 id="test-3">Test 3 - In blockquote <a href="#" class="test-ontop">On top</a></h2>
+		<blockquote cite="http://www.microsoft.com">
+			<p>This is a blockquote with two paragraphs.</p>
+
+			<p>640 K should be enough for everyone</p>
+		</blockquote>
+		
+		<p>Second blockquote lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam rhoncus aliquam metus. Duis risus. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Fusce consectetuer risus a nunc. Nulla est. Sed convallis magna eu sem. In convallis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat.</p>
+					
+		
+		<blockquote>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam rhoncus aliquam metus. Duis risus. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Fusce consectetuer risus a nunc. Nulla est. Sed convallis magna eu sem. In convallis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat.</p>
+			<p>Mauris elementum mauris vitae tortor. Integer malesuada. Mauris tincidunt sem sed arcu. Aliquam erat volutpat. Nunc tincidunt ante vitae massa. Nunc dapibus tortor vel mi dapibus sollicitudin. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Maecenas libero. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Nulla quis diam. Aenean placerat. Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede. Integer malesuada. Fusce suscipit libero eget elit. Maecenas lorem. Fusce tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.</p>
+		</blockquote>
+		
+		<!-- Test 4 -->
+		<h2 id="test-4">Test 4 - In grid <a href="#" class="test-ontop">On top</a></h2>
+		
+		<div class="grid-row">
+			<div class="grid-col grid-wp25" style="margin-right: 2%;">
+				<p>Class <strong><code>.grid-col</code></strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+				<p>Mauris elementum mauris vitae tortor. Integer malesuada. Mauris tincidunt sem sed arcu.</p>
+				
+				<div class="grid-cell">
+					<p>Class <strong><code>.grid-cell</code></strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+					<p>Mauris elementum mauris vitae tortor. Integer malesuada. Mauris tincidunt sem sed arcu.</p>
+				</div>
+			</div>
+			
+			<div class="grid-rcol grid-wp25" style="margin-left: 2%;">
+				<p>Class <strong><code>.grid-rcol</code></strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+				<p>Mauris elementum mauris vitae tortor. Integer malesuada. Mauris tincidunt sem sed arcu.</p>
+				
+				<div class="grid-cell">
+					<p>Class <strong><code>.grid-cell</code></strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+					<p>Mauris elementum mauris vitae tortor. Integer malesuada. Mauris tincidunt sem sed arcu.</p>
+				</div>
+			</div>
+
+			<div class="grid-fluid">
+				<p>Class <strong><code>.grid-fluid</code></strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+				<p>Mauris elementum mauris vitae tortor. Integer malesuada. Mauris tincidunt sem sed arcu.</p>
+				
+				<div class="grid-cell">
+					<p>Class <strong><code>.grid-cell</code></strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+					<p>Mauris elementum mauris vitae tortor. Integer malesuada. Mauris tincidunt sem sed arcu.</p>
+				</div>
+			</div>
+
+		</div>
+		
+		
+		<!-- Any footer (author infos, Typro Framework link),... -->
+		<div id="footer">
+			<div>
+				<p>&copy; Jan Pecha, 2012<br>
+					<a href="http://typro.iunas.cz/">Typro Framework</a>, v2.1<br>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
