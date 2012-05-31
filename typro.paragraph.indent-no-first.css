@@ -2,10 +2,18 @@
  * .typro No indent for first paragraph after heading, in table cell, etc.
  * 
  * @author		Jan Pecha,	<janpecha@email.cz>
+<<<<<<< HEAD
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
  * @version		2012-05-31-2
+=======
+ * @copyright	Jan Pecha, 2012
+ * @license		http://typro.iunas.cz/license
+ * @link		http://typro.iunas.cz/
+ * @version		2012-05-31-1
+ * @package		All Media
+>>>>>>> c8ee93b955d872eef980f60fcc4b1992c54fbe19
  */
 @media all {
 	h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p,
