@@ -139,6 +139,10 @@
 		text-align: center;
 	}
 	
+	caption {
+		text-align: center;
+	}
+	
 	form td, form tr {
 		border: none;
 	}

@@ -42,6 +42,10 @@
 		border: 1px solid #ddd;
 	}
 	
+	caption {
+		font-style: italic;
+	}
+	
 	blockquote {
 		font-family: Georgia, 'Times New CE', 'Times CE', 'Times New Roman', Times, serif;
 		border-left: 4px solid #e6e6e6;
