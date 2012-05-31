@@ -1,15 +1,19 @@
 /**
- * .typro No indent for first paragraph after heading
+ * .typro No indent for first paragraph after heading, in table cell, etc.
  * 
  * @author		Jan Pecha,	<janpecha@email.cz>
- * @copyright	Jan Pecha, 2011
+ * @copyright	Jan Pecha, 2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2.1.0
+ * @version		2012-05-31-1
  * @package		All Media
  */
 @media all {
-	h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
-		text-indent: 0em;
+	h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p,
+	blockquote > p:first-child,
+	td > p:first-child, th > p:first-child,
+	.grid-col > p:first-child, .grid-rcol > p:first-child,
+	.grid-fluid > p:first-child, .grid-cell > p:first-child {
+		text-indent: 0;
 	}
 }
