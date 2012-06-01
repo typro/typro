@@ -135,6 +135,21 @@
 			margin-bottom: 1em;
 		}
 		
+		.grid-example {
+			margin: 1em;
+		}
+		
+		.grid-example .grid-col, .grid-example .grid-rcol, .grid-example .grid-fluid {
+			background-color: #ddd;
+			border-radius: 8px;
+		}
+		
+		.grid-example .grid-row .grid-col,
+		.grid-example .grid-row .grid-rcol,
+		.grid-example .grid-row .grid-fluid {
+			background-color: #bbb;
+		}
+		
 		dt {
 			font-weight: bold;
 		}
@@ -157,8 +172,8 @@
 				<a href="#typography">Typography</a>
 				<a href="#codes">Codes</a>
 				<a href="#tables">Tables</a>
-				<a href="#images">Images</a>
-				<a href="#figures">Figures</a>
+				<a href="#images">Images*</a>
+				<a href="#figures">Figures*</a>
 				<a href="#flash-messages">FlashMessages</a>
 				<a href="#grid">Grid</a>
 				<!-- ... -->
@@ -219,6 +234,14 @@
 				<td>
 					<p><strong><em>Lorem ipsum dolor sit amet...</em></strong></p>
 					<p class="no-indent"><code class="jush">&lt;strong>&lt;em>Lorem ipsum dolor sit amet...&lt;/em>&lt;/strong></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td style="color:red">Abbreviation</td>
+				<td><code class="jush">&lt;abbr></code></td>
+				<td>
+					<p><acronym>Lorem ipsum dolor sit amet...</acronym></p>
+					<p class="no-indent"><code class="jush">&lt;abbr>Lorem ipsum dolor sit amet...&lt;/abbr></code></p>
 				</td>
 			</tr>
 		</table>
@@ -607,6 +630,7 @@
 		</div>
 		
 		
+		<!-- #flash-messages -->
 		<h2 id="flash-messages">Flash messages <a href="#" class="test-ontop">On top</a></h2>
 		<p>
 			Typro se snaží zjednodušit i tvorbu tzv. <em>flash messages</em>.
@@ -665,6 +689,247 @@
 &lt;/div>
 </code></pre>
 
+
+		<!-- #grid -->
+		<h2 id="grid">Grid <a href="#" class="test-ontop">On top</a></h2>
+		<p>Requires module <code>idea.typro.grid</code></p>
+		<h3>Basic</h3>
+		<div class="grid-row">
+			<div class="grid-col grid-wp50">
+				<div class="grid-row grid-example">
+					<div class="grid-col grid-wp50">
+						Lorem ipsum
+					</div>
+
+					<div class="grid-col grid-wp50">
+						Dolor sit amet
+					</div>
+				</div>
+			</div>
+			
+			<div class="grid-col grid-wp50">
+				<div class="grid-cell">
+<pre><code class="jush">&lt;div class="grid-row">
+	&lt;div class="grid-col grid-wp50">
+		Lorem ipsum
+	&lt;/div>
+	
+	&lt;div class="grid-col grid-wp50">
+		Dolor sit amet
+	&lt;/div>
+&lt;/div></code></pre>
+				</div>
+			</div>
+		</div>
+		
+		<h3>Grid cell</h3>
+		<div class="grid-row">
+			<div class="grid-col grid-wp50">
+				<div class="grid-row grid-example">
+					<div class="grid-col grid-wp50">
+						<div class="grid-cell">Lorem ipsum</div>
+					</div>
+
+					<div class="grid-col grid-wp50">
+						<div class="grid-cell">Dolor sit amet</div>
+					</div>
+				</div>
+				
+				<div class="grid-cell">
+					<p>Use class <code>.grid-cell</code></p>
+				</div>
+			</div>
+			
+			<div class="grid-col grid-wp50">
+				<div class="grid-cell">
+<pre><code class="jush">&lt;div class="grid-row">
+	&lt;div class="grid-col grid-wp50">
+		&lt;div class="grid-cell">
+			Lorem ipsum
+		&lt;/div>
+	&lt;/div>
+	
+	&lt;div class="grid-col grid-wp50">
+		&lt;div class="grid-cell">
+			Dolor sit amet
+		&lt;/div>
+	&lt;/div>
+&lt;/div></code></pre>
+				</div>
+			</div>
+		</div>
+		
+		<h3>Fluid column</h3>
+		<div class="grid-row">
+			<div class="grid-col grid-wp50">
+				<div class="grid-row grid-example">
+					<div class="grid-col grid-wp25">
+						Lorem ipsum
+					</div>
+
+					<div class="grid-rcol grid-wp25">
+						Dolor sit amet
+					</div>
+					
+					<div class="grid-fluid">
+						This element must be located at the end of parent element (<code>.grid-row</code>).
+					</div>
+				</div>
+				
+				<div class="grid-cell">
+					<p><strong>Important!</strong> Use classes <code>.grid-fluid</code> and <code>.grid-<strong>rcol</strong></code>
+				</div>
+			</div>
+			
+			<div class="grid-col grid-wp50">
+				<div class="grid-cell">
+<pre><code class="jush">&lt;div class="grid-row">
+	&lt;div class="grid-col grid-wp25">
+		Lorem ipsum
+	&lt;/div>
+	
+	&lt;div class="grid-rcol grid-wp25">
+		Dolor sit amet
+	&lt;/div>
+	
+	&lt;div class="grid-fluid">
+		This element must be located
+		at the end of parent
+		element (&lt;code>.grid-row&lt;/code>).
+	&lt;/div>
+&lt;/div></code></pre>
+				</div>
+			</div>
+		</div>
+		
+		<h3>Offsetting columns</h3>
+		<div class="grid-row">
+			<div class="grid-col grid-wp50">
+				<div class="grid-row grid-example">
+					<div class="grid-col grid-wp50">
+						<p>Lorem ipsum</p>
+						<p class="no-indent">width 50%<br><code>.grid-wp50</code></p>
+					</div>
+
+					<div class="grid-col grid-wp30 grid-of20">
+						<p>Dolor sit amet</p>
+						<p class="no-indent">
+							width 30%<br><code>.grid-wp30</code><br>
+							left offset 20%<br><code>.grid-of20</code><br>
+						</p>
+					</div>
+				</div>
+				
+				<div class="grid-row grid-example">
+					<div class="grid-col grid-wp25">
+						<p>Lorem ipsum</p>
+						<p class="no-indent">
+							width 25%<br><code>.grid-wp25</code><br>
+						</p>
+					</div>
+
+					<div class="grid-col grid-wp40 grid-of20">
+						<p>Dolor sit amet</p>
+						<p class="no-indent">
+							width 40%<br><code>.grid-wp40</code><br>
+							left offset 20%<br><code>.grid-of20</code><br>
+						</p>
+					</div>
+				</div>
+				
+				<div class="grid-row grid-example">
+					<div class="grid-col grid-wp25 grid-rof50">
+						<p>Lorem ipsum</p>
+						<p class="no-indent">
+							width 25%<br><code>.grid-wp25</code><br>
+							<strong>right</strong> offset 50%<br><code>.grid-<strong>rof</strong>50</code><br>
+						</p>
+					</div>
+
+					<div class="grid-col grid-wp25">
+						<p>Dolor sit amet</p>
+						<p class="no-indent">
+							width 25%<br><code>.grid-wp25</code><br>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="grid-col grid-wp50">
+				<div class="grid-cell">
+					<p>General syntax (using class <code>.grid-of&lt;offset size></code>):</p>
+<pre><code class="jush">&lt;div class="grid-row">
+	&lt;div class="grid-col grid-wp25 grid-of20">
+		Lorem ipsum
+	&lt;/div>
+	
+	&lt;div class="grid-col grid-wp50">
+		Dolor sit amet
+	&lt;/div>
+&lt;/div></code></pre>
+				</div>
+			</div>
+		</div>
+		
+		
+		<h3>Nesting columns</h3>
+		<div class="grid-row">
+			<div class="grid-col grid-wp50">
+				<div class="grid-row grid-example">
+					<div class="grid-col grid-wp50">
+						<p>Lorem ipsum</p>
+						<div class="grid-row grid-example">
+							<div class="grid-col grid-wp50">
+								<p>Lorem ipsum</p>
+							</div>
+
+							<div class="grid-col grid-wp30 grid-of20">
+								<p>Dolor sit amet</p>
+							</div>
+						</div>
+						
+						<div class="grid-row grid-example">
+							<div class="grid-col grid-wp20 grid-rof20">
+								<p>Lorem ipsum</p>
+							</div>
+
+							<div class="grid-col grid-wp60">
+								<p>Dolor sit amet</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="grid-col grid-wp50">
+						<p>Dolor sit amet</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="grid-col grid-wp50">
+				<div class="grid-cell">
+					<p>General syntax (using class <code>.grid-of&lt;offset size></code>):</p>
+<pre><code class="jush">&lt;div class="grid-row">
+	&lt;div class="grid-col grid-wp50">
+		Lorem ipsum
+		&lt;div class="grid-row">
+			&lt;div class="grid-col grid-wp50">
+				Lorem ipsum
+			&lt;/div>
+	
+			&lt;div class="grid-col grid-wp50">
+				Dolor sit amet
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+	
+	&lt;div class="grid-col grid-wp50">
+		Dolor sit amet
+	&lt;/div>
+&lt;/div></code></pre>
+				</div>
+			</div>
+		</div>
+		
 		
 		<!-- Any footer (author infos, Typro Framework link),... -->
 		<div id="footer">
