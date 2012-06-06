@@ -41,6 +41,15 @@
 		border: 1px solid #ddd;
 	}
 	
+	form th, form td, form tr {
+		border: 0;
+		background: transparent;
+	}
+	
+	form th {
+		text-align: right;
+	}
+	
 	caption {
 		font-style: italic;
 	}
