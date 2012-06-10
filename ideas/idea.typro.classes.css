@@ -14,12 +14,12 @@
 	}
 	
 	/* tables */
-	.no-border {
+	.no-border, .noborder {
 		border: none;
 	}
 	
 	/* paragraphs */
-	.no-indent {
+	.no-indent, .noindent {
 		text-indent: 0;
 	}
 }
