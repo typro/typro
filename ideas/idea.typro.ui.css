@@ -5,7 +5,7 @@
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-06-11-1
+ * @version		2012-06-12-1
  */
 @media all {
 	/* Buttons - a, span, submit button, button
@@ -153,5 +153,19 @@
 		text-shadow: 0 1px 0 #555;
 /*		position: relative;*/
 /*		top: 1px;*/
+	}
+	
+	.ui-button.ui-large,
+	input[type=submit].ui-button.ui-large,
+	input[type=reset].ui-button.ui-large,
+	input[type=button].ui-button.ui-large {
+		font-size: 110%;
+	}
+	
+	.ui-button.ui-small,
+	input[type=submit].ui-button.ui-small,
+	input[type=reset].ui-button.ui-small,
+	input[type=button].ui-button.ui-small {
+		font-size: 70%;
 	}
 }
