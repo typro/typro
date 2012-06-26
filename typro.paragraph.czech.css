@@ -1,23 +1,22 @@
-/** !!! DEPRECATED - must be rewritten
+/**
  * .typro Czech Paragraph
  * 
  * @author		Jan Pecha,	<janpecha@email.cz>
- * @copyright	Jan Pecha, 2011
+ * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2.1.0
- * @package		All Media - Paragraph
+ * @version		2012-06-26-1
  */
 @media all {
-	p, ul, table {
+	p {
 		margin-bottom: 0;
 	}
-
-	h1 {
-		margin-top: 0;
+	
+	p + table, p + dl, p + ol, p + ul, p + ol, p + pre, p + address {
+		margin-top: 1em;
 	}
 	
-	h2, h3, h4, h5, h6 {
+	p + h2, p + h3, p + h4, p + h5, p + h6 {
 		margin-top: 0.5em; /* 1em */
 	}
 }
