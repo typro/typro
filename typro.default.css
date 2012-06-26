@@ -70,6 +70,13 @@
 		font-family: 'Courier New CE', 'Courier CE', 'Courier New', Courier, monospace;
 	}
 	
+	/* code output */
+	pre {
+		-o-tab-size: 4;
+		-moz-tab-size: 4;
+		tab-size: 4;
+	}
+	
 	/* italic */
 	address, blockquote, cite, dfn, em, i, ins, q, var {
 		font-style: italic;
