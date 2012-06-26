@@ -5,10 +5,10 @@
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-06-12-1
+ * @version		2012-06-26-1
  */
 @media all {
-	/* Buttons - a, span, submit button, button
+	/** Buttons - a, span, submit button, button
 		based on http://hellohappy.org/css3-buttons/
 	*/
 	a.ui-button, span.ui-button,
@@ -28,8 +28,7 @@
 		color: #333;
 		font-family: 'Arial CE', 'Helvetica CE', Arial, Verdana, Helvetica, sans-serif;
 		font-size: 90%;
-		line-height: 2em;
-/*		line-height: 12em;*/
+		line-height: 2em;	/* for a, span */
 		text-align: center;
 		text-shadow: 0 1px 0 #fff;
 /*		padding: 0.7em 1em;*/
@@ -44,7 +43,7 @@
 		-webkit-box-sizing: content-box;
 		-moz-box-sizing: content-box;
 		box-sizing: content-box;
-		height: 2em;
+		height: 2em;	/* for input submit, reset,... buttons */
 		padding: 0.2em 1em;
 		outline-width: 0;
 		margin: 0.1em;
@@ -167,5 +166,55 @@
 	input[type=reset].ui-button.ui-small,
 	input[type=button].ui-button.ui-small {
 		font-size: 70%;
+	}
+	
+	
+	/** Button Group */
+	.ui-button-group {
+		margin: 0.2em 0.2em 0.4em;
+	}
+	
+	.ui-button-group:after {
+		content: ".";
+		display: block;
+		height: 0;
+		visibility: hidden;
+		clear: both;
+	}
+	
+	.ui-button-group .ui-button,
+	.ui-button-group input[type=submit].ui-button,
+	.ui-button-group input[type=reset].ui-button,
+	.ui-button-group input[type=button].ui-button {
+		margin: 0;
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+		float: left;
+/*		display: block;*/
+	}
+	
+	.ui-button-group .ui-button:first-child,
+	.ui-button-group input[type=submit].ui-button:first-child,
+	.ui-button-group input[type=reset].ui-button:first-child,
+	.ui-button-group input[type=button].ui-button:first-child {
+		-webkit-border-top-left-radius: 4px;
+		-webkit-border-bottom-left-radius: 4px;
+		-moz-border-radius-topleft: 4px;
+		-moz-border-radius-bottomleft: 4px;
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+	
+	.ui-button-group .ui-button:last-child,
+	.ui-button-group input[type=submit].ui-button:last-child,
+	.ui-button-group input[type=reset].ui-button:last-child,
+	.ui-button-group input[type=button].ui-button:last-child {
+		-webkit-border-top-right-radius: 4px;
+		-webkit-border-bottom-right-radius: 4px;
+		-moz-border-radius-topright: 4px;
+		-moz-border-radius-bottomright: 4px;
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
 	}
 }
