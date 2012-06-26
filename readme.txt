@@ -59,5 +59,6 @@ Who uses Typro?
 * http://typro.iunas.cz/
 * http://www.sluzatky.cz/
 * http://pohadkovyles.sluzatky.cz/
+* http://janpecha.iunas.cz/
 * and more
 
