@@ -14,6 +14,9 @@
 	/* after lists */
 	ul + p, ol + p, dl + p,
 	
+	/* after <pre> */
+	pre + p,
+	
 	/* first in blockquote */
 	blockquote > p:first-child,
 	
