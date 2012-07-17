@@ -66,6 +66,14 @@
 		display: block;
 	}
 	
+	.hover-menu.hover-menu-no-hover .hover-menu-sub:hover .hover-menu-items {
+		display: none;
+	}
+	
+	.hover-menu.hover-menu-no-hover .hover-menu-sub.hover-menu-active .hover-menu-items {
+		display: block;
+	}
+	
 	.hover-menu:after {
 		content: ".";
 		display: block;
