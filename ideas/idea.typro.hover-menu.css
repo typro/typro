@@ -2,11 +2,13 @@
  * .typro Hover menu
  * 
  * @author		Jan Pecha,	<janpecha@email.cz>
- * @copyright	Jan Pecha, 2011
+ * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2.1.0
+ * @version		2012-07-17
  * @package		All Media - Hover Menu
+ * @browsers	Ubuntu, 17.07.2012: Op 12.00 final; FF 13.0.1; Chromium 18.0.1025.168 (134367)
+ * @browsers??	Ubuntu, 28.12.2011: Op 11.60; FF 9; Chromium 14.0.835.202
  *
  * @todo		[2012-04-01] for last .hover-menu-items set right: 0;
  * @todo		[2012-04-01] only first paragraph text-indent: 0;
@@ -14,8 +16,8 @@
 @media all {
 	/* wrapper */
 	.hover-menu {
-/*		background: red;*/
 		margin-bottom: 1em;
+/*		display: inline-block; /* for not wide hover menu*/
 	}
 	
 	.hover-menu p {
@@ -29,30 +31,22 @@
 	/* horizontal item */
 	.hover-menu .hover-menu-sub {
 		float: left;
-/*		padding-left: 1em;*/
-/*		padding-right: 1em;*/
 		position: relative;
 		list-style-type: none;
 		text-indent: 0;
-/*		margin-left: 1em;*/
-/*		margin-right: 1em;*/
-	}
-	
-	.hover-menu .hover-menu-sub:hover {
-/*		background: #eee;*/
+		display: block;
 	}
 	
 	/* items wrapper */
 	.hover-menu .hover-menu-sub .hover-menu-items {
 		display: none;
 		position: absolute;
-/*		background: green;*/
 		min-width: 100%;
 		padding: 0.4em 1em;
-/*		left: 0;*/
-/*		right: 0;*/
+		left: 0;
 		z-index: 1000;
 		text-indent: 0;
+/*		margin-top: 1em; /* FOR TESTS ONLY!  * /*/
 	}
 	
 	.hover-menu .hover-menu-sub .hover-menu-items.hover-menu-left {
@@ -64,7 +58,6 @@
 	}
 	
 	.hover-menu .hover-menu-sub ul.hover-menu-items {
-/*		list-style-position: inside;*/
 		padding-left: 2em;
 		margin-left: 0;
 	}
@@ -73,9 +66,15 @@
 		display: block;
 	}
 	
-	.hover-menu-end {
-		clear: both;
+	.hover-menu:after {
+		content: ".";
+		display: block;
+		height: 0;
 		visibility: hidden;
+	}
+	
+	.hover-menu:after, .hover-menu-end, .hover-menu-clear {
+		clear: both;
 	}
 }
 
