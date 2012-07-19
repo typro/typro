@@ -1,0 +1,14 @@
+/**
+ * .typro Headings - margin-top
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011-2012
+ * @license		http://typro.iunas.cz/license
+ * @link		http://typro.iunas.cz/
+ * @version		2012-07-19-1
+ */
+@media all {
+	h2, h3, h4, h5, h6 {
+		margin-top: 1em;
+	}
+}
