@@ -272,7 +272,7 @@
 			}
 			else	// <typroDir>/typro.<module>.css
 			{
-				$file = 'typro.' . substr($filet, 1);
+				$file = 'typro.' . substr($file, 1);
 			}
 			
 			$file = $this->typroDir . '/' . $file . '.css';
