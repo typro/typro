@@ -68,6 +68,7 @@
 		try
 		{
 			$typro->minify();
+			$typro->log();
 			
 			echo "\nDone.\n\n";
 		}

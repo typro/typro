@@ -77,6 +77,7 @@
 			}
 			
 			$input = '';
+			$this->messages = array();
 			
 			$files = array_merge($this->prepareTyproFiles(), $this->prepareFiles());
 			$files = $this->removeDuplicateFiles($files);
@@ -434,6 +435,21 @@
 			}
 			
 			return array_flip($cache);
+		}
+		
+		
+		
+		/**
+		 * @return	void
+		 */
+		public function log()
+		{
+			echo "\n";
+			
+			foreach($this->messages as $messages)
+			{
+				echo "$messages\n";
+			}
 		}
 		
 		
