@@ -1,0 +1,16 @@
+/**
+ * .typro Visual HTML5
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011-2012
+ * @license		http://typro.iunas.cz/license
+ * @link		http://typro.iunas.cz/
+ * @version		2012-07-21-1
+ */
+@media all {
+	mark {
+		color: #000;
+		background-color: #ff0;
+		padding: 1px 3px;
+	}
+}
