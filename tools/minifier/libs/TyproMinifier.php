@@ -172,10 +172,10 @@
 			
 			if($priorityFirst > $prioritySecond)
 			{
-				return 1;
+				return -1;
 			}
 			
-			return -1;
+			return 1;
 		}
 		
 		
@@ -188,9 +188,9 @@
 		{
 			$name = basename($file);
 			
-			if(isset($this->priority[$name]))
+			if(isset(self::$priority[$name]))
 			{
-				return $this->priority[$name];
+				return self::$priority[$name];
 			}
 			elseif(self::startsWith($name, 'idea.'))
 			{
