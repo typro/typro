@@ -150,13 +150,12 @@
 ?>
 
 == CLI CSS Minifier (v2012-07-20-1)
-
 require: PHP 5.3+, CssMinifier.php, TyproMinifier.php
 
-usage:
+Usage:
 	php -f minifier.php -- [options]
 
-options:
+Options:
 	Optional:
 	-n <name of the generated file>	['min' . date('YmdHis') . 'css']
 	-p <path to Typro directory>	[current directory]
@@ -171,7 +170,7 @@ options:
 	   * @stable = all stable modules
 	   * @ideas = all ideas modules
 
-example:
+Example:
 	php -f minifier.php -- -n styles.css -t1 -f @reset @default @idea.grid
 
 link: http://typro.iunas.cz/

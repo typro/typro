@@ -21,6 +21,35 @@
 			$s = str_replace(';}', '}', $s); // remove leading semicolon
 			$s = trim($s);
 			
+			$state = 'normal';
+			$stringChar = '';
+			$len = strlen($s);
+			for($i = 0; $i < $len; $i++)
+			{
+				if($state === 'normal')
+				{
+					if($s[$i] === '\'' || $s === '"')
+					{
+						$state = 'string';
+						$stringChar = $s[$i];
+					}
+					elseif($s[$i] === ' ')
+					{
+						$s[$i] = "\n";
+					}
+				}
+				elseif($state === 'string')
+				{
+					if($s[$i] === $stringChar)
+					{
+						$state = 'normal';
+						$stringChar = '';
+					}
+				}
+			}
+			
+			
+			
 			return $s;
 		}
 	}
