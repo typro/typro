@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+	<!-- Author info (Change it) -->
+	<meta name="author" content="Jan Pecha (2012), http://janpecha.iunas.cz/">
+	
+	<!-- Load Typro Files -->
+	<link rel="stylesheet" media="all" href="../../../typro.reset.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../../typro.default.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../idea.typro.grid.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../idea.typro.grid.responsive.css" type="text/css">
+	<link rel="stylesheet" media="all" href="style.css" type="text/css">
+	<!-- ... -->
+	
+	<!-- Load Tests Stylesheet -->
+	<link rel="stylesheet" media="all" href="../../../tests/tests.style.css" type="text/css">
+	
+	<!-- Load Custom Stylesheets -->
+	<!-- <link rel="stylesheet" media="all" href="custom.css" type="text/css"> -->
+	
+	<!-- Specific Document Style -->
+	<style>
+	.grid-col {
+		outline: 1px solid red;
+	}
+	.grid-rcol {
+		outline: 1px solid blue;
+	}
+	.grid-fluid {
+		outline: 1px solid green;
+	}
+	.grid-row {
+		border: 1px solid orange;
+	}
+	</style>
+	
+	<title>Grid Responsive - Typro Framework</title>
+</head>
+<body>
+	<div id="wrapper">
+		<h1>Grid Responsive</h1>
+		
+		<!-- Test menu -->
+		<div class="test-menu">
+			<a href="#test-1">Basic</a>
+			<a href="#test-2">Offset</a>
+			<a href="#test-3">Nested</a>
+			<!-- ... -->
+		</div>
+		
+		<!-- Test 1 -->
+		<h2 id="test-1">Test 1 - Basic <a href="#" class="test-ontop">On top</a></h2>
+		<div class="grid-row grid-responsive">
+			<div class="grid-col grid-wp25">
+				<p>Lorem ipsum dolor sit amet</p>
+				<ul>
+					<li>Lorem</li>
+					<li>ipsum dolor</li>
+					<li>sit amet</li>
+				</ul>
+			</div>
+			
+			<div class="grid-rcol grid-wp25">
+				<p>Lorem ipsum dolor sit amet</p>
+				<ul>
+					<li>Lorem</li>
+					<li>ipsum dolor</li>
+					<li>sit amet</li>
+				</ul>
+			</div>
+			
+			<div class="grid-fluid">
+				<p>Lorem ipsum dolor sit amet</p>
+				<ul>
+					<li>Lorem</li>
+					<li>ipsum dolor</li>
+					<li>sit amet</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		
+		<!-- Test 2 -->
+		<h2 id="test-2">Test 2 - Offset <a href="#" class="test-ontop">On top</a></h2>
+		<div class="grid-row grid-responsive">
+			<div class="grid-col grid-wp25">
+				<p>Lorem ipsum dolor sit amet</p>
+				<ul>
+					<li>Lorem</li>
+					<li>ipsum dolor</li>
+					<li>sit amet</li>
+				</ul>
+			</div>
+			
+			<div class="grid-rcol grid-wp25 grid-of20">
+				<p>Lorem ipsum dolor sit amet</p>
+				<ul>
+					<li>Lorem</li>
+					<li>ipsum dolor</li>
+					<li>sit amet</li>
+				</ul>
+			</div>
+			
+			<div class="grid-fluid">
+				<p>Lorem ipsum dolor sit amet</p>
+				<ul>
+					<li>Lorem</li>
+					<li>ipsum dolor</li>
+					<li>sit amet</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<!-- Test 3 -->
+		<h2 id="test-3">Test 3 - Nested <a href="#" class="test-ontop">On top</a></h2>
+		<div class="grid-row grid-responsive">
+			<div class="grid-col grid-wp25">
+				<p>Lorem ipsum dolor sit amet</p>
+				<ul>
+					<li>Lorem</li>
+					<li>ipsum dolor</li>
+					<li>sit amet</li>
+				</ul>
+			</div>
+			
+			<div class="grid-rcol grid-wp25">
+				<p>Lorem ipsum dolor sit amet</p>
+				<ul>
+					<li>Lorem</li>
+					<li>ipsum dolor</li>
+					<li>sit amet</li>
+				</ul>
+			</div>
+			
+			<div class="grid-fluid">
+				<p>Lorem ipsum dolor sit amet</p>
+				<ul>
+					<li>Lorem</li>
+					<li>ipsum dolor</li>
+					<li>sit amet</li>
+				</ul>
+				
+				<div class="grid-row">
+					<div class="grid-col grid-wp25">
+						<p>Lorem ipsum dolor sit amet</p>
+						<ul>
+							<li>Lorem</li>
+							<li>ipsum dolor</li>
+							<li>sit amet</li>
+						</ul>
+					</div>
+			
+					<div class="grid-rcol grid-wp25">
+						<p>Lorem ipsum dolor sit amet</p>
+						<ul>
+							<li>Lorem</li>
+							<li>ipsum dolor</li>
+							<li>sit amet</li>
+						</ul>
+					</div>
+			
+					<div class="grid-fluid">
+						<p>Lorem ipsum dolor sit amet</p>
+						<ul>
+							<li>Lorem</li>
+							<li>ipsum dolor</li>
+							<li>sit amet</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- Any footer (author infos, Typro Framework link),... -->
+		<div id="footer">
+			<div>
+				<p>&copy; Jan Pecha, 2012<br>
+					<a href="http://typro.iunas.cz/">Typro Framework</a>, v2.1<br>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
