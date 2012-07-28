@@ -1,0 +1,75 @@
+/**
+ * .typro Thumbs - WARNING! WIP!!!!!
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011-2012
+ * @license		http://typro.iunas.cz/license
+ * @link		http://typro.iunas.cz/
+ * @version		2012-07-28-1
+ */
+/* Example:
+<div class="thumb">
+	<div class="thumb-content">
+		<img>
+		<div class="thumb-title">
+			<span class="thumb-title-content">Any Title :)</span>
+		</div>
+	</div>
+</div>
+*/
+@media all {
+	.thumb-list:after {
+		clear: both;
+		content: ".";
+		display: block;
+		height: 0;
+		visibility: hidden;
+	}
+	
+	.thumb {
+		float: left;
+		width: 240px;
+/*		/*??* /height: 125px;*/
+/*		max-height: 125px;*/
+		position: relative;
+/*		overflow: hidden;*/
+	}
+	
+	.thumb-content {
+		overflow: hidden;
+		height: 125px;
+		position: relative;
+	}
+	
+	.thumb img, .thumb-thumb {
+		max-width: 100%;
+		display: block;
+	}
+	
+	.thumb img {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.thumb-title {
+		margin: 0;
+		/*font-size: 105%;*/
+		letter-spacing: normal;
+/*		line-height: 1.2em;*/
+		position: absolute;
+/*		bottom: 4px;*/
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+	
+	.thumb-title-content {
+		display: block;
+/*		text-decoration: none;*/
+/*		position: absolute;*/
+/*		left: 0;*/
+/*		bottom: 0;*/
+/*		width: 100%;*/
+/*		padding-top: 104px;*/
+	}
+}

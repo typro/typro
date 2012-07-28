@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+	<!-- Author info (Change it) -->
+	<meta name="author" content="Jan Pecha (2012), http://janpecha.iunas.cz/">
+	
+	<!-- Load Typro Files -->
+	<link rel="stylesheet" media="all" href="../../../typro.reset.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../../typro.default.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../idea.typro.thumbs.css" type="text/css">
+	<!-- ... -->
+	
+	<!-- Load Tests Stylesheet -->
+	<link rel="stylesheet" media="all" href="../../../tests/tests.style.css" type="text/css">
+	
+	<!-- Load Custom Stylesheets -->
+	<!-- <link rel="stylesheet" media="all" href="custom.css" type="text/css"> -->
+	
+	<!-- Specific Document Style -->
+	<style>
+	.thumb {
+		/*width: 240px;*/
+	}
+	
+	.thumb-content {
+	}
+	
+	.thumb-list {
+		margin-bottom: 1em;
+	}
+	
+	.styled .thumb {
+		border: 1px solid silver;
+		padding: 4px;
+		margin: 4px;
+	}
+	
+	.styled .thumb-title-content {
+		/*border: 2px groove #fff;*/
+		background: #eee;
+		padding: 2px 4px;
+	}
+	
+	.larger .thumb {
+		background: red;
+	}
+	
+	.larger .thumb-content {
+		padding-bottom: 100px;
+	}
+	
+	.clickable .thumb-title-content {
+		padding-top: 100%;
+		background: rgba(210,200,200,0.7);
+		border: 2px solid blue;
+	}
+	
+	.any-content-wrapper {
+		border: 2px solid yellow;
+		background: #ccc;
+		padding: 4px;
+		display: block;
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+	}
+	
+	</style>
+	
+<!--	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>-->
+<!--	<script type="text/javascript" src="../../data.hover-menu/typro.hover-menu.jq.js"></script>-->
+	
+	<title>Thumbs - Typro Framework</title>
+</head>
+<body>
+	<div id="wrapper">
+		<h1>Thumbs</h1>
+		
+		<!-- Test menu -->
+		<div class="test-menu">
+			<a href="#test-1">Basic</a>
+			<a href="#test-2">Styled</a>
+			<a href="#test-3">Multiline title</a>
+			<a href="#test-4">Multiline title + more place for title</a>
+			<a href="#test-5">Clickable</a>
+			<!-- ... -->
+		</div>
+		
+		<!-- Test 1 -->
+		<h2 id="test-1">Test 1 - Basic <a href="#" class="test-ontop">On top</a></h2>
+		<div class="thumb-list">
+			<div class="thumb">
+				<div class="thumb-content">
+					<img src="../../../tests/images/490px-Karel_Capek.jpg">
+					<div class="thumb-title">
+						<span class="thumb-title-content">Any Title :)</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="thumb">
+				<div class="thumb-content">
+					<img src="../../../tests/images/Image001-120px.jpg">
+					<div class="thumb-title">
+						<span class="thumb-title-content">Any Title :)</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="thumb">
+				<div class="thumb-content">
+					<div class="thumb-thumb">
+						<h3>Lorem ipsum dolor sit amet</h3>
+					</div>
+					<div class="thumb-title">
+						<span class="thumb-title-content">Any Title :)</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="thumb">
+				<div class="thumb-content">
+					<img src="../../../tests/images/490px-Karel_Capek.jpg">
+					<div class="thumb-title">
+						<span class="thumb-title-content">Any Title :)</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p>Lorem ipsum dolor sit amet</p>
+		
+		
+		<!-- Test 2 -->
+		<h2 id="test-2">Test 2 - Styled <a href="#" class="test-ontop">On top</a></h2>
+		<div class="thumb-list styled">
+			<div class="thumb">
+				<div class="thumb-content">
+					<img src="../../../tests/images/490px-Karel_Capek.jpg">
+					<div class="thumb-title">
+						<span class="thumb-title-content">Any Title :)</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="thumb">
+				<div class="thumb-content">
+					<img src="../../../tests/images/Image001-120px.jpg">
+					<div class="thumb-title">
+						<span class="thumb-title-content">Any Title :)</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="thumb">
+				<div class="thumb-content">
+					<div class="thumb-thumb">
+						<h3>Lorem ipsum dolor sit amet</h3>
+					</div>
+					<div class="thumb-title">
+						<span class="thumb-title-content">Any Title :)</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="thumb">
+				<div class="thumb-content">
+					<img src="../../../tests/images/490px-Karel_Capek.jpg">
+					<div class="thumb-title">
+						<span class="thumb-title-content">Any Title :)</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- Test 3 -->
+		<h2 id="test-3">Test 3 - Multiline title <a href="#" class="test-ontop">On top</a></h2>
+		<div class="thumb-list styled">
+			<div class="thumb">
+				<div class="thumb-content">
+					<img src="../../../tests/images/490px-Karel_Capek.jpg">
+					<div class="thumb-title">
+						<span class="thumb-title-content">Any Title - lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Dolor sit lorem amet impsum. :)</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="thumb">
+				<div class="thumb-content">
+					<img src="../../../tests/images/Image001-120px.jpg">
+					<div class="thumb-title">
+						<span class="thumb-title-content">Any Title :)</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="thumb">
+				<div class="thumb-content">
+					<div class="thumb-thumb">
+						<h3>Lorem ipsum dolor sit amet</h3>
+					</div>
+					<div class="thumb-title">
+						<span class="thumb-title-content">Any Title :)</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="thumb">
+				<div class="thumb-content">
+					<img src="../../../tests/images/490px-Karel_Capek.jpg">
+					<div class="thumb-title">
+						<span class="thumb-title-content">Any Title :)</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- Test 4 -->
+		<h2 id="test-4">Test 4 - Multiline title + more place for title <a href="#" class="test-ontop">On top</a></h2>
+		<div class="thumb-list styled larger">
+			<div class="thumb">
+				<div class="thumb-content">
+					<img src="../../../tests/images/490px-Karel_Capek.jpg">
+					<div class="thumb-title">
+						<span class="thumb-title-content">Any Title - lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Dolor sit lorem amet impsum. :)</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="thumb">
+				<div class="thumb-content">
+					<img src="../../../tests/images/Image001-120px.jpg">
+					<div class="thumb-title">
+						<span class="thumb-title-content">Any Title :)</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="thumb">
+				<div class="thumb-content">
+					<div class="thumb-thumb">
+						<h3>Lorem ipsum dolor sit amet</h3>
+					</div>
+					<div class="thumb-title">
+						<span class="thumb-title-content">Any Title :)</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="thumb">
+				<div class="thumb-content">
+					<img src="../../../tests/images/490px-Karel_Capek.jpg">
+					<div class="thumb-title">
+						<a href="#" class="thumb-title-content">Any Title :)</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- Test 5 -->
+		<h2 id="test-5">Test 5 - Clickable <a href="#" class="test-ontop">On top</a></h2>
+		<div class="thumb-list styled larger clickable">
+			<div class="thumb">
+				<div class="thumb-content">
+					<img src="../../../tests/images/490px-Karel_Capek.jpg">
+					<div class="thumb-title">
+						<span class="thumb-title-content">Any Title - lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Dolor sit lorem amet impsum. :)</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="thumb">
+				<div class="thumb-content">
+					<img src="../../../tests/images/Image001-120px.jpg">
+					<div class="thumb-title">
+						<span class="thumb-title-content">Any Title :)</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="thumb">
+				<div class="thumb-content">
+					<div class="thumb-thumb">
+						<h3>Lorem ipsum dolor sit amet</h3>
+					</div>
+					<div class="thumb-title">
+						<span class="thumb-title-content">Any Title :)</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="thumb">
+				<div class="thumb-content">
+					<img src="../../../tests/images/490px-Karel_Capek.jpg">
+					<div class="thumb-title">
+						<a href="#" class="thumb-title-content">
+							<span class="any-content-wrapper">Any Title :)</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<!-- Any footer (author infos, Typro Framework link),... -->
+		<div id="footer">
+			<div>
+				<p>&copy; Jan Pecha, 2012<br>
+					<a href="http://typro.iunas.cz/">Typro Framework</a>, v2.1<br>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
