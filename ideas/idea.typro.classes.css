@@ -22,4 +22,17 @@
 	.no-indent, .noindent {
 		text-indent: 0;
 	}
+	
+	/* other */
+	.cleaner {
+		clear: both;
+	}
+/*	*/
+/*	.cleaner.left {*/
+/*		clear: left;*/
+/*	}*/
+/*	*/
+/*	.cleaner.right {*/
+/*		clear: right;*/
+/*	}*/
 }
