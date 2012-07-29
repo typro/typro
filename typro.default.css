@@ -164,6 +164,13 @@
 		padding: 0 0.4em;
 	}
 	
+	/* HTML5 */
+	mark {
+		color: #000;
+		background-color: #ff0;
+		padding: 1px 3px;
+	}
+	
 	/* other */
 	hr {
 		background: #eee;
