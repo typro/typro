@@ -2,6 +2,7 @@
  * .typro Data Grid
  * 
  * @author		Roman Sklenář
+ * @author		Jan Pecha
  * @link		http://addons.nette.org/cs/datagrid
  * @link		http://demo.datagrid.romansklenar.cz/
  * @license		New BSD License
@@ -12,6 +13,8 @@
 		padding: 0;
 		margin: 0;
 		border-collapse: collapse;
+		font-size: 90%;
+		margin-bottom: 1em;
 	}
 	
 	table.datagrid tr {
@@ -100,6 +103,7 @@
 		background: #C6DBFF url('./data.datagrid/th-bg.gif') no-repeat;
 		text-align: left;
 		padding: 0 10px;
+		vertical-align: top;
 	}
 	
 	table.datagrid th.checker, table.datagrid td.checker, table.datagrid td.actions {
