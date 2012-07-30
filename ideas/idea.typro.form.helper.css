@@ -1,0 +1,36 @@
+/**
+ * .typro Form Helper
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011-2012
+ * @license		http://typro.iunas.cz/license
+ * @link		http://typro.iunas.cz/
+ * @version		2012-07-30-1
+ * @package		All Media
+ */
+@media all {
+	.typro-input-color input {
+		width: 6em;
+		-webkit-border-top-right-radius: 0;
+		-webkit-border-bottom-right-radius: 0;
+		-moz-border-radius-topright: 0;
+		-moz-border-radius-bottomright: 0;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		text-align: center;
+	}
+	
+	.typro-input-color .typro-input-after {
+		width: 1.5em;
+		display: inline-block;
+		border: 1px solid red;
+		vertical-align: middle;
+		-webkit-border-top-left-radius: 0 !important;
+		-webkit-border-bottom-left-radius: 0 !important;
+		-moz-border-radius-topleft: 0 !important;
+		-moz-border-radius-bottomleft: 0 !important;
+		border-top-left-radius: 0 !important;
+		border-bottom-left-radius: 0 !important;
+		border-left-width: 0 !important;
+	}
+}
