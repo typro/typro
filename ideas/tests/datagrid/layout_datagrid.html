@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+	<!-- Author info (Change it) -->
+	<meta name="author" content="Jan Pecha (2012), http://janpecha.iunas.cz/">
+	
+	<!-- Load Typro Files -->
+	<link rel="stylesheet" media="all" href="../../../typro.reset.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../../typro.default.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../idea.typro.datagrid.css" type="text/css">
+	<!-- ... -->
+	
+	<!-- Load Tests Stylesheet -->
+	<link rel="stylesheet" media="all" href="../../../tests/tests.style.css" type="text/css">
+	
+	<!-- Load Custom Stylesheets -->
+	<!-- <link rel="stylesheet" media="all" href="custom.css" type="text/css"> -->
+	
+	<!-- Specific Document Style -->
+	<style>
+	</style>
+	
+	<title>DataGrid - Typro Framework</title>
+</head>
+<body>
+	<div id="wrapper">
+		<h1>DataGrid</h1>
+		
+		<!-- Test menu -->
+		<div class="test-menu">
+			<a href="#test-1">Basic</a>
+			<!-- ... -->
+		</div>
+		
+		<!-- Test 1 -->
+		<h2 id="test-1">Test 1 - Basic <a href="#" class="test-ontop">On top</a></h2>
+		<table class="datagrid">
+	<thead>
+		<tr class="header">
+			<th><a href="/?baseGrid-by=orderNumber&amp;do=baseGrid-order" class="datagrid-ajax">orderNumber</a><span class="positioner"><a class="datagrid-ajax" href="/?baseGrid-by=orderNumber&amp;baseGrid-dir=a&amp;do=baseGrid-order"><span class="up"></span></a><a class="datagrid-ajax" href="/?baseGrid-by=orderNumber&amp;baseGrid-dir=d&amp;do=baseGrid-order"><span class="down"></span></a></span></th>
+		
+			<th><a href="/?baseGrid-by=customerNumber&amp;do=baseGrid-order" class="datagrid-ajax">customerNumber</a><span class="positioner"><a class="datagrid-ajax" href="/?baseGrid-by=customerNumber&amp;baseGrid-dir=a&amp;do=baseGrid-order"><span class="up"></span></a><a class="datagrid-ajax" href="/?baseGrid-by=customerNumber&amp;baseGrid-dir=d&amp;do=baseGrid-order"><span class="down"></span></a></span></th>
+		
+			<th><a href="/?baseGrid-by=customerName&amp;do=baseGrid-order" class="datagrid-ajax">customerName</a><span class="positioner"><a class="datagrid-ajax" href="/?baseGrid-by=customerName&amp;baseGrid-dir=a&amp;do=baseGrid-order"><span class="up"></span></a><a class="datagrid-ajax" href="/?baseGrid-by=customerName&amp;baseGrid-dir=d&amp;do=baseGrid-order"><span class="down"></span></a></span></th>
+		
+			<th><a href="/?baseGrid-by=addressLine1&amp;do=baseGrid-order" class="datagrid-ajax">addressLine1</a><span class="positioner"><a class="datagrid-ajax" href="/?baseGrid-by=addressLine1&amp;baseGrid-dir=a&amp;do=baseGrid-order"><span class="up"></span></a><a class="datagrid-ajax" href="/?baseGrid-by=addressLine1&amp;baseGrid-dir=d&amp;do=baseGrid-order"><span class="down"></span></a></span></th>
+		
+			<th><a href="/?baseGrid-by=city&amp;do=baseGrid-order" class="datagrid-ajax">city</a><span class="positioner"><a class="datagrid-ajax" href="/?baseGrid-by=city&amp;baseGrid-dir=a&amp;do=baseGrid-order"><span class="up"></span></a><a class="datagrid-ajax" href="/?baseGrid-by=city&amp;baseGrid-dir=d&amp;do=baseGrid-order"><span class="down"></span></a></span></th>
+		
+			<th><a href="/?baseGrid-by=country&amp;do=baseGrid-order" class="datagrid-ajax">country</a><span class="positioner"><a class="datagrid-ajax" href="/?baseGrid-by=country&amp;baseGrid-dir=a&amp;do=baseGrid-order"><span class="up"></span></a><a class="datagrid-ajax" href="/?baseGrid-by=country&amp;baseGrid-dir=d&amp;do=baseGrid-order"><span class="down"></span></a></span></th>
+		
+			<th><a href="/?baseGrid-by=creditLimit&amp;do=baseGrid-order" class="datagrid-ajax">creditLimit</a><span class="positioner"><a class="datagrid-ajax" href="/?baseGrid-by=creditLimit&amp;baseGrid-dir=a&amp;do=baseGrid-order"><span class="up"></span></a><a class="datagrid-ajax" href="/?baseGrid-by=creditLimit&amp;baseGrid-dir=d&amp;do=baseGrid-order"><span class="down"></span></a></span></th>
+		
+			<th><a href="/?baseGrid-by=orderDate&amp;do=baseGrid-order" class="datagrid-ajax">orderDate</a><span class="positioner"><a class="datagrid-ajax" href="/?baseGrid-by=orderDate&amp;baseGrid-dir=a&amp;do=baseGrid-order"><span class="up"></span></a><a class="datagrid-ajax" href="/?baseGrid-by=orderDate&amp;baseGrid-dir=d&amp;do=baseGrid-order"><span class="down"></span></a></span></th>
+		
+			<th><a href="/?baseGrid-by=status&amp;do=baseGrid-order" class="datagrid-ajax">status</a><span class="positioner"><a class="datagrid-ajax" href="/?baseGrid-by=status&amp;baseGrid-dir=a&amp;do=baseGrid-order"><span class="up"></span></a><a class="datagrid-ajax" href="/?baseGrid-by=status&amp;baseGrid-dir=d&amp;do=baseGrid-order"><span class="down"></span></a></span></th>
+		
+			<th><a href="/?baseGrid-by=productsCount&amp;do=baseGrid-order" class="datagrid-ajax">productsCount</a><span class="positioner"><a class="datagrid-ajax" href="/?baseGrid-by=productsCount&amp;baseGrid-dir=a&amp;do=baseGrid-order"><span class="up"></span></a><a class="datagrid-ajax" href="/?baseGrid-by=productsCount&amp;baseGrid-dir=d&amp;do=baseGrid-order"><span class="down"></span></a></span></th>
+		</tr>
+	</thead>
+
+	<tfoot>
+		<tr class="footer">
+			<td colspan="10"> <span class="paginator"><span class="paginator-first inactive" title="First"></span><span class="paginator-prev inactive" title="Previous"></span><span class="paginator-controls"><label for="frm-datagrid-baseGrid-form-page">Page</label> <input type="text" size="1" name="page" id="frm-datagrid-baseGrid-form-page" value="1" /> of 22</span><a class="datagrid-ajax" href="/?baseGrid-goto=2&amp;do=baseGrid-page" title="Next"><span class="paginator-next"></span></a><a class="datagrid-ajax" href="/?baseGrid-goto=22&amp;do=baseGrid-page" title="Last"><span class="paginator-last"></span></a><input type="submit" name="pageSubmit" id="frm-datagrid-baseGrid-form-pageSubmit" value="Change page" title="Change page" /></span> <span class="grid-info">Items 1 - 15 of 326 | Display: <select onfocus="this.onmousewheel=function(){return false}" name="items" id="frm-datagrid-baseGrid-form-items"><option value="all">all</option><option value="5">5</option><option value="10">10</option><option value="15" selected="selected">15</option><option value="20">20</option><option value="50">50</option><option value="100">100</option></select><input type="submit" name="itemsSubmit" id="frm-datagrid-baseGrid-form-itemsSubmit" value="Change" title="Change" /></span></td>
+		</tr>
+	</tfoot>
+
+	<tbody>
+		<tr>
+			<td>10100</td>
+		
+			<td>363</td>
+		
+			<td>Online Diecast Creations Co.</td>
+		
+			<td>2304 Long Airport Avenue</td>
+		
+			<td>Nashua</td>
+		
+			<td>USA</td>
+		
+			<td>114200</td>
+		
+			<td>2003-01-06 00:00:00</td>
+		
+			<td>Shipped</td>
+		
+			<td>4</td>
+		</tr>
+	
+		<tr class="even">
+			<td>10101</td>
+		
+			<td>128</td>
+		
+			<td>Blauer See Auto, Co.</td>
+		
+			<td>Lyonerstr. 34</td>
+		
+			<td>Frankfurt</td>
+		
+			<td>Germany</td>
+		
+			<td>59700</td>
+		
+			<td>2003-01-09 00:00:00</td>
+		
+			<td>Shipped</td>
+		
+			<td>4</td>
+		</tr>
+	
+		<tr>
+			<td>10102</td>
+		
+			<td>181</td>
+		
+			<td>Vitachrome Inc.</td>
+		
+			<td>2678 Kingston Rd.</td>
+		
+			<td>NYC</td>
+		
+			<td>USA</td>
+		
+			<td>76400</td>
+		
+			<td>2003-01-10 00:00:00</td>
+		
+			<td>Shipped</td>
+		
+			<td>2</td>
+		</tr>
+	
+		<tr class="even">
+			<td>10103</td>
+		
+			<td>121</td>
+		
+			<td>Baane Mini Imports</td>
+		
+			<td>Erling Skakkes gate 78</td>
+		
+			<td>Stavern</td>
+		
+			<td>Norway</td>
+		
+			<td>81700</td>
+		
+			<td>2003-01-29 00:00:00</td>
+		
+			<td>Shipped</td>
+		
+			<td>16</td>
+		</tr>
+	
+		<tr>
+			<td>10104</td>
+		
+			<td>141</td>
+		
+			<td>Euro+ Shopping Channel</td>
+		
+			<td>C/ Moralzarzal, 86</td>
+		
+			<td>Madrid</td>
+		
+			<td>Spain</td>
+		
+			<td>227600</td>
+		
+			<td>2003-01-31 00:00:00</td>
+		
+			<td>Shipped</td>
+		
+			<td>13</td>
+		</tr>
+	
+		<tr class="even">
+			<td>10105</td>
+		
+			<td>145</td>
+		
+			<td>Danish Wholesale Imports</td>
+		
+			<td>Vinb</td>
+		
+			<td>Kobenhavn</td>
+		
+			<td>Denmark</td>
+		
+			<td>83400</td>
+		
+			<td>2003-02-11 00:00:00</td>
+		
+			<td>Shipped</td>
+		
+			<td>15</td>
+		</tr>
+	
+		<tr>
+			<td>10106</td>
+		
+			<td>278</td>
+		
+			<td>Rovelli Gifts</td>
+		
+			<td>Via Ludovico il Moro 22</td>
+		
+			<td>Bergamo</td>
+		
+			<td>Italy</td>
+		
+			<td>119600</td>
+		
+			<td>2003-02-17 00:00:00</td>
+		
+			<td>Shipped</td>
+		
+			<td>18</td>
+		</tr>
+	
+		<tr class="even">
+			<td>10107</td>
+		
+			<td>131</td>
+		
+			<td>Land of Toys Inc.</td>
+		
+			<td>897 Long Airport Avenue</td>
+		
+			<td>NYC</td>
+		
+			<td>USA</td>
+		
+			<td>114900</td>
+		
+			<td>2003-02-24 00:00:00</td>
+		
+			<td>Shipped</td>
+		
+			<td>8</td>
+		</tr>
+	
+		<tr>
+			<td>10108</td>
+		
+			<td>385</td>
+		
+			<td>Cruz &amp; Sons Co.</td>
+		
+			<td>15 McCallum Street</td>
+		
+			<td>Makati City</td>
+		
+			<td>Philippines</td>
+		
+			<td>81500</td>
+		
+			<td>2003-03-03 00:00:00</td>
+		
+			<td>Shipped</td>
+		
+			<td>16</td>
+		</tr>
+	
+		<tr class="even">
+			<td>10109</td>
+		
+			<td>486</td>
+		
+			<td>Motor Mint Distributors Inc.</td>
+		
+			<td>11328 Douglas Av.</td>
+		
+			<td>Philadelphia</td>
+		
+			<td>USA</td>
+		
+			<td>72600</td>
+		
+			<td>2003-03-10 00:00:00</td>
+		
+			<td>Shipped</td>
+		
+			<td>6</td>
+		</tr>
+	
+		<tr>
+			<td>10110</td>
+		
+			<td>187</td>
+		
+			<td>AV Stores, Co.</td>
+		
+			<td>Fauntleroy Circus</td>
+		
+			<td>Manchester</td>
+		
+			<td>UK</td>
+		
+			<td>136800</td>
+		
+			<td>2003-03-18 00:00:00</td>
+		
+			<td>Shipped</td>
+		
+			<td>16</td>
+		</tr>
+	
+		<tr class="even">
+			<td>10111</td>
+		
+			<td>129</td>
+		
+			<td>Mini Wheels Co.</td>
+		
+			<td>5557 North Pendale Street</td>
+		
+			<td>San Francisco</td>
+		
+			<td>USA</td>
+		
+			<td>64600</td>
+		
+			<td>2003-03-25 00:00:00</td>
+		
+			<td>Shipped</td>
+		
+			<td>6</td>
+		</tr>
+	
+		<tr>
+			<td>10112</td>
+		
+			<td>144</td>
+		
+			<td>Volvo Model Replicas, Co</td>
+		
+			<td>Berguvsv</td>
+		
+			<td>Lule</td>
+		
+			<td>Sweden</td>
+		
+			<td>53100</td>
+		
+			<td>2003-03-24 00:00:00</td>
+		
+			<td>Shipped</td>
+		
+			<td>2</td>
+		</tr>
+	
+		<tr class="even">
+			<td>10113</td>
+		
+			<td>124</td>
+		
+			<td>Mini Gifts Distributors Ltd.</td>
+		
+			<td>5677 Strong St.</td>
+		
+			<td>San Rafael</td>
+		
+			<td>USA</td>
+		
+			<td>210500</td>
+		
+			<td>2003-03-26 00:00:00</td>
+		
+			<td>Shipped</td>
+		
+			<td>4</td>
+		</tr>
+	
+		<tr>
+			<td>10114</td>
+		
+			<td>172</td>
+		
+			<td>La Corne D'abondance, Co.</td>
+		
+			<td>265, boulevard Charonne</td>
+		
+			<td>Paris</td>
+		
+			<td>France</td>
+		
+			<td>84300</td>
+		
+			<td>2003-04-01 00:00:00</td>
+		
+			<td>Shipped</td>
+		
+			<td>10</td>
+		</tr>
+	</tbody>
+</table>
+		
+		
+		<!-- Any footer (author infos, Typro Framework link),... -->
+		<div id="footer">
+			<div>
+				<p>&copy; Jan Pecha, 2012<br>
+					<a href="http://typro.iunas.cz/">Typro Framework</a>, v2.1<br>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
