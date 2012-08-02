@@ -1,0 +1,26 @@
+/**
+ * .typro Twitter Widget
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011-2012
+ * @license		http://typro.iunas.cz/license
+ * @link		http://typro.iunas.cz/
+ * @version		2012-08-02-1
+ */
+@media all {
+	div.twtr-widget, div.twtr-widget .twtr-doc {
+		font-size: 100% !important;
+	}
+
+	.twtr-widget p {
+		text-indent: 0;
+	}
+
+	.twtr-widget h3, .twtr-widget h4 {
+		clear: none;
+	}
+
+	.twtr-widget .twtr-timeline {
+		padding: 0.6em;
+	}
+}

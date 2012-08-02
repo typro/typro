@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+	<!-- Author info (Change it) -->
+	<meta name="author" content="Jan Pecha (2012), http://janpecha.iunas.cz/">
+	
+	<!-- Load Typro Files -->
+	<link rel="stylesheet" media="all" href="../../../typro.reset.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../../typro.default.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../idea.typro.twitter.widget.css" type="text/css">
+	<!-- ... -->
+	
+	<!-- Load Tests Stylesheet -->
+	<link rel="stylesheet" media="all" href="../../../tests/tests.style.css" type="text/css">
+	
+	<!-- Load Custom Stylesheets -->
+	<!-- <link rel="stylesheet" media="all" href="custom.css" type="text/css"> -->
+	
+	<!-- Specific Document Style -->
+	<style>
+	</style>
+	
+<!--	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>-->
+<!--	<script type="text/javascript" src="../../data.hover-menu/typro.hover-menu.jq.js"></script>-->
+	
+	<title>Twitter.Widget - Typro Framework</title>
+</head>
+<body>
+	<div id="wrapper">
+		<h1>Twitter.Widget</h1>
+		
+		<!-- Test menu -->
+		<div class="test-menu">
+			<a href="#test-1">Basic</a>
+			<!-- ... -->
+		</div>
+		
+		<!-- Test 1 -->
+		<h2 id="test-1">Test 1 - Basic <a href="#" class="test-ontop">On top</a></h2>
+		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+		new TWTR.Widget({
+		  version: 2,
+		  type: 'profile',
+		  rpp: 10,
+		  interval: 30000,
+		  width: 'auto',
+		  height: 300,
+		  theme: {
+			shell: {
+			  background: '#aaaaaa',
+			  color: '#ffffff'
+			},
+			tweets: {
+			  background: '#ffffff',
+			  color: '#333333',
+			  links: '#0044aa'
+			}
+		  },
+		  features: {
+			scrollbar: true,
+			loop: false,
+			live: false,
+			behavior: 'all'
+		  }
+		}).render().setUser('typrocss').start();
+		</script>
+		
+		
+		<!-- Test 2 -->
+		
+		
+		<!-- Any footer (author infos, Typro Framework link),... -->
+		<div id="footer">
+			<div>
+				<p>&copy; Jan Pecha, 2012<br>
+					<a href="http://typro.iunas.cz/">Typro Framework</a>, v2.1<br>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
