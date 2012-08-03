@@ -35,8 +35,16 @@ $(function() {
 					if(val.charAt(0) != '#')
 					{
 						val = '#' + val;
-						input.val(val);
 					}
+					
+					if(val.length == 4) // format #def -> #ddeeff
+					{
+						val = '#' + val.charAt(1) + val.charAt(1)
+							+ val.charAt(2) + val.charAt(2)
+							+ val.charAt(3) + val.charAt(3);
+					}
+					
+					input.val(val.substring(0, 7));
 					
 					var span = input.siblings().first().css('background', val);
 				}
