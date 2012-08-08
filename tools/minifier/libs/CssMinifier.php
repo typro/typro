@@ -2,7 +2,7 @@
 	/** Css Minifier - simple CSS minifier
 	 * 
 	 * @author		Jan Pecha, <janpecha@email.cz>
-	 * @version		2012-07-20-1
+	 * @version		2012-08-08-1
 	 */
 	
 	class CssMinifier implements \Typro\IMinifier
@@ -28,7 +28,7 @@
 			{
 				if($state === 'normal')
 				{
-					if($s[$i] === '\'' || $s === '"')
+					if($s[$i] === '\'' || $s[$i] === '"')
 					{
 						$state = 'string';
 						$stringChar = $s[$i];
