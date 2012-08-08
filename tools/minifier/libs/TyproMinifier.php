@@ -2,7 +2,7 @@
 	/** Typro Minifier
 	 * 
 	 * @author		Jan Pecha, <janpecha@email.cz>
-	 * @version		2012-07-20-1
+	 * @version		2012-08-08-1
 	 */
 	
 	namespace Typro;
@@ -135,7 +135,11 @@
 			// sken stabilnich modulu
 			if($this->options['allStables'])
 			{
-				$files = array_merge($files, $this->scanDir($this->typroDir . '/typro.*.css'));
+				$_files = $this->scanDir($this->typroDir . '/typro.*.css', array(
+					'typro.paragraph.czech.css',
+				));
+				
+				$files = array_merge($files, $_files);
 			}
 			
 			// sken idea modulu
@@ -204,15 +208,32 @@
 		
 		/**
 		 * @param	string
+		 * @param	string[]|NULL
 		 * @return	array
 		 */
-		protected function scanDir($pattern)
+		protected function scanDir($pattern, $exclude = NULL)
 		{
 			$files = glob($pattern);
 			
 			if($files === FALSE)
 			{
 				throw new \Exception('Scan dir error');
+			}
+			
+			if(is_array($exclude))
+			{
+				$exclude = array_flip($exclude);
+				
+				$files = array_filter($files, function($item) use ($exclude) {
+					$basename = basename($item);
+					
+					if(isset($exclude[$basename]))
+					{
+						return FALSE;
+					}
+					
+					return TRUE;
+				});
 			}
 			
 			return $files;
