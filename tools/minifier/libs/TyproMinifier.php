@@ -2,7 +2,7 @@
 	/** Typro Minifier
 	 * 
 	 * @author		Jan Pecha, <janpecha@email.cz>
-	 * @version		2012-08-08-1
+	 * @version		2012-08-13-1
 	 */
 	
 	namespace Typro;
@@ -137,6 +137,7 @@
 			{
 				$_files = $this->scanDir($this->typroDir . '/typro.*.css', array(
 					'typro.paragraph.czech.css',
+					'typro.font.verdana.css',
 				));
 				
 				$files = array_merge($files, $_files);
