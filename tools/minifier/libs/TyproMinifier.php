@@ -2,7 +2,7 @@
 	/** Typro Minifier
 	 * 
 	 * @author		Jan Pecha, <janpecha@email.cz>
-	 * @version		2012-08-13-1
+	 * @version		2012-08-13-2
 	 */
 	
 	namespace Typro;
@@ -272,11 +272,12 @@
 				$filepath = $this->baseDir . '/' . $filepath;
 			}
 			
+			$filePath = $filepath;
 			$filepath = realpath($filepath);
 			
 			if($filepath === FALSE)
 			{
-				throw new \Exception('Normalization failed');
+				throw new \Exception('Normalization failed - File not found - ' . $filePath);
 			}
 			
 			return $filepath;
@@ -298,13 +299,13 @@
 				$file = 'typro.' . substr($file, 1);
 			}
 			
-			$file = $this->typroDir . '/' . $file . '.css';
+			$filePath = $file = $this->typroDir . '/' . $file . '.css';
 			
 			$file = realpath($file);
 			
 			if($file === FALSE)
 			{
-				throw new \Exception('Normalization failed');
+				throw new \Exception('Normalization failed [Typro files] - File not found - ' . $filePath);
 			}
 			
 			return $file;
