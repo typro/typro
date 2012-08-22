@@ -2,7 +2,7 @@
 	/** Typro Minifier
 	 * 
 	 * @author		Jan Pecha, <janpecha@email.cz>
-	 * @version		2012-08-13-2
+	 * @version		2012-08-23-1
 	 */
 	
 	namespace Typro;
@@ -146,7 +146,11 @@
 			// sken idea modulu
 			if($this->options['allIdeas'])
 			{
-				$files = array_merge($files, $this->scanDir($this->typroDir . '/ideas/idea.typro.*.css'));
+				$files = array_merge($files, $this->scanDir($this->typroDir . '/ideas/idea.typro.*.css', array(
+					'idea.typro.grid.responsive.reorder.css',
+					'idea.typro.headings.css',
+					'idea.typro.headings.margin.css',
+				)));
 			}
 			
 			// odstraneni duplicitnich souboru z pole
