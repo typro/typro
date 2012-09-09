@@ -641,7 +641,7 @@
 			
 			<div class="grid-col grid-wp50">
 				<div class="grid-cell">
-<pre><code class="jush">&lt;table class="no-border">
+<pre><code class="jush">&lt;table>
 	&lt;caption>This is table caption&lt;/caption>
 	&lt;tr>
 		&lt;td>1.&lt;/td>
@@ -663,7 +663,7 @@
 			Typro se snaží zjednodušit i tvorbu tzv. <em>flash messages</em>.
 			Nabízí styly pro <strong>různé typy</strong> zpráv a také
 			<strong>JavaScriptovou obsluhu</strong> uzavíracího tlačítka
-			(vyžaduje <a href="http://jquery.com/">jQuery</a>). Zprávy mají i
+			(vyžaduje <a href="http://jquery.com/">jQuery</a>, nebo <a href="http://zeptojs.com/">Zepto.JS</a>). Zprávy mají i
 			předpřipravený rámeček - stačí ho aktivovat pomocí <code class="jush-css_pro">border-width: 1px;</code> (viz např. u <code>flash-message-ok</code>).
 		</p>
 		<div class="flash-message">
@@ -678,11 +678,11 @@
 
 		<div class="flash-message-ok">
 			<p>Any <strong>ok</strong> flash message with border (<code class="jush-css_pro">border-width: 1px;</code>).</p>
-			<a href="#" class="flash-message-close" title="Close"><span>Close</span></a>
+			<span class="flash-message-close" title="Close"><span>Close</span></span>
 		</div>
 <pre><code class="jush">&lt;div class="flash-message-<strong>ok</strong>">
 	&lt;p>Any &lt;strong>ok&lt;/strong> flash message with border (&lt;code>border-width: 1px;&lt;/code>).&lt;/p>
-	&lt;a href="#" class="flash-message-close" title="Close">&lt;span>Close&lt;/span>&lt;/a>
+	&lt;span class="flash-message-close" title="Close">&lt;span>Close&lt;/span>&lt;/span>
 &lt;/div>
 </code></pre>
 
