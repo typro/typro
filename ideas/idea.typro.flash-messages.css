@@ -5,7 +5,7 @@
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2.1.0
+ * @version		2012-09-09-1
  * @package		All Media
  */
 @media all {
@@ -63,6 +63,7 @@
 /*		background-color: #888;*/
 		text-decoration: none;
 		overflow: hidden;
+		cursor: pointer;
 	}
 	
 	/* .flash-message-close span */
