@@ -5,7 +5,7 @@
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-09-10-1
+ * @version		2012-09-10-2
  * @package		All Media
  */
 @media all {
@@ -62,6 +62,13 @@
 		text-decoration: none;
 		overflow: hidden;
 		cursor: pointer;
+		
+		color: #656565;
+		font-size: 1.2em;
+		line-height: 1em;
+		vertical-align: top;
+		text-shadow: 1px 1px 0px #eee;
+		filter: dropshadow(color=#eee, offx=1, offy=1);
 	}
 	
 	/* .flash-message-close span */
@@ -70,15 +77,8 @@
 	.flash-message-info .flash-message-close span,
 	.flash-message-important .flash-message-close span,
 	.flash-message-error .flash-message-close span {
-		color: #656565;
-		font-size: 1.2em;
-		line-height: 1em;
-		vertical-align: top;
-		text-shadow: 1px 1px 0px #eee;
-		filter: dropshadow(color=#eee, offx=1, offy=1);
-		/* For Close Image Icon:
 		visibility: hidden;
-		*/
+		
 		/* For Style Content:
 		content: "✖";
 		*/
