@@ -5,7 +5,7 @@
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-09-09-1
+ * @version		2012-09-10-1
  * @package		All Media
  */
 @media all {
@@ -23,14 +23,12 @@
 		border-radius: 4px;
 		text-indent: 0;
 		position: relative; /* ! */
-/*		left: -2px;*/
 		margin-left: auto;
 		margin-right: auto;
 		
-		/* for close icon */
+		/* For Close Image Icon: */
 		min-width: 22px;
 		min-height: 22px;
-/*		width: 95%*/
 	}
 	
 	/* p */
@@ -55,12 +53,12 @@
 	.flash-message-close {
 		background-color: transparent;
 		position: absolute;
-/*		display: block;*/
 		right: 8px;
 		top: 7px;
+		/* For Close Image Icon:
 		width: 12px;
 		height: 12px;
-/*		background-color: #888;*/
+		*/
 		text-decoration: none;
 		overflow: hidden;
 		cursor: pointer;
@@ -72,8 +70,22 @@
 	.flash-message-info .flash-message-close span,
 	.flash-message-important .flash-message-close span,
 	.flash-message-error .flash-message-close span {
-/*		display: none;*/
+		color: #656565;
+		font-size: 1.2em;
+		line-height: 1em;
+		vertical-align: top;
+		text-shadow: 1px 1px 0px #eee;
+		filter: dropshadow(color=#eee, offx=1, offy=1);
+		/* For Close Image Icon:
 		visibility: hidden;
+		*/
+		/* For Style Content:
+		content: "✖";
+		*/
+		/*For &times entity:
+		font-size: 1.5em;
+		font-weight: bold;
+		*/
 	}
 	
 	/* Colors */
@@ -94,12 +106,6 @@
 		border-color: #ffe440;
 		border-color: #f0d63c;
 	}
-	
-/*	.flash-message-info {*/
-/*		background-color: #8ec3ff;*/
-/*		border-color: #ffe440;*/
-/*		border-color: #3c90f0;*/
-/*	}*/
 	
 	.flash-message-error {
 		background-color: #ffa18e;
