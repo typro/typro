@@ -1,0 +1,33 @@
+/**
+ * .typro UI Loading Bar
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011-2012
+ * @license		http://typro.iunas.cz/license
+ * @link		http://typro.iunas.cz/
+ * @version		2012-09-10-1
+ */
+@media all {
+	.ui-progress {
+		display: block;
+		border: 1px solid #779;
+		width: 100%;
+		height: 1.6em;
+		border-radius: 3px;
+		background: #f4f4ff;
+		overflow: hidden;
+		text-align: center;
+		margin: 2px 1px;
+/*		padding: 1px;*/
+	}
+	
+	.ui-progress .ui-bar {
+		width: 100%;
+		background: #005E80;
+		height: 0.9em;
+		border-top: 0.8em solid #137591;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+}
