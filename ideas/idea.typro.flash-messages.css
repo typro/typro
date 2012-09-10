@@ -5,7 +5,7 @@
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-09-10-2
+ * @version		2012-09-10-3
  * @package		All Media
  */
 @media all {
@@ -78,6 +78,9 @@
 	.flash-message-important .flash-message-close span,
 	.flash-message-error .flash-message-close span {
 		visibility: hidden;
+		display: block;
+		width: 1px;
+		height: 1px;
 		
 		/* For Style Content:
 		content: "✖";
