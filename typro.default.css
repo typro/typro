@@ -5,7 +5,7 @@
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-07-01-1
+ * @version		2012-09-11-1
  */
 @media all {
 	body {
@@ -68,6 +68,7 @@
 	/* monospace font */
 	code, kbd, pre, samp, tt, var, listing {
 		font-family: 'Courier CE', 'Courier New', Courier, monospace;
+		text-indent: 0; /* <code> inline-block fix */
 	}
 	
 	/* code output */
@@ -75,6 +76,10 @@
 		-o-tab-size: 4;
 		-moz-tab-size: 4;
 		tab-size: 4;
+	}
+	
+	pre code {
+		display: inline; /* <code> inline-block fix */
 	}
 	
 	/* italic */
