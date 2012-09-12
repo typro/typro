@@ -5,7 +5,7 @@
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-09-10-1
+ * @version		2012-09-12-1
  */
 @media all {
 	.ui-progress {
@@ -16,7 +16,7 @@
 		border-radius: 3px;
 		background: #f4f4ff;
 		overflow: hidden;
-		text-align: center;
+		text-align: left; /*for IE6, IE7 */
 		margin: 2px 1px;
 /*		padding: 1px;*/
 	}
