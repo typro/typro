@@ -5,7 +5,7 @@
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-09-11-1
+ * @version		2012-09-12-1
  */
 @media all {
 	body {
@@ -148,6 +148,12 @@
 	th {
 		text-align: center;
 	}
+	
+	/*fix for IE6, IE7*/
+	th p {
+		text-align: left;
+	}
+	/*\fix for IE7*/
 	
 	caption {
 		text-align: center;
