@@ -5,7 +5,7 @@
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-09-10-3
+ * @version		2012-09-12-1
  * @package		All Media
  */
 @media all {
@@ -67,6 +67,7 @@
 		font-size: 1.2em;
 		line-height: 1em;
 		vertical-align: top;
+		text-align: right;
 		text-shadow: 1px 1px 0px #eee;
 		filter: dropshadow(color=#eee, offx=1, offy=1);
 	}
