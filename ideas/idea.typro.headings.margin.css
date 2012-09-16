@@ -6,6 +6,7 @@
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
  * @version		2012-07-19-1
+ * @todo		zrusit pokud je prvnim elementem v gridu, ?blockquote, ... ??proste vsude?? - ale je blbe nastavovat potom margin-top:0; - lepsi by bylo pouzit :not(), ale to je az IE9+
  */
 @media all {
 	h2, h3, h4, h5, h6 {

@@ -5,7 +5,7 @@
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-09-12-1
+ * @version		2012-09-12-2
  * @package		All Media
  */
 @media all {
@@ -38,6 +38,7 @@
 	.flash-message-important p,
 	.flash-message-error p {
 		text-indent: inherit;
+		/*te\xt-indent: 0; /*fix for IE7*/
 	}
 	
 	/* p:last-child */
