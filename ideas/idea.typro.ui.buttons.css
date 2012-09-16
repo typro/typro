@@ -1,11 +1,11 @@
 /**
- * .typro UI buttons
+ * .typro UI buttons Reset
  * 
  * @author		Jan Pecha,	<janpecha@email.cz>
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-09-16-1
+ * @version		2012-09-16-2
  */
 @media all {
 	.ui-button {
@@ -29,9 +29,9 @@
 		height: 1em;
 		line-height: 1em;
 		border: none;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
+		-webkit-box-sizing: content-box;
+		-moz-box-sizing: content-box;
+		box-sizing: content-box;
 		
 		/*style*/
 		background: #eee;
