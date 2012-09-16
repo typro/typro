@@ -50,7 +50,10 @@
 		clear: both;
 	}
 	
-	.ui-button-group .ui-button {
+	.ui-button-group .ui-button,
+	.ui-button-group input[type=submit].ui-button,
+	.ui-button-group input[type=reset].ui-button,
+	.ui-button-group input[type=button].ui-button {
 		margin: 0;
 		-webkit-border-radius: 0;
 		-moz-border-radius: 0;

@@ -156,24 +156,6 @@
 		margin: 0.2em 0.2em 0.4em;
 	}
 	
-	.ui-button-group:after {
-		content: ".";
-		display: block;
-		height: 0;
-		visibility: hidden;
-		clear: both;
-	}
-	
-	.ui-button-group .ui-button,
-	.ui-button-group input[type=submit].ui-button,
-	.ui-button-group input[type=reset].ui-button,
-	.ui-button-group input[type=button].ui-button {
-		margin: 0;
-		-webkit-border-radius: 0;
-		-moz-border-radius: 0;
-		border-radius: 0;
-		float: left;
-	}
 	
 	.ui-button-group .ui-button:first-child,
 	.ui-button-group input[type=submit].ui-button:first-child,
