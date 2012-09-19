@@ -3,7 +3,7 @@
  * @author		Jan Pecha, <janpecha@email.cz>
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012.06.03-1
+ * @version		2012-09-19-1
  */
  
 Zepto(function($) {
@@ -23,9 +23,7 @@ Zepto(function($) {
 				margin: 0,
 				paddingTop: 0,
 				paddingBottom: 0,
-			}, 300, 'ease-out', function() {
-				$(this).remove();
-			});
+			}, 300, 'ease-out');
 		
 		return false;
 	});
