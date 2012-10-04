@@ -70,7 +70,7 @@
 		vertical-align: top;
 		text-align: right;
 		text-shadow: 1px 1px 0px #eee;
-		filter: dropshadow(color=#eee, offx=1, offy=1);
+		filter: dropshadow(color=#eee, offx=1, offy=1); /* TODO: smazat?? */
 	}
 	
 	/* .flash-message-close span */
