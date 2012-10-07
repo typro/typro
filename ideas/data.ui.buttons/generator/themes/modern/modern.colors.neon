@@ -1,9 +1,9 @@
 # Typro Modern Style Settings
 # author	Jan Pecha, 2012
-# version	2012-10-07-1
+# version	2012-10-07-2
 
 # Default style
-default: # hotovo
+default:
 	normal:
 		border-color: @2884ca
 		background-color: @60abe3
@@ -17,27 +17,10 @@ default: # hotovo
 		top-color: @73b4e5
 		bottom-color: @539cd4
 		shadow-color: @8ec3ea
-		
-
-# Disabled style
-disabled: #hotovo
-	normal:
-		border-color: @e2e2e2
-		background-color: @ececec
-		top-color: @f2f2f2
-		bottom-color: @e6e6e6
-		shadow-color: @fafafa
-		text-shadow-color: @fff
-	
-	hover:
-		background-color: @efefef
-		top-color: @f4f4f4
-		bottom-color: @eaeaea
-		shadow-color: @fbfbfb
 
 
 # .ui-success
-.success: # tu cele
+.success:
 	normal:
 		border-color: @45a443
 		background-color: @5dbb5c
@@ -54,7 +37,7 @@ disabled: #hotovo
 
 
 # .ui-danger
-.danger: #hotovo
+.danger:
 	normal:
 		border-color: @ae3939
 		background-color: @c55252
@@ -68,5 +51,22 @@ disabled: #hotovo
 		top-color: @d47d7d
 		bottom-color: @c55959
 		shadow-color: @dc9696
+
+
+# Disabled style
+disabled:
+	normal:
+		border-color: @e2e2e2
+		background-color: @ececec
+		top-color: @f2f2f2
+		bottom-color: @e6e6e6
+		shadow-color: @fafafa
+		text-shadow-color: @fff
+	
+	hover:
+		background-color: @efefef
+		top-color: @f4f4f4
+		bottom-color: @eaeaea
+		shadow-color: @fbfbfb
 
 
