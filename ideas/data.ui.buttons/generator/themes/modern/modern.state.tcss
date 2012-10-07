@@ -1,0 +1,62 @@
+
+/** Colors for {$stateName} */
+.iu-button{$state} {
+	border-color: {$border-color};
+	background-color: {$background-color};
+	
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, {$top-color} 0%, {$bottom-color} 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, {$top-color} 0%, {$bottom-color} 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, {$top-color} 0%, {$bottom-color} 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, {$top-color}), color-stop(1, {$bottom-color}));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, {$top-color} 0%, {$bottom-color} 100%);
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, {$top-color} 0%, {$bottom-color} 100%);
+	
+	-webkit-box-shadow: inset 0px 1px 0px 0px {$shadow-color};
+	box-shadow: inset 0px 1px 0px 0px {$shadow-color};
+	text-shadow: {$text-shadow-color} 0px -1px 0px;
+}
+
+.iu-button{$state:hover}:hover {
+	background-color: {$background-color:hover};
+	
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, {$top-color:hover} 0%, {$bottom-color:hover} 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, {$top-color:hover} 0%, {$bottom-color:hover} 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, {$top-color:hover} 0%, {$bottom-color:hover} 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, {$top-color:hover}), color-stop(1, {$bottom-color:hover}));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, {$top-color} 0%, {$bottom-color:hover} 100%);
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, {$top-color} 0%, {$bottom-color:hover} 100%);
+	
+	-webkit-box-shadow: inset 0px 1px 0px 0px {$shadow-color:hover};
+	box-shadow: inset 0px 1px 0px 0px {$shadow-color:hover};
+}
+
+.iu-button{$state:active}:active {
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, {$bottom-color} 0%, {$top-color} 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, {$bottom-color} 0%, {$top-color} 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, {$bottom-color} 0%, {$top-color} 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, {$bottom-color}), color-stop(1, {$top-color}));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, {$bottom-color} 0%, {$top-color} 100%);
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, {$bottom-color} 0%, {$top-color} 100%);
+	
+	-webkit-box-shadow: inset 0px 1px 3px 0px {$shadow-color};
+	box-shadow: inset 0px 1px 0px 0px {$shadow-color};
+}
+
