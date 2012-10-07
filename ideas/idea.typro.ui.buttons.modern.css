@@ -1,0 +1,189 @@
+/**
+ * .typro UI Buttons - Modern Theme
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011-2012
+ * @license		http://typro.iunas.cz/license
+ * @link		http://typro.iunas.cz/
+ * @version		2012-10-07-1
+ */
+.ui-button {
+	border: 1px solid transparent;
+	border-radius: 3px;
+	color: #fff;
+	font-weight: 700;
+	cursor: pointer;
+	padding: 0.7em 1em;
+	font-size: 13px;
+	font-size: 90%;
+}
+
+
+/** Colors for default */
+.ui-button {
+	border-color: #2884ca;
+	background-color: #60abe3;
+	
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#5da9e2), to(#378ccd)); /* Safari 4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #5da9e2, #378ccd); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(top, #5da9e2, #378ccd); /* Firefox 3.6-15 */
+	background-image:      -o-linear-gradient(top, #5da9e2, #378ccd); /* Opera 11.10-12.00 */
+	background-image:         linear-gradient(to bottom, #5da9e2, #378ccd); /* Firefox 16+, IE10, Opera 12.50+ */
+	
+	-webkit-box-shadow: inset 0px 1px 0px 0px #7bb9e7;
+	box-shadow: inset 0px 1px 0px 0px #7bb9e7;
+	text-shadow: #488ec7 0px -1px 0px;
+}
+
+.ui-button:hover {
+	background-color: #61a6dc;
+	
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#73b4e5), to(#539cd4)); /* Safari 4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #73b4e5, #539cd4); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(top, #73b4e5, #539cd4); /* Firefox 3.6-15 */
+	background-image:      -o-linear-gradient(top, #73b4e5, #539cd4); /* Opera 11.10-12.00 */
+	background-image:         linear-gradient(to bottom, #73b4e5, #539cd4); /* Firefox 16+, IE10, Opera 12.50+ */
+	
+	-webkit-box-shadow: inset 0px 1px 0px 0px #8ec3ea;
+	box-shadow: inset 0px 1px 0px 0px #8ec3ea;
+}
+
+.ui-button:active {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#378ccd), to(#5da9e2)); /* Safari 4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #378ccd, #5da9e2); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(top, #378ccd, #5da9e2); /* Firefox 3.6-15 */
+	background-image:      -o-linear-gradient(top, #378ccd, #5da9e2); /* Opera 11.10-12.00 */
+	background-image:         linear-gradient(to bottom, #378ccd, #5da9e2); /* Firefox 16+, IE10, Opera 12.50+ */
+	
+	-webkit-box-shadow: inset 0px 1px 3px 0px #7bb9e7;
+	box-shadow: inset 0px 1px 0px 0px #7bb9e7;
+}
+
+
+
+/** Colors for .success */
+.ui-button.ui-success {
+	border-color: #45a443;
+	background-color: #5dbb5c;
+	
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#72c471), to(#4ab049)); /* Safari 4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #72c471, #4ab049); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(top, #72c471, #4ab049); /* Firefox 3.6-15 */
+	background-image:      -o-linear-gradient(top, #72c471, #4ab049); /* Opera 11.10-12.00 */
+	background-image:         linear-gradient(to bottom, #72c471, #4ab049); /* Firefox 16+, IE10, Opera 12.50+ */
+	
+	-webkit-box-shadow: inset 0px 1px 0px 0px #72c471;
+	box-shadow: inset 0px 1px 0px 0px #72c471;
+	text-shadow: #4fb54e 0px -1px 0px;
+}
+
+.ui-button.ui-success:hover {
+	background-color: #74c573;
+	
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#86cc85), to(#63bb63)); /* Safari 4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #86cc85, #63bb63); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(top, #86cc85, #63bb63); /* Firefox 3.6-15 */
+	background-image:      -o-linear-gradient(top, #86cc85, #63bb63); /* Opera 11.10-12.00 */
+	background-image:         linear-gradient(to bottom, #86cc85, #63bb63); /* Firefox 16+, IE10, Opera 12.50+ */
+	
+	-webkit-box-shadow: inset 0px 1px 0px 0px #9dd69c;
+	box-shadow: inset 0px 1px 0px 0px #9dd69c;
+}
+
+.ui-button.ui-success:active {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#4ab049), to(#72c471)); /* Safari 4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #4ab049, #72c471); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(top, #4ab049, #72c471); /* Firefox 3.6-15 */
+	background-image:      -o-linear-gradient(top, #4ab049, #72c471); /* Opera 11.10-12.00 */
+	background-image:         linear-gradient(to bottom, #4ab049, #72c471); /* Firefox 16+, IE10, Opera 12.50+ */
+	
+	-webkit-box-shadow: inset 0px 1px 3px 0px #72c471;
+	box-shadow: inset 0px 1px 0px 0px #72c471;
+}
+
+
+
+/** Colors for .danger */
+.ui-button.ui-danger {
+	border-color: #ae3939;
+	background-color: #c55252;
+	
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#cd6868), to(#bb3e3e)); /* Safari 4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #cd6868, #bb3e3e); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(top, #cd6868, #bb3e3e); /* Firefox 3.6-15 */
+	background-image:      -o-linear-gradient(top, #cd6868, #bb3e3e); /* Opera 11.10-12.00 */
+	background-image:         linear-gradient(to bottom, #cd6868, #bb3e3e); /* Firefox 16+, IE10, Opera 12.50+ */
+	
+	-webkit-box-shadow: inset 0px 1px 0px 0px #d68585;
+	box-shadow: inset 0px 1px 0px 0px #d68585;
+	text-shadow: #c04343 0px -1px 0px;
+}
+
+.ui-button.ui-danger:hover {
+	background-color: #cc6969;
+	
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#d47d7d), to(#c55959)); /* Safari 4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #d47d7d, #c55959); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(top, #d47d7d, #c55959); /* Firefox 3.6-15 */
+	background-image:      -o-linear-gradient(top, #d47d7d, #c55959); /* Opera 11.10-12.00 */
+	background-image:         linear-gradient(to bottom, #d47d7d, #c55959); /* Firefox 16+, IE10, Opera 12.50+ */
+	
+	-webkit-box-shadow: inset 0px 1px 0px 0px #dc9696;
+	box-shadow: inset 0px 1px 0px 0px #dc9696;
+}
+
+.ui-button.ui-danger:active {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#bb3e3e), to(#cd6868)); /* Safari 4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #bb3e3e, #cd6868); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(top, #bb3e3e, #cd6868); /* Firefox 3.6-15 */
+	background-image:      -o-linear-gradient(top, #bb3e3e, #cd6868); /* Opera 11.10-12.00 */
+	background-image:         linear-gradient(to bottom, #bb3e3e, #cd6868); /* Firefox 16+, IE10, Opera 12.50+ */
+	
+	-webkit-box-shadow: inset 0px 1px 3px 0px #d68585;
+	box-shadow: inset 0px 1px 0px 0px #d68585;
+}
+
+
+
+/** Colors for disabled */
+.ui-button.ui-disabled, .ui-button[disabled] {
+	border-color: #e2e2e2;
+	background-color: #ececec;
+	
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e6e6e6)); /* Safari 4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #f2f2f2, #e6e6e6); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(top, #f2f2f2, #e6e6e6); /* Firefox 3.6-15 */
+	background-image:      -o-linear-gradient(top, #f2f2f2, #e6e6e6); /* Opera 11.10-12.00 */
+	background-image:         linear-gradient(to bottom, #f2f2f2, #e6e6e6); /* Firefox 16+, IE10, Opera 12.50+ */
+	
+	-webkit-box-shadow: inset 0px 1px 0px 0px #fafafa;
+	box-shadow: inset 0px 1px 0px 0px #fafafa;
+	text-shadow: #eee 0px -1px 0px;
+	
+	color: #888 !important;
+}
+
+.ui-button.ui-disabled:hover, .ui-button[disabled]:hover {
+	background-color: #efefef;
+	
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#eaeaea)); /* Safari 4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #f4f4f4, #eaeaea); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(top, #f4f4f4, #eaeaea); /* Firefox 3.6-15 */
+	background-image:      -o-linear-gradient(top, #f4f4f4, #eaeaea); /* Opera 11.10-12.00 */
+	background-image:         linear-gradient(to bottom, #f4f4f4, #eaeaea); /* Firefox 16+, IE10, Opera 12.50+ */
+	
+	-webkit-box-shadow: inset 0px 1px 0px 0px #fbfbfb;
+	box-shadow: inset 0px 1px 0px 0px #fbfbfb;
+}
+
+.ui-button.ui-disabled:active, .ui-button[disabled]:active {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), to(#f2f2f2)); /* Safari 4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #e6e6e6, #f2f2f2); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(top, #e6e6e6, #f2f2f2); /* Firefox 3.6-15 */
+	background-image:      -o-linear-gradient(top, #e6e6e6, #f2f2f2); /* Opera 11.10-12.00 */
+	background-image:         linear-gradient(to bottom, #e6e6e6, #f2f2f2); /* Firefox 16+, IE10, Opera 12.50+ */
+	
+	-webkit-box-shadow: inset 0px 1px 3px 0px #fafafa;
+	box-shadow: inset 0px 1px 0px 0px #fafafa;
+}
+
