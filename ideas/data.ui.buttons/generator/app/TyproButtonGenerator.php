@@ -2,7 +2,7 @@
 	/** Typro Button Generator
 	 * 
 	 * @author		Jan Pecha, <janpecha@email.cz>
-	 * @version		2012-10-07-1
+	 * @version		2012-10-07-2
 	 */
 	
 	namespace Typro\Generators;
@@ -36,11 +36,17 @@
 					$a['state:hover'] = '.ui-disabled:hover, .ui-button[disabled]';
 					$a['state:active'] = '.ui-disabled:active, .ui-button[disabled]';
 				}
+				elseif($state[0] === '.')
+				{
+					$a['state'] = '.ui-' . substr($state, 1);
+					$a['state:hover'] = $a['state'];
+					$a['state:active'] = $a['state'];
+				}
 				else
 				{
 					$a['state'] = $state;
-					$a['state:hover'] = $state;
-					$a['state:active'] = $state;
+					$a['state:hover'] = $a['state'];
+					$a['state:active'] = $a['state'];
 				}
 				
 				$this->iterVars[] = $a;
