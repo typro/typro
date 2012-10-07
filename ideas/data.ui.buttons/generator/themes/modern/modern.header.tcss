@@ -7,7 +7,7 @@
  * @link		http://typro.iunas.cz/
  * @version		{$version}
  */
-.iu-button {
+.ui-button {
 	border: 1px solid transparent;
 	border-radius: 3px;
 	color: #fff;
