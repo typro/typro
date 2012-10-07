@@ -5,7 +5,7 @@
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-10-07-1
+ * @version		2012-10-07-2
  */
 .ui-button {
 	border: 1px solid transparent;
@@ -16,6 +16,14 @@
 	padding: 0.7em 1em;
 	font-size: 13px;
 	font-size: 90%;
+}
+
+.ui-button-group .ui-button:first-child {
+	border-radius: 3px 0 0 3px;
+}
+
+.ui-button-group .ui-button:last-child {
+	border-radius: 0 3px 3px 0;
 }
 
 
