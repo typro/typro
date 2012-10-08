@@ -5,7 +5,7 @@
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-10-07-1
+ * @version		2012-10-08-1
  */
 @media all {
 	.ui-button {
@@ -21,21 +21,62 @@
 		font-weight: normal;
 		font-style: normal;
 		overflow: visible;
-		padding: 0;
 		margin: 0;
 		text-align: center;
 		font-family: 'Arial CE', 'Helvetica CE', Arial, Verdana, Helvetica, sans-serif;
-		font-size: 100%;
-		height: 1em;
-		line-height: 1em;
+		font-size: inherit;
+/*		height: 1em;*/
+		/*height: 2em;	/* for input submit, reset,... buttons */
+		line-height: 100%;
+		line-height: 130%;
+/*		line-height: normal;*/
+		overflow: hidden;
 		border: none;
+		-webkit-box-sizing: padding-box;
+		-moz-box-sizing: padding-box;
+		-o-box-sizing: padding-box;
+		box-sizing: padding-box;
+		
+/*		-webkit-box-sizing: border-box;*/
+/*		-moz-box-sizing: border-box;*/
+/*		-o-box-sizing: border-box;*/
+/*		box-sizing: border-box;*/
+
 		-webkit-box-sizing: content-box;
 		-moz-box-sizing: content-box;
+		-o-box-sizing: content-box;
 		box-sizing: content-box;
+		
+		/* button settings */
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;
 		
 		/*style*/
 		background: #eee;
+		
+		height: 2em;
+		line-height: 2em;
+		padding: 0.2em 1em;
+		
+/*		margin: 0 !important;*/
+/*		padding: 0 !important;*/
+/*		border: 0;*/
+/*		font-size: 100%;*/
+/*		line-height: normal !important;*/
+/*		font: inherit;*/
+/*		vertical-align: middle;*/
+		
+		/* workarounds */
+/*		-moz-appearance: none !important;*/
+/*		-webkit-appearance: none;*/
+/*		appearance: normal;*/
+/*		text-rendering: auto !important;*/
 	}
+	
+/*	button.ui-button, input[type="reset"].ui-button, input[type="button"].ui-button, input[type="submit"].ui-button {*/
+/*		line-height: 1em !important;*/
+/*	}*/
 	
 	/* Buttons Group */
 /*	.ui-button-group {*/
@@ -68,5 +109,10 @@
 	
 	.ui-button.ui-small {
 		font-size: 70%;
+	}
+	
+	/* Disabled */
+	.ui-button.ui-disabled, .ui-button[disabled] {
+		cursor: not-allowed;
 	}
 }
