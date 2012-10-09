@@ -5,7 +5,7 @@
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-10-08-1
+ * @version		2012-10-09-1
  */
 @media all {
 	.ui-button {
@@ -32,16 +32,7 @@
 /*		line-height: normal;*/
 		overflow: hidden;
 		border: none;
-		-webkit-box-sizing: padding-box;
-		-moz-box-sizing: padding-box;
-		-o-box-sizing: padding-box;
-		box-sizing: padding-box;
 		
-/*		-webkit-box-sizing: border-box;*/
-/*		-moz-box-sizing: border-box;*/
-/*		-o-box-sizing: border-box;*/
-/*		box-sizing: border-box;*/
-
 		-webkit-box-sizing: content-box;
 		-moz-box-sizing: content-box;
 		-o-box-sizing: content-box;
@@ -68,7 +59,7 @@
 /*		vertical-align: middle;*/
 		
 		/* workarounds */
-/*		-moz-appearance: none !important;*/
+		-moz-appearance: none !important;
 /*		-webkit-appearance: none;*/
 /*		appearance: normal;*/
 /*		text-rendering: auto !important;*/
@@ -79,9 +70,9 @@
 /*	}*/
 	
 	/* Buttons Group */
-/*	.ui-button-group {*/
-/*		margin: 0.2em 0.2em 0.4em;*/
-/*	}*/
+	.ui-button-group {
+		margin: 0.2em 0.2em 0.4em;
+	}
 	
 	.ui-button-group:after {
 		content: ".";
@@ -114,5 +105,6 @@
 	/* Disabled */
 	.ui-button.ui-disabled, .ui-button[disabled] {
 		cursor: not-allowed;
+		color: graytext;
 	}
 }
