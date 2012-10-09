@@ -5,33 +5,31 @@
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-10-09-1
+ * @version		2012-10-09-2
  */
 @media all {
 	.ui-button {
 		/* button reset */
 		display: inline;
 		display: inline-block;
-		text-decoration: none;
-		color: #333;
 		cursor: pointer;
 		outline-width: 0;
 		vertical-align: middle;
 		white-space: normal;
 		font-weight: normal;
 		font-style: normal;
-		overflow: visible;
-		margin: 0;
-		text-align: center;
 		font-family: 'Arial CE', 'Helvetica CE', Arial, Verdana, Helvetica, sans-serif;
 		font-size: inherit;
-/*		height: 1em;*/
-		/*height: 2em;	/* for input submit, reset,... buttons */
-		line-height: 100%;
-		line-height: 130%;
-/*		line-height: normal;*/
+		margin: 0;
+		padding: 0.2em 1em;
+		text-align: center;
+		text-decoration: none;
+		color: #333;
 		overflow: hidden;
 		border: none;
+		
+		line-height: 2em; /* for a, span,... buttons */
+		height: 2em; /* for input submit, reset,... buttons */
 		
 		-webkit-box-sizing: content-box;
 		-moz-box-sizing: content-box;
@@ -46,28 +44,9 @@
 		/*style*/
 		background: #eee;
 		
-		height: 2em;
-		line-height: 2em;
-		padding: 0.2em 1em;
-		
-/*		margin: 0 !important;*/
-/*		padding: 0 !important;*/
-/*		border: 0;*/
-/*		font-size: 100%;*/
-/*		line-height: normal !important;*/
-/*		font: inherit;*/
-/*		vertical-align: middle;*/
-		
-		/* workarounds */
+		/* others */
 		-moz-appearance: none !important;
-/*		-webkit-appearance: none;*/
-/*		appearance: normal;*/
-/*		text-rendering: auto !important;*/
 	}
-	
-/*	button.ui-button, input[type="reset"].ui-button, input[type="button"].ui-button, input[type="submit"].ui-button {*/
-/*		line-height: 1em !important;*/
-/*	}*/
 	
 	/* Buttons Group */
 	.ui-button-group {
