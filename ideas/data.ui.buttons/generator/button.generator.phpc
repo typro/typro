@@ -2,12 +2,12 @@
 	/** Typro Button CLI Generator
 	 * 
 	 * @author		Jan Pecha, <janpecha@email.cz>
-	 * @version		2012-10-09-1
+	 * @version		2012-10-09-2
 	 */
 	
 	if(isset($_SERVER['argv'][1]))
 	{
-		error_reporting(-1);
+		error_reporting(0);
 		
 		require_once __DIR__ . '/libs/Neon.php';
 		require_once __DIR__ . '/app/TyproBaseGenerator.php';
@@ -35,7 +35,7 @@
 			die("\nError: State file not found.\n");
 		}
 		
-		$footer = file_get_contents(__DIR__ . '/themes/' . "$theme/$theme" . '.footer.tcss');
+		$footer = @file_get_contents(__DIR__ . '/themes/' . "$theme/$theme" . '.footer.tcss'); // @ - nemusi existovat
 		
 		if($footer === FALSE)
 		{
