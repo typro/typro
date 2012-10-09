@@ -1,6 +1,6 @@
 # Typro Modern Style Settings
 # author	Jan Pecha, 2012
-# version	2012-10-07-2
+# version	2012-10-09-1
 
 # Default style
 default:
@@ -61,7 +61,7 @@ disabled:
 		top-color: @f2f2f2
 		bottom-color: @e6e6e6
 		shadow-color: @fafafa
-		text-shadow-color: @fff
+		text-shadow-color: @eee
 	
 	hover:
 		background-color: @efefef
