@@ -1,0 +1,72 @@
+# Typro Modern Style Settings
+# author	Jan Pecha, 2012
+# version	2012-10-09-1
+
+# Default style
+default:
+	normal:
+		border-color: @2884ca
+		background-color: @60abe3
+		top-color: @5da9e2
+		bottom-color: @378ccd
+		shadow-color: @7bb9e7
+		text-shadow-color: @488ec7
+	
+	hover:
+		background-color: @61a6dc
+		top-color: @73b4e5
+		bottom-color: @539cd4
+		shadow-color: @8ec3ea
+
+
+# .ui-success
+.success:
+	normal:
+		border-color: @45a443
+		background-color: @5dbb5c
+		top-color: @72c471
+		bottom-color: @4ab049
+		shadow-color: @72c471
+		text-shadow-color: @4fb54e
+	
+	hover:
+		background-color: @74c573
+		top-color: @86cc85
+		bottom-color: @63bb63
+		shadow-color: @9dd69c
+
+
+# .ui-danger
+.danger:
+	normal:
+		border-color: @ae3939
+		background-color: @c55252
+		top-color: @cd6868
+		bottom-color: @bb3e3e
+		shadow-color: @d68585
+		text-shadow-color: @c04343
+	
+	hover:
+		background-color: @cc6969
+		top-color: @d47d7d
+		bottom-color: @c55959
+		shadow-color: @dc9696
+
+
+# Disabled style
+disabled:
+	normal:
+		border-color: @e2e2e2
+		background-color: @ececec
+		top-color: @f2f2f2
+		bottom-color: @e6e6e6
+		shadow-color: @fafafa
+		text-shadow-color: @eee
+	
+	hover:
+		background-color: @efefef
+		top-color: @f4f4f4
+		bottom-color: @eaeaea
+		shadow-color: @fbfbfb
+
+

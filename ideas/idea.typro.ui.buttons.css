@@ -1,171 +1,54 @@
 /**
- * .typro UI buttons
+ * .typro UI buttons Reset
  * 
  * @author		Jan Pecha,	<janpecha@email.cz>
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-07-17-1
+ * @version		2012-10-09-2
  */
 @media all {
-	/** Buttons - a, span, submit button, button
-		based on http://hellohappy.org/css3-buttons/
-	*/
-	a.ui-button, span.ui-button,
-	input[type=submit].ui-button, input[type=reset].ui-button,
-	input[type=button].ui-button, button.ui-button {
+	.ui-button {
+		/* button reset */
 		display: inline;
 		display: inline-block;
-		text-decoration: none;
-		background: #e3e3e3;
-		border: 1px solid #bbb;
-		-webkit-border-radius: 4px;
-		-moz-border-radius: 4px;
-		border-radius: 4px;
-		-webkit-box-shadow: inset 0 0 1px 1px #f6f6f6;
-		-moz-box-shadow: inset 0 0 1px 1px #f6f6f6;
-		box-shadow: inset 0 0 1px 1px #f6f6f6;
-		color: #333;
-		font-family: 'Arial CE', 'Helvetica CE', Arial, Verdana, Helvetica, sans-serif;
-		font-size: 90%;
-		line-height: 2em;	/* for a, span */
-		text-align: center;
-		text-shadow: 0 1px 0 #fff;
-		padding: 0;
 		cursor: pointer;
+		outline-width: 0;
 		vertical-align: middle;
 		white-space: normal;
 		font-weight: normal;
 		font-style: normal;
-		overflow: visible;
-/*		min-height: 44px;*/
+		font-family: 'Arial CE', 'Helvetica CE', Arial, Verdana, Helvetica, sans-serif;
+		font-size: inherit;
+		margin: 0;
+		padding: 0.2em 1em;
+		text-align: center;
+		text-decoration: none;
+		color: #333;
+		overflow: hidden;
+		border: none;
+		
+		line-height: 2em; /* for a, span,... buttons */
+		height: 2em; /* for input submit, reset,... buttons */
+		
 		-webkit-box-sizing: content-box;
 		-moz-box-sizing: content-box;
+		-o-box-sizing: content-box;
 		box-sizing: content-box;
-		height: 2em;	/* for input submit, reset,... buttons */
-		padding: 0.2em 1em;
-		outline-width: 0;
-		margin: 0.1em;
+		
+		/* button settings */
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;
+		
+		/*style*/
+		background: #eee;
+		
+		/* others */
+		-moz-appearance: none !important;
 	}
 	
-	
-	a.ui-button:hover, span.ui-button:hover,
-	input[type=submit].ui-button:hover, input[type=reset].ui-button:hover,
-	input[type=button].ui-button:hover, button.ui-button:hover {
-		background: #d9d9d9;
-		-webkit-box-shadow: inset 0 0 1px 1px #eaeaea;
-		-moz-box-shadow: inset 0 0 1px 1px #eaeaea;
-		box-shadow: inset 0 0 1px 1px #eaeaea;
-		color: #222;
-		cursor: pointer;
-	}
-	
-	
-	a.ui-button:active, span.ui-button:active,
-	input[type=submit].ui-button:active, input[type=reset].ui-button:active,
-	input[type=button].ui-button:active, button.ui-button:active {
-		background: #d0d0d0;
-		-webkit-box-shadow: inset 0 0 1px 1px #e3e3e3;
-		-moz-box-shadow: inset 0 0 1px 1px #e3e3e3;
-		box-shadow: inset 0 0 1px 1px #e3e3e3;
-		color: #000;
-		position: relative;
-		top: 1px;
-	}
-	
-	
-	/* OK button */
-	a.ui-button.ui-ok, span.ui-button.ui-ok,
-	input[type=submit].ui-button.ui-ok, input[type=reset].ui-button.ui-ok,
-	input[type=button].ui-button.ui-ok, button.ui-button.ui-ok {
-		background: #60ac55;
-		border-color: #3d9131;
-		-webkit-box-shadow: inset 0 0 1px 1px #96ca6d;
-		-moz-box-shadow: inset 0 0 1px 1px #96ca6d;
-		box-shadow: inset 0 0 1px 1px #96ca6d;
-		color: #fff;
-		text-shadow: 0 1px 0 #3d9131;
-	}
-	
-	
-	a.ui-button.ui-ok:hover, span.ui-button.ui-ok:hover,
-	input[type=submit].ui-button.ui-ok:hover, input[type=reset].ui-button.ui-ok:hover,
-	input[type=button].ui-button.ui-ok:hover, button.ui-button.ui-ok:hover {
-		background: #56a24b;
-		-webkit-box-shadow: inset 0 0 1px 1px #8ec367;
-		-moz-box-shadow: inset 0 0 1px 1px #8ec367;
-		box-shadow: inset 0 0 1px 1px #8ec367;
-		cursor: pointer;
-	}
-	
-	
-	a.ui-button.ui-ok:active, span.ui-button.ui-ok:active,
-	input[type=submit].ui-button.ui-ok:active, input[type=reset].ui-button.ui-ok:active,
-	input[type=button].ui-button.ui-ok:active, button.ui-button.ui-ok:active {
-		background: #4d9941;
-		-webkit-box-shadow: inset 0 0 1px 1px #87bc60;
-		-moz-box-shadow: inset 0 0 1px 1px #87bc60;
-		box-shadow: inset 0 0 1px 1px #87bc60;
-		text-shadow: 0 1px 0 #555;
-/*		position: relative;*/
-/*		top: 1px;*/
-	}
-	
-	
-	
-	/* delete button */
-	a.ui-button.ui-delete, span.ui-button.ui-delete,
-	input[type=submit].ui-button.ui-delete, input[type=reset].ui-button.ui-delete,
-	input[type=button].ui-button.ui-delete, button.ui-button.ui-delete {
-		background: #b43535;
-		border-color: #913131;
-		-webkit-box-shadow: inset 0 0 1px 1px #ca6d6d;
-		-moz-box-shadow: inset 0 0 1px 1px #ca6d6d;
-		box-shadow: inset 0 0 1px 1px #ca6d6d;
-		color: #fff;
-		text-shadow: 0 1px 0 #913131;
-	}
-	
-	
-	a.ui-button.ui-delete:hover, span.ui-button.ui-delete:hover,
-	input[type=submit].ui-button.ui-delete:hover, input[type=reset].ui-button.ui-delete:hover,
-	input[type=button].ui-button.ui-delete:hover, button.ui-button.ui-delete:hover {
-		background: #9d2e2e;
-		-webkit-box-shadow: inset 0 0 1px 1px #c36767;
-		-moz-box-shadow: inset 0 0 1px 1px #c36767;
-		box-shadow: inset 0 0 1px 1px #c36767;
-		cursor: pointer;
-	}
-	
-	
-	a.ui-button.ui-delete:active, span.ui-button.ui-delete:active,
-	input[type=submit].ui-button.ui-delete:active, input[type=reset].ui-button.ui-delete:active,
-	input[type=button].ui-button.ui-delete:active, button.ui-button.ui-delete:active {
-		background: #9c3434;
-		-webkit-box-shadow: inset 0 0 1px 1px #bc6060;
-		-moz-box-shadow: inset 0 0 1px 1px #bc6060;
-		box-shadow: inset 0 0 1px 1px #bc6060;
-		text-shadow: 0 1px 0 #555;
-/*		position: relative;*/
-/*		top: 1px;*/
-	}
-	
-	.ui-button.ui-large,
-	input[type=submit].ui-button.ui-large,
-	input[type=reset].ui-button.ui-large,
-	input[type=button].ui-button.ui-large {
-		font-size: 110%;
-	}
-	
-	.ui-button.ui-small,
-	input[type=submit].ui-button.ui-small,
-	input[type=reset].ui-button.ui-small,
-	input[type=button].ui-button.ui-small {
-		font-size: 70%;
-	}
-	
-	
-	/** Button Group */
+	/* Buttons Group */
 	.ui-button-group {
 		margin: 0.2em 0.2em 0.4em;
 	}
@@ -189,27 +72,18 @@
 		float: left;
 	}
 	
-	.ui-button-group .ui-button:first-child,
-	.ui-button-group input[type=submit].ui-button:first-child,
-	.ui-button-group input[type=reset].ui-button:first-child,
-	.ui-button-group input[type=button].ui-button:first-child {
-		-webkit-border-top-left-radius: 4px;
-		-webkit-border-bottom-left-radius: 4px;
-		-moz-border-radius-topleft: 4px;
-		-moz-border-radius-bottomleft: 4px;
-		border-top-left-radius: 4px;
-		border-bottom-left-radius: 4px;
+	/* Sizes */
+	.ui-button.ui-large {
+		font-size: 110%;
 	}
 	
-	.ui-button-group .ui-button:last-child,
-	.ui-button-group input[type=submit].ui-button:last-child,
-	.ui-button-group input[type=reset].ui-button:last-child,
-	.ui-button-group input[type=button].ui-button:last-child {
-		-webkit-border-top-right-radius: 4px;
-		-webkit-border-bottom-right-radius: 4px;
-		-moz-border-radius-topright: 4px;
-		-moz-border-radius-bottomright: 4px;
-		border-top-right-radius: 4px;
-		border-bottom-right-radius: 4px;
+	.ui-button.ui-small {
+		font-size: 70%;
+	}
+	
+	/* Disabled */
+	.ui-button.ui-disabled, .ui-button[disabled] {
+		cursor: not-allowed;
+		color: graytext;
 	}
 }

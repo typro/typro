@@ -1,0 +1,80 @@
+<?php
+	/** Typro Button CLI Generator
+	 * 
+	 * @author		Jan Pecha, <janpecha@email.cz>
+	 * @version		2012-10-09-2
+	 */
+	
+	if(isset($_SERVER['argv'][1]))
+	{
+		error_reporting(0);
+		
+		require_once __DIR__ . '/libs/Neon.php';
+		require_once __DIR__ . '/app/TyproBaseGenerator.php';
+		require_once __DIR__ . '/app/TyproButtonGenerator.php';
+		
+		$theme = $_SERVER['argv'][1];
+		$dir = getcwd();
+		
+		if($dir === FALSE)
+		{
+			die("\nError: getcwd() failed\n");
+		}
+		
+		$header = file_get_contents(__DIR__ . '/themes/' . "$theme/$theme" . '.header.tcss');
+		
+		if($header === FALSE)
+		{
+			die("\nError: Header file not found.\n");
+		}
+		
+		$part = file_get_contents(__DIR__ . '/themes/' . "$theme/$theme" . '.state.tcss');
+		
+		if($part === FALSE)
+		{
+			die("\nError: State file not found.\n");
+		}
+		
+		$footer = @file_get_contents(__DIR__ . '/themes/' . "$theme/$theme" . '.footer.tcss'); // @ - nemusi existovat
+		
+		if($footer === FALSE)
+		{
+			$footer = '';
+		}
+		
+		$settings = file_get_contents(__DIR__ . '/themes/' . "$theme/$theme" . '.colors.neon');
+		
+		if($settings === FALSE)
+		{
+			die("\nError: Theme color file not found.\n");
+		}
+		
+		$settings = Neon::decode($settings);
+		
+		if(is_array($settings))
+		{
+			$generator = new Typro\Generators\ButtonGenerator($header, $part, $footer, $settings);
+			$css = $generator->generate();
+		
+			file_put_contents($dir . "/idea.typro.ui.buttons.$theme.css", $css);
+			
+			echo "\nDone.\n\n";
+		}
+		else
+		{
+			die("\nError: NEON decode failed.\n");
+		}
+		
+		exit;
+	}
+?>
+
+Typro Button CLI Generator
+**************************
+version	2012-10-09-1
+author	Jan Pecha, 2012
+
+Usage
+-----
+php -f button.generator.phpc -- <name of button theme>
+

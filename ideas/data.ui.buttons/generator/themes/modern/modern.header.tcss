@@ -1,0 +1,25 @@
+/**
+ * .typro UI Buttons - Modern Theme
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011-{$year}
+ * @license		http://typro.iunas.cz/license
+ * @link		http://typro.iunas.cz/
+ * @version		{$version}
+ */
+.ui-button {
+	border: 1px solid transparent;
+	border-radius: 3px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 90%;
+}
+
+/* Groups */
+.ui-button-group .ui-button:first-child {
+	border-radius: 3px 0 0 3px;
+}
+
+.ui-button-group .ui-button:last-child {
+	border-radius: 0 3px 3px 0;
+}
