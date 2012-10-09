@@ -5,7 +5,7 @@
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-10-07-2
+ * @version		2012-10-09-1
  */
 .ui-button {
 	border: 1px solid transparent;
@@ -168,8 +168,6 @@
 	-webkit-box-shadow: inset 0px 1px 0px 0px #fafafa;
 	box-shadow: inset 0px 1px 0px 0px #fafafa;
 	text-shadow: #eee 0px -1px 0px;
-	
-	color: #888 !important;
 }
 
 .ui-button.ui-disabled:hover, .ui-button[disabled]:hover {
