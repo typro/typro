@@ -2,7 +2,7 @@
 	/** Typro Button Generator
 	 * 
 	 * @author		Jan Pecha, <janpecha@email.cz>
-	 * @version		2012-10-07-1
+	 * @version		2012-10-09-1
 	 */
 	
 	namespace Typro\Generators;
@@ -24,12 +24,16 @@
 		/** @var  string */
 		protected $part;
 		
+		/** @var  string */
+		protected $footer;
 		
 		
-		public function __construct($header, $part, array $settings)
+		
+		public function __construct($header, $part, $footer, array $settings)
 		{
 			$this->header = (string)$header;
 			$this->part = (string)$part;
+			$this->footer = (string)$footer;
 			$this->settings = $settings;
 		}
 		

@@ -2,7 +2,7 @@
 	/** Typro Button CLI Generator
 	 * 
 	 * @author		Jan Pecha, <janpecha@email.cz>
-	 * @version		2012-10-07-1
+	 * @version		2012-10-09-1
 	 */
 	
 	if(isset($_SERVER['argv'][1]))
@@ -35,6 +35,13 @@
 			die("\nError: State file not found.\n");
 		}
 		
+		$footer = file_get_contents(__DIR__ . '/themes/' . "$theme/$theme" . '.footer.tcss');
+		
+		if($footer === FALSE)
+		{
+			$footer = '';
+		}
+		
 		$settings = file_get_contents(__DIR__ . '/themes/' . "$theme/$theme" . '.colors.neon');
 		
 		if($settings === FALSE)
@@ -46,7 +53,7 @@
 		
 		if(is_array($settings))
 		{
-			$generator = new Typro\Generators\ButtonGenerator($header, $part, $settings);
+			$generator = new Typro\Generators\ButtonGenerator($header, $part, $footer, $settings);
 			$css = $generator->generate();
 		
 			file_put_contents($dir . "/idea.typro.ui.buttons.$theme.css", $css);
@@ -64,7 +71,7 @@
 
 Typro Button CLI Generator
 **************************
-version	2012-10-07-1
+version	2012-10-09-1
 author	Jan Pecha, 2012
 
 Usage
