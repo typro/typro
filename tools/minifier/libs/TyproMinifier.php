@@ -2,7 +2,7 @@
 	/** Typro Minifier
 	 * 
 	 * @author		Jan Pecha, <janpecha@email.cz>
-	 * @version		2012-08-23-1
+	 * @version		2012-10-09-1
 	 */
 	
 	namespace Typro;
@@ -150,6 +150,7 @@
 					'idea.typro.grid.responsive.reorder.css',
 					'idea.typro.headings.css',
 					'idea.typro.headings.margin.css',
+					'idea.typro.ui.buttons.minimal.css',
 				)));
 			}
 			
