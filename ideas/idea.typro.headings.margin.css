@@ -5,7 +5,7 @@
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-10-13-2
+ * @version		2012-10-13-3
  * @todo		[2012-10-13]	zrusit pokud je prvnim elementem v gridu, ?blockquote, ... ??proste vsude?? - ale je blbe nastavovat potom margin-top:0; - lepsi by bylo pouzit :not(), ale to je az IE9+
  */
 @media all {
@@ -17,12 +17,12 @@
 	h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6,
 	
 	/* first heading in grid */
-	.grid-col > h1:first-child, .grid-rcol > h1:first-child, .grid-cell > h1:first-child,
-	.grid-col > h2:first-child, .grid-rcol > h2:first-child, .grid-cell > h2:first-child,
-	.grid-col > h3:first-child, .grid-rcol > h3:first-child, .grid-cell > h3:first-child,
-	.grid-col > h4:first-child, .grid-rcol > h4:first-child, .grid-cell > h4:first-child,
-	.grid-col > h5:first-child, .grid-rcol > h5:first-child, .grid-cell > h5:first-child,
-	.grid-col > h6:first-child, .grid-rcol > h6:first-child, .grid-cell > h6:first-child {
+	.grid-col > h1:first-child, .grid-rcol > h1:first-child, .grid-fluid > h1:first-child, .grid-cell > h1:first-child,
+	.grid-col > h2:first-child, .grid-rcol > h2:first-child, .grid-fluid > h2:first-child, .grid-cell > h2:first-child,
+	.grid-col > h3:first-child, .grid-rcol > h3:first-child, .grid-fluid > h3:first-child, .grid-cell > h3:first-child,
+	.grid-col > h4:first-child, .grid-rcol > h4:first-child, .grid-fluid > h4:first-child, .grid-cell > h4:first-child,
+	.grid-col > h5:first-child, .grid-rcol > h5:first-child, .grid-fluid > h5:first-child, .grid-cell > h5:first-child,
+	.grid-col > h6:first-child, .grid-rcol > h6:first-child, .grid-fluid > h6:first-child, .grid-cell > h6:first-child {
 		margin-top: 0;
 	}
 }
