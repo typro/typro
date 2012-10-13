@@ -54,6 +54,14 @@
 		overflow: auto;
 	}
 	
+	/* blockquote modification */
+	.grid-col > blockquote:first-child,
+	.grid-rcol > blockquote:first-child,
+	.grid-fluid > blockquote:first-child,
+	.grid-cell > blockquote:first-child {
+		margin-top: 0;
+	}
+	
 	/* widths */
 	.grid-wp75 {
 		width: 75%;

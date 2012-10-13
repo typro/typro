@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+	<!-- Author info (Change it) -->
+	<meta name="author" content="Jan Pecha (2012), http://janpecha.iunas.cz/">
+	
+	<!-- Load Typro Files -->
+	<link rel="stylesheet" media="all" href="../../../typro.reset.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../../typro.default.css" type="text/css">
+	<link rel="stylesheet" media="all" href="../../idea.typro.grid.css" type="text/css">
+	<link rel="stylesheet" media="all" href="style.css" type="text/css">
+	<!-- ... -->
+	
+	<!-- Load Tests Stylesheet -->
+	<link rel="stylesheet" media="all" href="../../../tests/tests.style.css" type="text/css">
+	
+	<!-- Load Custom Stylesheets -->
+	<!-- <link rel="stylesheet" media="all" href="custom.css" type="text/css"> -->
+	
+	<!-- Specific Document Style -->
+	<style>
+	.grid-col {
+		outline: 1px solid red;
+	}
+	.grid-rcol {
+		outline: 1px solid blue;
+	}
+	.grid-fluid {
+		outline: 1px solid green;
+	}
+	.grid-row {
+		border: 1px solid orange;
+	}
+	
+	.grid-cell {
+		background: #eee;
+	}
+	</style>
+	
+	<title>Grid - &lt;blockquote> first child in grid column - Typro Framework</title>
+</head>
+<body>
+	<div id="wrapper">
+		<h1>Grid - &lt;blockquote> first child in grid column</h1>
+		
+		<!-- Test menu -->
+		<div class="test-menu">
+			<a href="#test-1">Basic</a>
+			<!-- ... -->
+		</div>
+		
+		<!-- Test 1 -->
+		<h2 id="test-1">Test 1 - Basic <a href="#" class="test-ontop">On top</a></h2>
+		<div class="grid-row grid-responsive">
+			<div class="grid-col grid-wp25">
+				<blockquote><p>Lorem ipsum dolor sit amet</p></blockquote>
+				<p>Amet sit dolor ipsum lorem.</p>
+			</div>
+			
+			<div class="grid-rcol grid-wp25">
+				<blockquote><p>Lorem ipsum dolor sit amet</p></blockquote>
+				<p>Amet sit dolor ipsum lorem.</p>
+			</div>
+			
+			<div class="grid-fluid">
+				<blockquote><p>Lorem ipsum dolor sit amet</p></blockquote>
+				<p>Amet sit dolor ipsum lorem.</p>
+				
+				<div class="grid-cell">
+					<blockquote><p>Lorem ipsum dolor sit amet</p></blockquote>
+					<p>Amet sit dolor ipsum lorem.</p>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<!-- Test 2 -->
+		
+		
+		<!-- Any footer (author infos, Typro Framework link),... -->
+		<div id="footer">
+			<div>
+				<p>&copy; Jan Pecha, 2012<br>
+					<a href="http://typro.iunas.cz/">Typro Framework</a>, v2.1<br>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
