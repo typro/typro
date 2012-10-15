@@ -7,6 +7,7 @@ Homepage: http://typro.iunas.cz/
 Using
 -----
 
+``` html
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="typro.reset.css">
@@ -18,12 +19,14 @@ Using
 	...
 </body>
 </html>
+```
 
 
 
 Using experimental module
 -------------------------
 
+``` html
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="typro.reset.css">
@@ -42,6 +45,7 @@ Using experimental module
 	...
 </body>
 </html>
+```
 
 
 Examples
@@ -61,4 +65,3 @@ Who uses Typro?
 * http://pohadkovyles.sluzatky.cz/
 * http://janpecha.iunas.cz/
 * and more
-
