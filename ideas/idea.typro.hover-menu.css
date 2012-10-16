@@ -5,8 +5,7 @@
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-07-17
- * @package		All Media - Hover Menu
+ * @version		2012-10-16-1
  * @browsers	Ubuntu, 17.07.2012: Op 12.00 final; FF 13.0.1; Chromium 18.0.1025.168 (134367)
  * @browsers??	Ubuntu, 28.12.2011: Op 11.60; FF 9; Chromium 14.0.835.202
  *
@@ -83,6 +82,14 @@
 	
 	.hover-menu:after, .hover-menu-end, .hover-menu-clear {
 		clear: both;
+	}
+	
+	.hover-menu .hover-menu-sub:hover {
+		z-index: 1000;
+	}
+	
+	.hover-menu .hover-menu-active {
+		z-index: 500;
 	}
 }
 
