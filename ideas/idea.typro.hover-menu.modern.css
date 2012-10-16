@@ -1,0 +1,59 @@
+/**
+ * .typro Hover menu - Modern Theme
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011-2012
+ * @license		http://typro.iunas.cz/license
+ * @link		http://typro.iunas.cz/
+ * @version		2012-10-16-1
+ */
+@media all {
+	/* wrapper */
+	.hover-menu {
+		box-sizing: padding-box;
+		border: 1px solid #e2e2e2;
+		background-color: #ececec;
+		padding: 0;
+		border-radius: 4px;
+	
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e6e6e6)); /* Safari 4+, Chrome */
+		background-image: -webkit-linear-gradient(top, #f2f2f2, #e6e6e6); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+		background-image:    -moz-linear-gradient(top, #f2f2f2, #e6e6e6); /* Firefox 3.6-15 */
+		background-image:      -o-linear-gradient(top, #f2f2f2, #e6e6e6); /* Opera 11.10-12.00 */
+		background-image:         linear-gradient(to bottom, #f2f2f2, #e6e6e6); /* Firefox 16+, IE10, Opera 12.50+ */
+	
+		-webkit-box-shadow: inset 0px 1px 0px 0px #fafafa;
+		box-shadow: inset 0px 1px 0px 0px #fafafa;
+		color: #333;
+		padding: 0 0.5em;
+	}
+	
+	/* horizontal item */
+	.hover-menu .hover-menu-sub {
+		text-shadow: #fff 0px 1px 0px;
+		padding: 0.4em 0.8em;
+		border: 1px solid transparent;
+		border-width: 0 1px;
+	}
+	
+	.hover-menu .hover-menu-sub:hover { /* TODO: prechod na pozadi */
+		background: #f3f3f3;
+		border-color: #ddd;
+	}
+	
+	/* items wrapper */
+	.hover-menu .hover-menu-sub .hover-menu-items {
+		border: 1px solid #ddd;
+		border-top-width: 0;
+		background: #f3f3f3;
+		top: 2.4em;
+		border-radius: 0px 0px 3px 3px;
+		left: -1px;
+	}
+}
+
+@media print {
+	.hover-menu {
+		display: none;
+	}
+}
