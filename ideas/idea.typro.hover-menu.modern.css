@@ -5,7 +5,8 @@
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-10-16-1
+ * @version		2012-10-16-2
+ * @browsers	Ubuntu, 16.10.2012: Op 12.02 (1578); FF 16.0.1; Chromium 20.0.1132.47 (144678)
  */
 @media all {
 	/* wrapper */
@@ -33,27 +34,29 @@
 		text-shadow: #fff 0px 1px 0px;
 		padding: 0.4em 0.8em;
 		border: 1px solid transparent;
-		border-width: 0 1px;
+		border-width: 1px 1px 0;
+		border-top-width: 0;
+		cursor: pointer;
+/*		border-radius: 2px 2px 0 0;*/
 	}
 	
-	.hover-menu .hover-menu-sub:hover { /* TODO: prechod na pozadi */
+	.hover-menu .hover-menu-sub:hover, .hover-menu .hover-menu-active { /* TODO: prechod na pozadi */
 		background: #f3f3f3;
-		border-color: #ddd;
+		border-color: #d4d4d4;
+/*		background-image:      -o-linear-gradient(top, #e6e6e6, #f2f2f2); /* Opera 11.10-12.00 * /*/
+/*		border-top-color: #aaf;*/
+		color: #222;
 	}
 	
 	/* items wrapper */
 	.hover-menu .hover-menu-sub .hover-menu-items {
-		border: 1px solid #ddd;
+		border: 1px solid #ccc;
 		border-top-width: 0;
 		background: #f3f3f3;
-		top: 2.4em;
-		border-radius: 0px 0px 3px 3px;
+		top: 2.2em;
+		border-radius: 0px 0px 4px 4px;
 		left: -1px;
+		cursor: default;
 	}
 }
 
-@media print {
-	.hover-menu {
-		display: none;
-	}
-}
