@@ -6,13 +6,13 @@
  * @link		http://addons.nette.org/cs/datagrid
  * @link		http://demo.datagrid.romansklenar.cz/
  * @license		New BSD License
- * @version		2012-07-30-1
+ * @version		2012-10-31-1
  */
 @media all {
 	table.datagrid {
 		padding: 0;
 		margin: 0;
-		border-collapse: collapse;
+		border-collapse: separate;
 		font-size: 90%;
 		margin-bottom: 1em;
 	}
@@ -95,15 +95,21 @@
 	table.datagrid td, table.datagrid th {
 		color: #525b37;
 		border: 1px solid #BBCBF4;
+		border-width: 1px 0 0 1px;
 		padding: 6px 10px;
+	}
+	
+	table.datagrid td:last-child, table.datagrid th:last-child {
+		border-right-width: 1px;
 	}
 	
 	table.datagrid th {
 		color: #505767;
-		background: #C6DBFF url('./data.datagrid/th-bg.gif') no-repeat;
+		background: #C6DBFF/* url('./data.datagrid/th-bg.gif') 1px 1px no-repeat*/;
 		text-align: left;
 		padding: 0 10px;
 		vertical-align: top;
+		box-shadow: inset 1px 1px 1px 0px #fff;
 	}
 	
 	table.datagrid th.checker, table.datagrid td.checker, table.datagrid td.actions {
@@ -118,8 +124,9 @@
 	}
 	
 	table.datagrid tr.filters, table.datagrid tr.filters td {
-		background: #C6DBFF url('./data.datagrid/th-bg-mid.gif') no-repeat;
+		background: #C6DBFF/* url('./data.datagrid/th-bg-mid.gif') no-repeat*/;
 		padding: 3px 6px !important;
+		box-shadow: inset 1px 0px 1px 0px #fff;
 	}
 	
 	table.datagrid tr.header th span.link {
@@ -154,13 +161,14 @@
 	}
 	
 	table.datagrid tr.footer td {
-		background: #C6DBFF url('./data.datagrid/th-bg-top.gif') repeat-x;
+		background: #C6DBFF/* url('./data.datagrid/th-bg-top.gif') 0px 1px repeat-x*/;
 		color: #505767;
 		border: 1px solid #BBCBF4;
 		padding: 0 10px;
 		text-align: left;
 		font-weight: bold;
 		line-height: 1em;
+		box-shadow: inset 0px 1px 1px 0px #fff;
 	}
 	
 	table.datagrid span.positioner {
@@ -183,20 +191,31 @@
 		border: none;
 		display: block;
 		float: left;
-		margin: 2px;
+		margin: 1px 2px 1px 6px;
 		width: 21px;
 		height: 4px;
 		opacity: 0.40;
 		=filter: alpha(opacity=40);
 		padding-left: 0px !important;
+		
+		/* http://css-tricks.com/snippets/css/css-triangle/ */
+		width: 0; 
+		height: 0; 
+		border-left: 4px solid transparent;
+		border-right: 4px solid transparent;
 	}
 	
 	table.datagrid span.positioner a span.up {
-		background: url('./data.datagrid/asc.gif') no-repeat right center;
+/*		background: url('./data.datagrid/asc.gif') no-repeat right center;*/
+		/* http://css-tricks.com/snippets/css/css-triangle/ */
+		border-bottom: 4px solid #000;
+		margin-top: 2px;
 	}
 	
 	table.datagrid span.positioner a span.down {
-		background: url('./data.datagrid/desc.gif') no-repeat right center;
+/*		background: url('./data.datagrid/desc.gif') no-repeat right center;*/
+		/* http://css-tricks.com/snippets/css/css-triangle/ */
+		border-top: 4px solid #000;
 	}
 	
 	table.datagrid span.positioner a span.down:hover, table.datagrid span.positioner a span.up:hover {
