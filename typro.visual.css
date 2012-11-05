@@ -5,12 +5,12 @@
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-09-09-1
+ * @version		2012-05-11-1
  */
 @media all {
 	pre {
 		padding: 0.6em 0.7em;
-		background-color: #fafafa;
+		background-color: #f9f9f9;
 		border: 1px dashed #d0d0d0;
 		overflow: auto;
 	}
@@ -69,7 +69,7 @@
 		font-family: Georgia, 'Times New CE', 'Times CE', 'Times New Roman', Times, serif;
 		border-left: 4px solid #e6e6e6;
 		padding: 1em 1.3em 0.1em;
-		background-color: #fafafa;
+		background-color: #f6f6f6;
 	}
 
 	acronym[title], abbr[title] {
