@@ -14,7 +14,8 @@
 	.paginator {
 		display: block;
 		display: inline-block;
-		border: 1px solid #d0d0d0;
+/*		border: 1px solid #d0d0d0;*/
+		border-color: #d0d0d0;
 		border-radius: 4px;
 		list-style: none inside;
 		margin: 0;
@@ -22,7 +23,7 @@
 		padding: 0;
 		color: #333;
 		
-		box-shadow: 0px 1px #eee;
+/*		box-shadow: 0px 1px #eee;*/
 	}
 	
 	.paginator:after {
@@ -38,7 +39,11 @@
 	div.paginator a,
 	.paginator li {
 		float: left;
-		border-right: inherit;
+/*		border-right: inherit;*/
+		border: 1px solid transparent;
+		border-color: inherit;
+		border-right: none;
+		box-shadow: 0px 1px #eee;
 	}
 	
 	div.paginator a:hover,
@@ -50,8 +55,13 @@
 	.paginator .paginator-current:last-child,
 	div.paginator a:last-child,
 	.paginator li:last-child {
-		border-right: none;
+		border-right: 1px solid transparent;
+		border-color: inherit;
 		border-radius: 0 4px 4px 0;
+	}
+	
+	.paginator a.paginator-current {
+		border: none !important;
 	}
 	
 	.paginator .paginator-button:first-child,
@@ -77,11 +87,17 @@
 		font-weight: bold;
 		background: #f3f3f3;
 		
-		box-shadow: inset 1px 1px 10px #ccc;
+		box-shadow: inset 1px 1px 10px #ccc, 0px 1px #eee;
 	}
 	
 	.paginator a.paginator-current {
 		cursor: pointer;
+	}
+	
+	.paginator li a.paginator-current {
+		box-shadow: inset 1px 1px 10px #ccc;
+/*		border-bottom: 1px solid red;*/
+/*		border-color: inherit;*/
 	}
 	
 	.paginator .paginator-current:hover {
