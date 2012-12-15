@@ -1,0 +1,117 @@
+/**
+ * .typro Paginator
+ * 
+ * @author		Jan Pecha,	<janpecha@email.cz>
+ * @copyright	Jan Pecha, 2011-2012
+ * @license		http://typro.iunas.cz/license
+ * @link		http://typro.iunas.cz/
+ * @version		2012-12-15-1
+ * @package		All Media
+ * @todo		2012-12-15  .paginator a without text underline
+ * @todo		2012-12-15  .paginator button span hidden
+ */
+@media all {
+	.paginator {
+		display: block;
+		display: inline-block;
+		border: 1px solid #d0d0d0;
+		border-radius: 4px;
+		list-style: none inside;
+		margin: 0;
+		margin-bottom: 1em;
+		padding: 0;
+		color: #333;
+		
+		box-shadow: 0px 1px #eee;
+	}
+	
+	.paginator:after {
+		content: ".";
+		display: block;
+		height: 0;
+		visibility: hidden;
+		clear: both;
+	}
+	
+	.paginator .paginator-button,
+	.paginator .paginator-current,
+	div.paginator a,
+	.paginator li {
+		float: left;
+		border-right: inherit;
+	}
+	
+	div.paginator a:hover,
+	.paginator li:hover {
+		background: #f3f3f3;
+	}
+	
+	.paginator .paginator-button:last-child,
+	.paginator .paginator-current:last-child,
+	div.paginator a:last-child,
+	.paginator li:last-child {
+		border-right: none;
+		border-radius: 0 4px 4px 0;
+	}
+	
+	.paginator .paginator-button:first-child,
+	.paginator .paginator-current:first-child,
+	div.paginator a:first-child,
+	.paginator li:first-child {
+		border-radius: 4px 0 0 4px;
+	}
+	
+	.paginator a.paginator-current:first-child {
+		border-radius: 0;
+	}
+	
+	.paginator a, /* div a, li a, .current a */
+	.paginator .paginator-button,
+	.paginator .paginator-current {
+		padding: 0.3em 1em;
+		display: block;
+	}
+	
+	.paginator .paginator-current {
+		cursor: default;
+		font-weight: bold;
+		background: #f3f3f3;
+		
+		box-shadow: inset 1px 1px 10px #ccc;
+	}
+	
+	.paginator a.paginator-current {
+		cursor: pointer;
+	}
+	
+	.paginator .paginator-current:hover {
+		background: #eee;
+	}
+	
+	.paginator .paginator-current:hover {
+		background: #f3f3f3;
+	}
+	
+	.paginator .paginator-button {
+		background: #f8f8f8;
+		color: #aaa;
+		cursor: no-drop;
+		cursor: not-allowed;
+	}
+	
+	.paginator .paginator-button:hover {
+		background: #f8f8f8;
+	}
+	
+	.paginator .paginator-button span,
+	.paginator a span {
+		display: none;
+	}
+}
+
+
+@media print {
+	.paginator {
+		display: none;
+	}
+}
