@@ -5,7 +5,7 @@
  * @copyright	Jan Pecha, 2011-2012
  * @license		http://typro.iunas.cz/license
  * @link		http://typro.iunas.cz/
- * @version		2012-05-11-1
+ * @version		2013-01-23-1
  */
 @media all {
 	pre {
@@ -45,11 +45,11 @@
 	}
 	
 	th {
-		background: #eee;
+		background: #e6e6e6;
 	}
 	
 	td, th {
-		border: 1px solid #ddd;
+		border: 1px solid #ccc;
 	}
 	
 	form th, form td, form tr {
