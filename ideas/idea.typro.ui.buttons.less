@@ -1,89 +1,78 @@
-/**
- * .typro UI buttons Reset
- *
- * @author		Jan Pecha,	<janpecha@email.cz>
- * @copyright	Jan Pecha, 2011-2012
- * @license		http://typro.iunas.cz/license
- * @link		http://typro.iunas.cz/
- * @version		2012-10-09-2
- */
-@media all {
-	.ui-button {
-		/* button reset */
-		display: inline;
-		display: inline-block;
-		cursor: pointer;
-		outline-width: 0;
-		vertical-align: middle;
-		white-space: normal;
-		font-weight: normal;
-		font-style: normal;
-		font-family: 'Arial CE', 'Helvetica CE', Arial, Verdana, Helvetica, sans-serif;
-		font-size: inherit;
-		margin: 0;
-		padding: 0.2em 1em;
-		text-align: center;
-		text-decoration: none;
-		color: #333;
-		overflow: hidden;
-		border: none;
+.ui-button {
+	/* button reset */
+	display: inline;
+	display: inline-block;
+	cursor: pointer;
+	outline-width: 0;
+	vertical-align: middle;
+	white-space: normal;
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'Arial CE', 'Helvetica CE', Arial, Verdana, Helvetica, sans-serif;
+	font-size: inherit;
+	margin: 0;
+	padding: 0.2em 1em;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	overflow: hidden;
+	border: none;
 
-		line-height: 2em; /* for a, span,... buttons */
-		height: 2em; /* for input submit, reset,... buttons */
+	line-height: 2em; /* for a, span,... buttons */
+	height: 2em; /* for input submit, reset,... buttons */
 
-		-webkit-box-sizing: content-box;
-		-moz-box-sizing: content-box;
-		-o-box-sizing: content-box;
-		box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-o-box-sizing: content-box;
+	box-sizing: content-box;
 
-		/* button settings */
-		-moz-user-select: none;
-		-webkit-user-select: none;
-		user-select: none;
+	/* button settings */
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
 
-		/*style*/
-		background: #eee;
+	/*style*/
+	background: #eee;
 
-		/* others */
-		-moz-appearance: none !important;
-	}
+	/* others */
+	-moz-appearance: none !important;
+}
 
-	/* Buttons Group */
-	.ui-button-group {
-		margin: 0.2em 0.2em 0.4em;
-	}
+/* Buttons Group */
+.ui-button-group {
+	margin: 0.2em 0.2em 0.4em;
+}
 
-	.ui-button-group:after {
-		content: ".";
-		display: block;
-		height: 0;
-		visibility: hidden;
-		clear: both;
-	}
+.ui-button-group:after {
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
 
-	.ui-button-group .ui-button,
-	.ui-button-group input[type=submit].ui-button,
-	.ui-button-group input[type=reset].ui-button,
-	.ui-button-group input[type=button].ui-button {
-		margin: 0;
-		-webkit-border-radius: 0;
-		-moz-border-radius: 0;
-		border-radius: 0;
-		float: left;
-	}
+.ui-button-group .ui-button,
+.ui-button-group input[type=submit].ui-button,
+.ui-button-group input[type=reset].ui-button,
+.ui-button-group input[type=button].ui-button {
+	margin: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	float: left;
+}
 
-	/* Sizes */
-	.ui-button.ui-large {
-		font-size: 110%;
-	}
+/* Sizes */
+.ui-button.ui-large {
+	font-size: 110%;
+}
 
-	.ui-button.ui-small {
-		font-size: 70%;
-	}
+.ui-button.ui-small {
+	font-size: 70%;
+}
 
-	/* Disabled */
-	.ui-button.ui-disabled, .ui-button[disabled] {
-		cursor: not-allowed;
-		color: graytext;
-	}
+/* Disabled */
+.ui-button.ui-disabled, .ui-button[disabled] {
+	cursor: not-allowed;
+	color: graytext;
 }

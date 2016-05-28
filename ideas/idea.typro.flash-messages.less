@@ -1,122 +1,110 @@
-/**
- * .typro Flash Messages
- *
- * @author		Jan Pecha,	<janpecha@email.cz>
- * @copyright	Jan Pecha, 2011-2012
- * @license		http://typro.iunas.cz/license
- * @link		http://typro.iunas.cz/
- * @version		2012-09-12-2
- * @package		All Media
- */
-@media all {
-	/* flash-message(ok|info|important|error) */
-	.flash-message,
-	.flash-message-ok,
-	.flash-message-info,
-	.flash-message-important,
-	.flash-message-error {
-		background-color: #eee;
-		padding: 1em;
-		margin-bottom: 1em;
-		border: 1px solid #ccc;
-		border-width: 0;
-		border-radius: 4px;
-		text-indent: 0;
-		position: relative; /* ! */
-		margin-left: auto;
-		margin-right: auto;
+/* flash-message(ok|info|important|error) */
+.flash-message,
+.flash-message-ok,
+.flash-message-info,
+.flash-message-important,
+.flash-message-error {
+	background-color: #eee;
+	padding: 1em;
+	margin-bottom: 1em;
+	border: 1px solid #ccc;
+	border-width: 0;
+	border-radius: 4px;
+	text-indent: 0;
+	position: relative; /* ! */
+	margin-left: auto;
+	margin-right: auto;
 
-		/* For Close Image Icon: */
-		min-width: 22px;
-		min-height: 22px;
-	}
+	/* For Close Image Icon: */
+	min-width: 22px;
+	min-height: 22px;
+}
 
-	/* p */
-	.flash-message p,
-	.flash-message-ok p,
-	.flash-message-info p,
-	.flash-message-important p,
-	.flash-message-error p {
-		text-indent: inherit;
-		/*te\xt-indent: 0; /*fix for IE7*/
-	}
+/* p */
+.flash-message p,
+.flash-message-ok p,
+.flash-message-info p,
+.flash-message-important p,
+.flash-message-error p {
+	text-indent: inherit;
+	/*te\xt-indent: 0; /*fix for IE7*/
+}
 
-	/* p:last-child */
-	.flash-message p:last-child,
-	.flash-message-ok p:last-child,
-	.flash-message-info p:last-child,
-	.flash-message-important p:last-child,
-	.flash-message-error p:last-child {
-		margin-bottom: 0;
-	}
+/* p:last-child */
+.flash-message p:last-child,
+.flash-message-ok p:last-child,
+.flash-message-info p:last-child,
+.flash-message-important p:last-child,
+.flash-message-error p:last-child {
+	margin-bottom: 0;
+}
 
-	/* .flash-message-close */
-	.flash-message-close {
-		background-color: transparent;
-		position: absolute;
-		right: 8px;
-		top: 7px;
-		/* For Close Image Icon:
-		width: 12px;
-		height: 12px;
-		*/
-		text-decoration: none;
-		overflow: hidden;
-		cursor: pointer;
+/* .flash-message-close */
+.flash-message-close {
+	background-color: transparent;
+	position: absolute;
+	right: 8px;
+	top: 7px;
+	/* For Close Image Icon:
+	width: 12px;
+	height: 12px;
+	*/
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
 
-		color: #656565;
-		font-size: 1.2em;
-		line-height: 1em;
-		vertical-align: top;
-		text-align: right;
-		text-shadow: 1px 1px 0px #eee;
-		filter: dropshadow(color=#eee, offx=1, offy=1); /* TODO: smazat?? */
-	}
+	color: #656565;
+	font-size: 1.2em;
+	line-height: 1em;
+	vertical-align: top;
+	text-align: right;
+	text-shadow: 1px 1px 0px #eee;
+	filter: dropshadow(color=#eee, offx=1, offy=1); /* TODO: smazat?? */
+}
 
-	/* .flash-message-close span */
-	.flash-message .flash-message-close span,
-	.flash-message-ok .flash-message-close span,
-	.flash-message-info .flash-message-close span,
-	.flash-message-important .flash-message-close span,
-	.flash-message-error .flash-message-close span {
-		visibility: hidden;
-		display: block;
-		width: 1px;
-		height: 1px;
+/* .flash-message-close span */
+.flash-message .flash-message-close span,
+.flash-message-ok .flash-message-close span,
+.flash-message-info .flash-message-close span,
+.flash-message-important .flash-message-close span,
+.flash-message-error .flash-message-close span {
+	visibility: hidden;
+	display: block;
+	width: 1px;
+	height: 1px;
 
-		/* For Style Content:
-		content: "✖";
-		*/
-		/*For &times entity:
-		font-size: 1.5em;
-		font-weight: bold;
-		*/
-	}
+	/* For Style Content:
+	content: "✖";
+	*/
+	/*For &times entity:
+	font-size: 1.5em;
+	font-weight: bold;
+	*/
+}
 
-	/* Colors */
-	.flash-message-ok {
-		background-color: #b8e088;
-		border-color: #ffe440;
-		border-color: #86bf42;
-	}
+/* Colors */
+.flash-message-ok {
+	background-color: #b8e088;
+	border-color: #ffe440;
+	border-color: #86bf42;
+}
 
-	.flash-message-info {
-		background-color: #b2d0ff;
-		border-color: #ffe440;
-		border-color: #90b5f0;
-	}
+.flash-message-info {
+	background-color: #b2d0ff;
+	border-color: #ffe440;
+	border-color: #90b5f0;
+}
 
-	.flash-message-important {
-		background-color: #ffef8e;
-		border-color: #ffe440;
-		border-color: #f0d63c;
-	}
+.flash-message-important {
+	background-color: #ffef8e;
+	border-color: #ffe440;
+	border-color: #f0d63c;
+}
 
-	.flash-message-error {
-		background-color: #ffa18e;
-		border-color: #f0463c;
-		border-color: #f05a3c;
-	}
+.flash-message-error {
+	background-color: #ffa18e;
+	border-color: #f0463c;
+	border-color: #f05a3c;
 }
 
 

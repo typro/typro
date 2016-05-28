@@ -1,192 +1,178 @@
-/**
- * .typro Grid
- *
- * @author		Jan Pecha,	<janpecha@email.cz>
- * @copyright	Jan Pecha, 2011-2012
- * @license		http://typro.iunas.cz/license
- * @link		http://typro.iunas.cz/
- * @version		2012-12-15-1
- * @package		All Media
- *
- * @todo		[XX]	28.01.2012 - ??pridat .grid-row {margin-top: 1em;}
- * @todo		[ok]	28.01.2012 - ??odstranit .grid-row {margin-bottom:}
- */
-@media all {
-	.grid-row {
-		padding: 0;
-		margin: 0;
-		border-width: 0;
-	}
 
-	.grid-row:after {
-		content: ".";
-		display: block;
-		height: 0;
-		visibility: hidden;
-	}
+.grid-row {
+	padding: 0;
+	margin: 0;
+	border-width: 0;
+}
 
-	.grid-clear, .grid-row:after {
-		clear: both;
-	}
+.grid-row:after {
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
 
-	.grid-col, .grid-rcol, .grid-fluid {
-		overflow: hidden;
-		padding: 0;
-		margin: 0;
-		border-width: 0;
-	}
+.grid-clear, .grid-row:after {
+	clear: both;
+}
 
-	.grid-col, .grid-rcol {
-		display: inline;
-		float: left;
-	}
+.grid-col, .grid-rcol, .grid-fluid {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	border-width: 0;
+}
 
-	.grid-rcol {
-		float: right;
-	}
+.grid-col, .grid-rcol {
+	display: inline;
+	float: left;
+}
 
-	.grid-fluid {
+.grid-rcol {
+	float: right;
+}
 
-	}
+.grid-fluid {
 
-	/* BC-break - use .grid-cell.grid-old-cell or .grid-row.grid-old-cell or .grid-row.grid-old-cell-all */
-	.grid-cell {
-		padding: 0 1em 0 0;
-		margin-top: 1em;
-		margin-bottom: 1em;
-		overflow: auto;
-	}
+}
 
-	/* BC */
-	.grid-cell.grid-old-cell,
-	.grid-row.grid-old-cell > .grid-cell,
-	.grid-row.grid-old-cell-all .grid-cell {
-		padding: 1em;
-	}
-	/* \BC */
+/* BC-break - use .grid-cell.grid-old-cell or .grid-row.grid-old-cell or .grid-row.grid-old-cell-all */
+.grid-cell {
+	padding: 0 1em 0 0;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	overflow: auto;
+}
 
-	/* blockquote modification */
-	.grid-col > blockquote:first-child,
-	.grid-rcol > blockquote:first-child,
-	.grid-fluid > blockquote:first-child,
-	.grid-cell > blockquote:first-child {
-		margin-top: 0;
-	}
+/* BC */
+.grid-cell.grid-old-cell,
+.grid-row.grid-old-cell > .grid-cell,
+.grid-row.grid-old-cell-all .grid-cell {
+	padding: 1em;
+}
+/* \BC */
 
-	/* widths */
-	.grid-wp75 {
-		width: 75%;
-	}
+/* blockquote modification */
+.grid-col > blockquote:first-child,
+.grid-rcol > blockquote:first-child,
+.grid-fluid > blockquote:first-child,
+.grid-cell > blockquote:first-child {
+	margin-top: 0;
+}
 
-	.grid-wp50 {
-		width: 50%;
-	}
+/* widths */
+.grid-wp75 {
+	width: 75%;
+}
 
-	.grid-wp25 {
-		width: 25%;
-	}
+.grid-wp50 {
+	width: 50%;
+}
 
-	.grid-wp80 {
-		width: 80%;
-	}
+.grid-wp25 {
+	width: 25%;
+}
 
-	.grid-wp60 {
-		width: 60%;
-	}
+.grid-wp80 {
+	width: 80%;
+}
 
-	.grid-wp40 {
-		width: 40%;
-	}
+.grid-wp60 {
+	width: 60%;
+}
 
-	.grid-wp20 {
-		width: 20%;
-	}
+.grid-wp40 {
+	width: 40%;
+}
 
-	/*---*/
+.grid-wp20 {
+	width: 20%;
+}
 
-	.grid-wp70 {
-		width: 70%;
-	}
+/*---*/
 
-	.grid-wp30 {
-		width: 30%;
-	}
+.grid-wp70 {
+	width: 70%;
+}
 
-	/*---*/
+.grid-wp30 {
+	width: 30%;
+}
 
-	.grid-wp10 {
-		width: 10%;
-	}
+/*---*/
 
-	.grid-wp90 {
-		width: 90%;
-	}
+.grid-wp10 {
+	width: 10%;
+}
 
-	/*---*/
+.grid-wp90 {
+	width: 90%;
+}
 
-	.grid-wp15 {
-		width: 15%;
-	}
+/*---*/
 
-	.grid-wp85 {
-		width: 85%;
-	}
+.grid-wp15 {
+	width: 15%;
+}
 
-	/* offsets */
-	.grid-of75 {
-		margin-left: 75%;
-	}
+.grid-wp85 {
+	width: 85%;
+}
 
-	.grid-of50 {
-		margin-left: 50%;
-	}
+/* offsets */
+.grid-of75 {
+	margin-left: 75%;
+}
 
-	.grid-of25 {
-		margin-left: 25%;
-	}
+.grid-of50 {
+	margin-left: 50%;
+}
 
-	.grid-of80 {
-		margin-left: 80%;
-	}
+.grid-of25 {
+	margin-left: 25%;
+}
 
-	.grid-of60 {
-		margin-left: 60%;
-	}
+.grid-of80 {
+	margin-left: 80%;
+}
 
-	.grid-of40 {
-		margin-left: 40%;
-	}
+.grid-of60 {
+	margin-left: 60%;
+}
 
-	.grid-of20 {
-		margin-left: 20%;
-	}
+.grid-of40 {
+	margin-left: 40%;
+}
 
-	/* right offsets */
-	.grid-rof75 {
-		margin-right: 75%;
-	}
+.grid-of20 {
+	margin-left: 20%;
+}
 
-	.grid-rof50 {
-		margin-right: 50%;
-	}
+/* right offsets */
+.grid-rof75 {
+	margin-right: 75%;
+}
 
-	.grid-rof25 {
-		margin-right: 25%;
-	}
+.grid-rof50 {
+	margin-right: 50%;
+}
 
-	.grid-rof80 {
-		margin-right: 80%;
-	}
+.grid-rof25 {
+	margin-right: 25%;
+}
 
-	.grid-rof60 {
-		margin-right: 60%;
-	}
+.grid-rof80 {
+	margin-right: 80%;
+}
 
-	.grid-rof40 {
-		margin-right: 40%;
-	}
+.grid-rof60 {
+	margin-right: 60%;
+}
 
-	.grid-rof20 {
-		margin-right: 20%;
-	}
+.grid-rof40 {
+	margin-right: 40%;
+}
+
+.grid-rof20 {
+	margin-right: 20%;
 }
