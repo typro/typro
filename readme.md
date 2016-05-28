@@ -31,13 +31,13 @@ Using experimental module
 <head>
 	<link rel="stylesheet" type="text/css" href="typro.reset.css">
 	<link rel="stylesheet" type="text/css" href="typro.default.css">
-	
+
 	<!-- Experimental modules: -->
 	<link rel="stylesheet" type="text/css" href="ideas/idea.typro.form.css">
 	<link rel="stylesheet" type="text/css" href="ideas/idea.typro.grid.css">
 	<link rel="stylesheet" type="text/css" href="ideas/idea.typro.hover-menu.css">
 	<!-- \Experimental modules -->
-	
+
 	<link rel="stylesheet" type="text/css" href="typro.print.css">
 	...
 </head>
