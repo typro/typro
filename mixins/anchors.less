@@ -1,0 +1,29 @@
+
+#typro {
+	.anchors(@link, @hover, @visited) {
+		.anchors--link(@link);
+		.anchors--visited(@visited);
+		.anchors--hover(@hover);
+	}
+
+
+	.anchors--link(@link) {
+		color: @link;
+	}
+
+
+	.anchors--hover(@hover) {
+		&:hover,
+		&:focus,
+		&:active {
+			color: @hover;
+		}
+	}
+
+
+	.anchors--visited(@visited) {
+		&:visited {
+			color: @visited;
+		}
+	}
+}

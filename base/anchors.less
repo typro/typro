@@ -1,0 +1,14 @@
+
+@import '../mixins/anchors';
+
+@typro-anchors-link: #0044aa;
+@typro-anchors-visited: #00255c;
+@typro-anchors-hover: #d22;
+
+a {
+	#typro.anchors(
+		@typro-anchors-link,
+		@typro-anchors-hover,
+		@typro-anchors-visited
+	);
+}
