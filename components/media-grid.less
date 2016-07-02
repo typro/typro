@@ -1,0 +1,52 @@
+
+#typro {
+	.media-grid--cols(@num) {
+		.media-grid__item {
+			width: 100% / @num;
+			float: left;
+		}
+
+		.media-grid__item:nth-of-type(@{num}n + 1) {
+			clear: both;
+		}
+	}
+}
+
+
+.media-grid {
+	display: block;
+	overflow: hidden;
+}
+
+
+.media-grid--1cols {
+	.media-grid__item {
+		float: none;
+		width: 100%;
+	}
+}
+
+
+.media-grid--2cols {
+	#typro.media-grid--cols(2);
+}
+
+
+.media-grid--3cols {
+	#typro.media-grid--cols(3);
+}
+
+
+.media-grid--4cols {
+	#typro.media-grid--cols(4);
+}
+
+
+.media-grid--5cols {
+	#typro.media-grid--cols(5);
+}
+
+
+.media-grid__item {
+	display: block;
+}
