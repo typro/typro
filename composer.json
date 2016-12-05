@@ -1,0 +1,13 @@
+{
+	"name": "typro/typro",
+	"description": "Minimalist CSS/LESS library.",
+	"type": "library",
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Jan Pecha",
+			"homepage": "https://www.janpecha.cz/"
+		}
+	],
+	"require": {}
+}
