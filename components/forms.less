@@ -1,0 +1,90 @@
+
+.form {
+	// reset
+	input[type=text],
+	input[type=password],
+	input[type=file],
+	input[type=email],
+	input[type=number],
+	input[type=date],
+	input[type=datetime-local],
+	select,
+	textarea {
+		box-sizing: border-box;
+		font: inherit;
+		padding: 0.25em 0.5em;
+	}
+
+	input[type=text],
+	input[type=password],
+	input[type=file],
+	input[type=email],
+	input[type=number],
+	textarea {
+		width: 100%;
+	}
+
+	textarea {
+		resize: vertical;
+	}
+}
+
+
+.form__label {
+	font-weight: bold;
+	margin-bottom: 0.125em;
+}
+
+
+.form__control-pair {
+	margin-bottom: 0.75em;
+}
+
+
+.form__control__description {
+	font-size: 87.5%;
+	display: block;
+	color: #666;
+	margin-bottom: 0.25em;
+	margin-top: 0.25em;
+}
+
+
+.form__errors,
+.form__control__error {
+	color: #de0000;
+}
+
+
+.form__control__error {
+	font-size: 87.5%;
+	margin-bottom: 0.25em;
+	margin-top: 0.25em;
+}
+
+
+.form__group { // fieldset
+	border: none;
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+
+.form__group__label { // legend
+	width: 100%;
+	font-weight: bold;
+	font-size: 112.5%;
+	border-bottom: 1px solid #ddd;
+	margin: 0 0 0.5em;
+	padding: 0 0 0.5em;
+}
+
+
+.form__group__description {
+	margin: 0 0 1em;
+}
+
+
+.form--hidden {
+	display: none;
+}
