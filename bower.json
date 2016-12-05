@@ -4,7 +4,7 @@
   "authors": [
     "Jan Pecha <janpecha@email.cz>"
   ],
-  "description": "",
+  "description": "Minimalist CSS/LESS library.",
   "main": "",
   "license": "BSD-3",
   "private": true,
