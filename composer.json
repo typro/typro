@@ -9,5 +9,12 @@
 			"homepage": "https://www.janpecha.cz/"
 		}
 	],
-	"require": {}
+	"require": {},
+	"extra": {
+		"assets-files": [
+			"base",
+			"components",
+			"mixins"
+		]
+	}
 }
