@@ -16,5 +16,8 @@
 			"components",
 			"mixins"
 		]
+	},
+	"suggest": {
+		"frontpack/less": "LESS installable via Composer."
 	}
 }
