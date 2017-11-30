@@ -12,6 +12,11 @@
 	composer require typro/typro
 	```
 
+
+## Integrations
+
+* [typro/bridge-nette-forms](https://github.com/typro/bridge-nette-forms) - integration to [Nette Forms](https://github.com/nette/forms)
+
 ------------------------------
 
 License: [New BSD License](license.md)
