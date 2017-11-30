@@ -6,12 +6,6 @@
 
 [Download a latest package](https://github.com/typro/typro/releases) or use a package manager:
 
-* [Bower](https://bower.io/)
-
-	```
-	bower install typro --save
-	```
-
 * [Composer](https://getcomposer.org/)
 
 	```
