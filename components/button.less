@@ -1,0 +1,62 @@
+
+.button {
+	display: inline-block;
+	padding: 0.375em 1em;
+	box-sizing: border-box;
+	font: inherit;
+	font-weight: normal;
+	background-color: #1779ba;
+	font-size: 100%;
+	border-radius: 3px;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset;
+
+	&,
+	&:hover,
+	&:focus,
+	&:active,
+	&:visited {
+		color: #fff;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: lighten(#1779ba, 5%);
+	}
+
+	&:active {
+		box-shadow: none;
+	}
+}
+
+
+.button--danger {
+	background: #B93528;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: #CC3A2C;
+	}
+}
+
+
+.button--success {
+	background: #008036;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: #009a41;
+	}
+}
+
+
+.button--small {
+	font-size: 87.5%;
+	padding-left: 1em;
+	padding-right: 1em;
+}
