@@ -1,0 +1,17 @@
+
+#typro {
+	.hover(@rules) {
+		&:hover,
+		&:focus,
+		&:active {
+			@rules();
+		}
+	}
+
+
+	.visited(@rules) {
+		&:visited {
+			@rules();
+		}
+	}
+}
