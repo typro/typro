@@ -1,4 +1,12 @@
+@import '../base/variables';
+
 @typro-text-muted: gray;
+@typro-text-danger: @typro-danger;
+@typro-text-success: @typro-success;
+@typro-text-xlarge: @typro-xlarge;
+@typro-text-large: @typro-large;
+@typro-text-small: @typro-small;
+@typro-text-xsmall: @typro-xsmall;
 
 
 .text--left {
@@ -21,6 +29,16 @@
 }
 
 
+.text--danger {
+	color: @typro-text-danger;
+}
+
+
+.text--success {
+	color: @typro-text-success;
+}
+
+
 .text--bold {
 	font-weight: bold;
 }
@@ -28,4 +46,24 @@
 
 .text--strike {
 	text-decoration: line-through;
+}
+
+
+.text--xlarge {
+	font-size: @typro-text-xlarge;
+}
+
+
+.text--large {
+	font-size: @typro-text-large;
+}
+
+
+.text--small {
+	font-size: @typro-text-small;
+}
+
+
+.text--xsmall {
+	font-size: @typro-text-xsmall;
 }
