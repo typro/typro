@@ -1,3 +1,5 @@
+@import '../base/variables';
+
 .button {
 	display: inline-block;
 	padding: 0.375em 1em;
@@ -5,8 +7,8 @@
 	margin-bottom: 1px;
 	font: inherit;
 	font-weight: normal;
-	background-color: #1779ba;
-	font-size: 100%;
+	background-color: @typro-info;
+	font-size: @typro-medium;
 	border-radius: 3px;
 	border: none;
 	cursor: pointer;
@@ -18,13 +20,13 @@
 	&:focus,
 	&:active,
 	&:visited {
-		color: #fff;
+		color: contrast(@typro-info);
 	}
 
 	&:hover,
 	&:focus,
 	&:active {
-		background-color: lighten(#1779ba, 5%);
+		background-color: @typro-info-hover;
 	}
 
 	&:active {
@@ -34,29 +36,42 @@
 
 
 .button--danger {
-	background: #B93528;
+	background: @typro-danger;
 
 	&:hover,
 	&:focus,
 	&:active {
-		background-color: #CC3A2C;
+		background-color: @typro-danger-hover;
 	}
 }
 
 
 .button--success {
-	background: #008036;
+	background: @typro-success;
 
 	&:hover,
 	&:focus,
 	&:active {
-		background-color: #009a41;
+		background-color: @typro-success-hover;
 	}
 }
 
 
 .button--small {
-	font-size: 87.5%;
-	padding-left: 1em;
-	padding-right: 1em;
+	font-size: @typro-small;
+}
+
+
+.button--xsmall {
+	font-size: @typro-xsmall;
+}
+
+
+.button--large {
+	font-size: @typro-large;
+}
+
+
+.button--xlarge {
+	font-size: @typro-xlarge;
 }

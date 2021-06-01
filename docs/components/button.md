@@ -18,3 +18,6 @@ Basic button.
 * `.button--danger`
 * `.button--success`
 * `.button--small`
+* `.button--xsmall`
+* `.button--large`
+* `.button--xlarge`
