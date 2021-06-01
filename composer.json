@@ -16,6 +16,12 @@
 			"components",
 			"mixins",
 			"js"
+		],
+		"cleaner-ignore": [
+			"base/",
+			"components/",
+			"mixins/",
+			"js/"
 		]
 	},
 	"suggest": {
