@@ -1,0 +1,40 @@
+@import '../base/variables';
+
+@typro-label-default: gray;
+@typro-label-warning: #d09f1a; // #ce9700
+@typro-label-danger: @typro-danger;
+@typro-label-success: @typro-success;
+
+.label {
+	font-size: 81.25%;
+	display: inline-block;
+	background: @typro-label-default;
+	color: contrast(@typro-label-default);
+	line-height: 1.25;
+	border-radius: 3px;
+	padding: 0.25em 0.5em;
+	text-shadow: 0 -1px rgba(50, 50, 50, 0.3);
+	text-decoration: none;
+	margin-bottom: 1px;
+}
+
+
+.label--warning {
+	background-color: @typro-label-warning;
+	color: contrast(@typro-label-warning);
+}
+
+
+.label--error,
+.label--danger,
+.label--inactive {
+	background-color: @typro-label-danger;
+	color: contrast(@typro-label-danger);
+}
+
+
+.label--active,
+.label--success {
+	background-color: @typro-label-success;
+	color: contrast(@typro-label-success);
+}
