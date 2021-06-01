@@ -32,4 +32,16 @@
 
 ## Modifiers
 
-* `.table--hover`
+* **Table**
+	* `.table--hover`
+	* `.table--striped`
+	* `.table--small`
+	* `.table--xsmall`
+
+* **Rows**
+	* `.table__row--danger`
+	* `.table__row--success`
+
+* **Cells**
+	* `.table__cell--danger`
+	* `.table__cell--success`

@@ -1,3 +1,6 @@
+@import '../base/variables';
+
+
 .table {
 	width: 100%;
 	border-spacing: 0;
@@ -41,6 +44,60 @@
 }
 
 
-.table--hover .table__body .table__row {
+.table--small {
+	font-size: @typro-small;
+}
+
+
+.table--xsmall {
+	font-size: @typro-xsmall;
+}
+
+
+.table__row--danger,
+.table__cell--danger {
+	background: #f8d7da;
+	border-bottom-color: #d0a3a3;
+}
+
+
+.table__row--success,
+.table__cell--success {
+	background: #cbe9d3;
+	// border-bottom-color: #6db18a;
+	border-bottom-color: #78a58c;
+}
+
+
+.table--striped .table__body .table__row:nth-child(odd) {
+	background-color: #f8f8f8;
+}
+
+
+.table--striped .table__body .table__row--danger:nth-child(odd),
+.table--striped .table__body .table__row:nth-child(odd) .table__cell--danger, {
+	background-color: darken(#f8d7da, 5%);
+}
+
+
+.table--striped .table__body .table__row--success:nth-child(odd),
+.table--striped .table__body .table__row:nth-child(odd) .table__cell--success, {
+	background-color: darken(#cbe9d3, 5%);
+}
+
+
+.table--hover .table__body .table__row:hover {
 	background-color: #f2f2f2;
+}
+
+
+.table--hover .table__body .table__row--danger:hover,
+.table--hover .table__body .table__row:hover .table__cell--danger {
+	background: #e09f9f;
+}
+
+
+.table--hover .table__body .table__row--success:hover,
+.table--hover .table__body .table__row:hover .table__cell--success {
+	background: #8fc8a9;
 }
