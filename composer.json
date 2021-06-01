@@ -14,10 +14,12 @@
 		"assets-files": [
 			"base",
 			"components",
-			"mixins"
+			"mixins",
+			"js"
 		]
 	},
 	"suggest": {
-		"frontpack/less": "LESS installable via Composer."
+		"frontpack/less": "LESS installable via Composer.",
+		"frontpack/lucy.js": "For JavaScript handlers."
 	}
 }

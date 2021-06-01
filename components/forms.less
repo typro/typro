@@ -73,7 +73,7 @@
 .form__group { // fieldset
 	border: none;
 	margin: 0 0 1em;
-	padding: 0;
+	padding: 0 0.75em;
 }
 
 
@@ -81,9 +81,13 @@
 	width: 100%;
 	font-weight: bold;
 	font-size: 112.5%;
-	border-bottom: 1px solid #ddd;
-	margin: 0 0 0.5em;
-	padding: 0 0 0.5em;
+	// border-bottom: 1px solid #ddd;
+	// border-bottom-width: 0;
+	margin: 0 -0.75em 0.5em;
+	padding: 0.375em 0.75em;
+	background: #eee;
+	border-radius: 5px;
+	position: relative;
 }
 
 
@@ -99,4 +103,57 @@
 
 .form--wide {
 	width: 100%;
+}
+
+// collapsed
+.form__group--collapsible .form__group__label {
+	margin-bottom: 0.5em;
+	cursor: pointer;
+
+	&:after {
+		color: gray;
+		border-style: solid;
+		border-width: 0.25em 0.25em 0 0;
+		content: '';
+		display: inline-block;
+		width: 0.5em;
+		height: 0.5em;
+		position: relative;
+		transform: rotate(135deg);
+		vertical-align: top;
+
+		position: absolute;
+		top: 0.625em;
+		bottom: 0;
+		right: 1em;
+	}
+
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: underline;
+
+		&:after {
+			text-decoration: none;
+			color: #aaa;
+		}
+	}
+}
+
+
+.form__group--collapsed .form__controls {
+	height: 0;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+
+.form__group--collapsed .form__group__label {
+	margin-bottom: 0;
+
+	&:after {
+		top: 0.75em;
+		transform: rotate(45deg);
+	}
 }
