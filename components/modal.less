@@ -1,0 +1,119 @@
+// http://codepen.io/maccadb7/pen/nbHEg
+// http://netdna.webdesignerdepot.com/uploads7/creating-a-modal-window-with-html5-and-css3/demo.html#close
+// http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/
+// http://www.vzhurudolu.cz/prirucka/css3-flexbox
+// https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+// http://tympanus.net/Development/ModalWindowEffects/
+// AJAX: https://gist.github.com/Kedrigern/4735415
+
+.modal__container {
+	background: rgba(0,0,0,0.8);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 99999;
+	opacity: 0;
+	-webkit-transition: opacity 300ms ease-in;
+	-moz-transition: opacity 300ms ease-in;
+	transition: opacity 300ms ease-in;
+	pointer-events: none;
+
+	padding: 1em;
+	text-align: center;
+
+	&.modal--active {
+		opacity: 1;
+		pointer-events: auto;
+	}
+}
+
+
+.modal {
+	background: #fefefe;
+	border: #ddd solid 1px;
+	border-radius: 3px;
+	min-width: 50%;
+	width: auto;
+	display: inline-block;
+	text-align: left;
+	max-height: 100%;
+	//max-width: 600px; // TODO
+	margin-left: auto;
+	margin-right: auto;
+
+	display: flex;
+	flex-direction: column;
+
+	height: 100%;// filmage
+}
+
+
+.modal__close {
+	&,
+	&:link,
+	&:visited {
+		color: #aaa;
+	}
+
+	&:hover,
+	&:focus {
+		color: #ccc;
+	}
+
+	&:active {
+		top: 1px;
+	}
+
+	font-size: 30px;
+	text-decoration: none;
+	position: absolute;
+	right: 0.5em;
+	top: 0;
+}
+
+
+.modal__header,
+.modal__body,
+.modal__footer {
+	// width: 100%;
+}
+
+
+.modal__body {
+	// padding: 1em;
+	overflow: auto;
+	flex: 1; // added
+	display: flex;
+}
+
+
+.modal__body > * {
+	box-sizing: border-box;
+	border: none;
+	width: 100%;
+	flex: 1;
+}
+
+.modal__header,
+.modal__footer {
+	padding: 0.4em 1em;
+}
+
+.modal__header {
+	border-bottom: 1px solid #eee;
+	position: relative;
+}
+
+.modal__title {
+	font-size: 100%;
+	font-weight: bold;
+	display: block;
+	pointer-events: none;
+}
+
+.modal__footer {
+	border-top: 1px solid #eee;
+	text-align: right; // inpost
+}
