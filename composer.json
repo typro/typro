@@ -12,12 +12,14 @@
 	"require": {},
 	"extra": {
 		"assets-files": [
+			"settings",
 			"base",
 			"components",
 			"tools",
 			"js"
 		],
 		"cleaner-ignore": [
+			"settings/",
 			"base/",
 			"components/",
 			"tools/",
