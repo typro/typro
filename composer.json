@@ -13,10 +13,11 @@
 	"extra": {
 		"assets-files": [
 			"settings",
+			"tools",
 			"generic",
 			"elements",
 			"components",
-			"tools",
+			"utils",
 			"js",
 			"01-settings.less",
 			"02-tools.less",
@@ -29,10 +30,11 @@
 		],
 		"cleaner-ignore": [
 			"settings/",
+			"tools/",
 			"generic/",
 			"elements/",
 			"components/",
-			"tools/",
+			"utils/",
 			"js/",
 			"01-settings.less",
 			"02-tools.less",
