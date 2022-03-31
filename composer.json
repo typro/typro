@@ -14,13 +14,13 @@
 		"assets-files": [
 			"base",
 			"components",
-			"mixins",
+			"tools",
 			"js"
 		],
 		"cleaner-ignore": [
 			"base/",
 			"components/",
-			"mixins/",
+			"tools/",
 			"js/"
 		]
 	},
