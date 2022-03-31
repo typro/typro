@@ -13,6 +13,7 @@
 	"extra": {
 		"assets-files": [
 			"settings",
+			"generic",
 			"base",
 			"components",
 			"tools",
@@ -20,6 +21,7 @@
 		],
 		"cleaner-ignore": [
 			"settings/",
+			"generic/",
 			"base/",
 			"components/",
 			"tools/",
