@@ -9,12 +9,12 @@ Reset, normalization, basic styles & typography.
 
 ## Variables
 
-* **Sizes**
-	* `@typro-xlarge`
-	* `@typro-large`
-	* `@typro-medium`
-	* `@typro-small`
-	* `@typro-xsmall`
+* **Font Sizes**
+	* `@typro-font-xlarge`
+	* `@typro-font-large`
+	* `@typro-font-medium`
+	* `@typro-font-small`
+	* `@typro-font-xsmall`
 
 * **Colors**
 	* `@typro-info`
