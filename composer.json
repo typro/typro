@@ -14,7 +14,7 @@
 		"assets-files": [
 			"settings",
 			"generic",
-			"base",
+			"elements",
 			"components",
 			"tools",
 			"js"
@@ -22,7 +22,7 @@
 		"cleaner-ignore": [
 			"settings/",
 			"generic/",
-			"base/",
+			"elements/",
 			"components/",
 			"tools/",
 			"js/"
