@@ -17,7 +17,15 @@
 			"elements",
 			"components",
 			"tools",
-			"js"
+			"js",
+			"01-settings.less",
+			"02-tools.less",
+			"03-generic.less",
+			"04-elements.less",
+			"05-objects.less",
+			"06-components.less",
+			"07-utils.less",
+			"typro.less"
 		],
 		"cleaner-ignore": [
 			"settings/",
@@ -25,7 +33,15 @@
 			"elements/",
 			"components/",
 			"tools/",
-			"js/"
+			"js/",
+			"01-settings.less",
+			"02-tools.less",
+			"03-generic.less",
+			"04-elements.less",
+			"05-objects.less",
+			"06-components.less",
+			"07-utils.less",
+			"typro.less"
 		]
 	},
 	"suggest": {
