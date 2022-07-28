@@ -1,3 +1,7 @@
+@import '../settings/breakpoints';
+@import '../settings/spacing';
+
+
 .grid {
 	display: grid;
 	gap: @typro-spacing-medium;
@@ -63,6 +67,7 @@
 .grid__item,
 .grid__item--1col {
 	grid-column: span 1;
+	min-width: 0; // https://stackoverflow.com/a/43312314
 }
 
 
