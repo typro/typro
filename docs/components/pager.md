@@ -1,7 +1,7 @@
 # pager
 
 ```less
-@import 'typro/components/pager';
+@import 'typro/06-components/pager';
 ```
 
 ```html

@@ -3,7 +3,7 @@
 Text blocks modifiers.
 
 ```less
-@import 'typro/components/text';
+@import 'typro/06-components/text';
 ```
 
 ```html

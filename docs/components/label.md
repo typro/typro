@@ -3,7 +3,7 @@
 Basic label.
 
 ```less
-@import 'typro/components/label';
+@import 'typro/06-components/label';
 ```
 
 ```html

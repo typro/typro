@@ -1,7 +1,7 @@
 # table
 
 ```less
-@import 'typro/components/table';
+@import 'typro/06-components/table';
 ```
 
 ```html

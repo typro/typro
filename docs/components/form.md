@@ -3,7 +3,7 @@
 Responsive block image.
 
 ```less
-@import 'typro/components/forms';
+@import 'typro/06-components/forms';
 ```
 
 ```html

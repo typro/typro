@@ -3,7 +3,7 @@
 Reset, normalization, basic styles & typography.
 
 ```less
-@import 'typro/base/base';
+@import 'typro/03-generic';
 ```
 
 

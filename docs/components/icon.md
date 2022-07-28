@@ -3,7 +3,7 @@
 Basic component for icons. Default size is 32x32 pixels.
 
 ```less
-@import 'typro/components/icon';
+@import 'typro/06-components/icon';
 ```
 
 ```html

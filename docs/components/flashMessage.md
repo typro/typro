@@ -1,7 +1,7 @@
 # flashMessage
 
 ```less
-@import 'typro/components/flashMessage';
+@import 'typro/06-components/flashMessage';
 ```
 
 ```html

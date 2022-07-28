@@ -3,7 +3,7 @@
 Dropdown button.
 
 ```less
-@import 'typro/components/dropdown';
+@import 'typro/06-components/dropdown';
 ```
 
 ```html

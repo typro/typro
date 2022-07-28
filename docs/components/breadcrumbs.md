@@ -1,7 +1,7 @@
 # breadcrumbs
 
 ```less
-@import 'typro/components/breadcrumbs';
+@import 'typro/06-components/breadcrumbs';
 ```
 
 ```html

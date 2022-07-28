@@ -3,7 +3,7 @@
 Basic button.
 
 ```less
-@import 'typro/components/button';
+@import 'typro/06-components/button';
 ```
 
 ```html

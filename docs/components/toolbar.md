@@ -1,7 +1,7 @@
 # toolbar
 
 ```less
-@import 'typro/components/toolbar';
+@import 'typro/06-components/toolbar';
 ```
 
 ```html
