@@ -7,29 +7,29 @@ Text blocks modifiers.
 ```
 
 ```html
-<p class="text--left">
+<p class="u-text-left">
 	Lorem ipsum.
 </p>
 
-<p class="text--center">
+<p class="u-text-center">
 	Lorem ipsum.
 </p>
 
-<p class="text--right">
+<p class="u-text-right">
 	Lorem ipsum.
 </p>
 
-<span class="text--muted">Lorem ipsum</span>
-<span class="text--danger">Lorem ipsum</span>
-<span class="text--success">Lorem ipsum</span>
+<span class="u-text-muted">Lorem ipsum</span>
+<span class="u-text-danger">Lorem ipsum</span>
+<span class="u-text-success">Lorem ipsum</span>
 
-<span class="text--bold">Lorem ipsum</span>
-<span class="text--strike">Lorem ipsum</span>
+<span class="u-text-bold">Lorem ipsum</span>
+<span class="u-text-strike">Lorem ipsum</span>
 
-<span class="text--xlarge">Lorem ipsum</span>
-<span class="text--large">Lorem ipsum</span>
-<span class="text--small">Lorem ipsum</span>
-<span class="text--xsmall">Lorem ipsum</span>
+<span class="u-text-xl">Lorem ipsum</span>
+<span class="u-text-lg">Lorem ipsum</span>
+<span class="u-text-sm">Lorem ipsum</span>
+<span class="u-text-xs">Lorem ipsum</span>
 ```
 
 
