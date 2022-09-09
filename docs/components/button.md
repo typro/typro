@@ -15,8 +15,22 @@ Basic button.
 
 ## Modifiers
 
+**Color**
+
 * `.button--danger` + `.button--inactive`
 * `.button--success` + `.button--active`
+
+
+**Size**
+
+* `.button--sm`
+* `.button--xs`
+* `.button--lg`
+* `.button--xl`
+
+
+**Deprecated**
+
 * `.button--small`
 * `.button--xsmall`
 * `.button--large`
