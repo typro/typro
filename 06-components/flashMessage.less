@@ -1,8 +1,20 @@
+@typro-flashMessages-gap: @typro-spacing-xxsmall;
 @typro-flashMessage-default: #aaa;
 @typro-flashMessage-info: #6aaebd;
 @typro-flashMessage-success: #61ab63;
 @typro-flashMessage-error: #b35d5d;
 @typro-flashMessage-warning: #cead52;
+
+
+.flashMessages {
+	.flashMessage {
+		margin-bottom: @typro-flashMessages-gap;
+	}
+
+	.flashMessage:last-child {
+		margin-bottom: 0;
+	}
+}
 
 
 .flashMessage {
