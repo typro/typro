@@ -23,8 +23,8 @@ Basic button.
 
 **Size**
 
-* `.button--sm`
 * `.button--xs`
+* `.button--sm`
 * `.button--lg`
 * `.button--xl`
 
