@@ -15,8 +15,8 @@ Basic button.
 
 ## Modifiers
 
-* `.button--danger`
-* `.button--success`
+* `.button--danger` + `.button--inactive`
+* `.button--success` + `.button--active`
 * `.button--small`
 * `.button--xsmall`
 * `.button--large`
