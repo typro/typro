@@ -9,12 +9,14 @@ body {
 }
 
 /* margin bottom */
-address, dl, p, pre, ol, table, ul {
-	margin-bottom: 1em;
-}
+& when (@typro-featureToggles-genericsNoSpace = false) {
+	address, dl, p, pre, ol, table, ul {
+		margin-bottom: 1em;
+	}
 
-ul ul, ol ol, ul ol, ol ul {
-	margin-bottom: 0em;
+	ul ul, ol ol, ul ol, ol ul {
+		margin-bottom: 0em;
+	}
 }
 
 ul, ol, dd {
@@ -29,15 +31,17 @@ ol {
 	list-style-type: decimal;
 }
 
-/* extra margin */
-blockquote {
-	margin-bottom: 2em;
-	margin-top: 2em;
-}
+& when (@typro-featureToggles-genericsNoSpace = false) {
+	/* extra margin */
+	blockquote {
+		margin-bottom: 2em;
+		margin-top: 2em;
+	}
 
-h1 + blockquote, h2 + blockquote, h3 + blockquote, h4 + blockquote,
-h5 + blockquote, h6 + blockquote {
-	margin-top: 0;
+	h1 + blockquote, h2 + blockquote, h3 + blockquote, h4 + blockquote,
+	h5 + blockquote, h6 + blockquote {
+		margin-top: 0;
+	}
 }
 
 /* overflow */
@@ -145,12 +149,19 @@ form td, form tr {
 /* forms */
 fieldset {
 	border: 1px solid #bbb;
-	margin-bottom: 1em;
+
+	& when (@typro-featureToggles-genericsNoSpace = false) {
+		margin-bottom: 1em;
+	}
+
 	padding: 0.6em 1em 1em;
 }
 
 legend {
-	margin-left: 0.2em;
+	& when (@typro-featureToggles-genericsNoSpace = false) {
+		margin-left: 0.2em;
+	}
+
 	padding: 0 0.4em;
 }
 
@@ -167,7 +178,10 @@ hr {
 	height: 1px;
 	border-width: 0;
 	border-top: 0.25em solid #e8e8e8;
-	margin-bottom: 1em;
+
+	& when (@typro-featureToggles-genericsNoSpace = false) {
+		margin-bottom: 1em;
+	}
 }
 
 /* other - deprecated */
