@@ -15,7 +15,10 @@
 	padding: 0.25em 0.5em;
 	text-shadow: 0 -1px rgba(50, 50, 50, 0.3);
 	text-decoration: none;
-	margin-bottom: 1px;
+
+	& when (@typro-featureToggles-componentsNoSpace = false) {
+		margin-bottom: 1px;
+	}
 }
 
 

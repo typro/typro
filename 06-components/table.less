@@ -4,7 +4,10 @@
 .table {
 	width: 100%;
 	border-spacing: 0;
-	margin-bottom: 1em;
+
+	& when (@typro-featureToggles-componentsNoSpace = false) {
+		margin-bottom: 1em;
+	}
 	// border-top: 1px solid #e6e6e6;
 	// color: #313131;
 }

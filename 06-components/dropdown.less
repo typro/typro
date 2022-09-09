@@ -22,7 +22,11 @@
 	align-items: center;
 	padding: 0.375em 1em;
 	box-sizing: border-box;
-	margin-bottom: 1px;
+
+	& when (@typro-featureToggles-componentsNoSpace = false) {
+		margin-bottom: 1px;
+	}
+
 	font: inherit;
 	font-weight: normal;
 	font-size: 100%;
