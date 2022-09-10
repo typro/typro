@@ -1,4 +1,9 @@
 #typro {
+	.percentageToUnit(@percentage, @baseUnit) {
+		@return: unit((@percentage / 100) * @baseUnit, get-unit(@baseUnit));
+	}
+
+
 	.verticalRhythm(@fontSize, @baseline) {
 		@baselineCount: ceil((@fontSize / @baseline));
 		font-size: percentage(unit(@fontSize));
