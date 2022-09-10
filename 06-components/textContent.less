@@ -1,0 +1,167 @@
+@typro-textContent-baselineUnit: 1em;
+@typro-textContent-baseline: (@typro-textContent-baselineUnit * @typro-lineHeight);
+@typro-textContent-sizes: {
+	text: 100%;
+	h1: 175%;
+	h2: 150%;
+	h3: 131.25%;
+	h4: 112.5%;
+	h5: 93.75%;
+	h6: 75%;
+}
+
+
+@typro-textContent-sizes-big: {
+	text: 100%;
+	h1: 250%;
+	h2: 200%;
+	h3: 175%;
+	h4: 150%;
+	h5: 125%;
+	h6: 100%;
+}
+
+@typro-textContent-breakpoint: @typro-breakpoint-md;
+
+
+.textContent {
+	max-width: 40em;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: @typro-textContent-sizes[text];
+
+	address,
+	dl,
+	p,
+	pre,
+	ol,
+	table,
+	ul {
+		margin-bottom: @typro-textContent-baseline;
+	}
+
+	ul ul,
+	ol ol,
+	ul ol,
+	ol ul {
+		margin-bottom: 0;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin-top: 0;
+	}
+
+	hr {
+		margin: 0;
+		height: @typro-textContent-baseline;
+		box-sizing: border-box;
+	}
+
+	h1 {
+		#typro.verticalRhythm(
+			#typro.percentageToUnit(@typro-textContent-sizes[h1], @typro-textContent-baselineUnit)[],
+			@typro-textContent-baseline
+		);
+	}
+
+	h2 {
+		#typro.verticalRhythm(
+			#typro.percentageToUnit(@typro-textContent-sizes[h2], @typro-textContent-baselineUnit)[],
+			@typro-textContent-baseline
+		);
+	}
+
+	h3 {
+		#typro.verticalRhythm(
+			#typro.percentageToUnit(@typro-textContent-sizes[h3], @typro-textContent-baselineUnit)[],
+			@typro-textContent-baseline
+		);
+	}
+
+	h4 {
+		#typro.verticalRhythm(
+			#typro.percentageToUnit(@typro-textContent-sizes[h4], @typro-textContent-baselineUnit)[],
+			@typro-textContent-baseline
+		);
+	}
+
+	h5 {
+		#typro.verticalRhythm(
+			#typro.percentageToUnit(@typro-textContent-sizes[h5], @typro-textContent-baselineUnit)[],
+			@typro-textContent-baseline
+		);
+	}
+
+	h6 {
+		#typro.verticalRhythm(
+			#typro.percentageToUnit(@typro-textContent-sizes[h6], @typro-textContent-baselineUnit)[],
+			@typro-textContent-baseline
+		);
+	}
+}
+
+
+// Position
+.textContent--onLeft {
+	margin-left: 0;
+}
+
+
+.textContent--onRight {
+	margin-right: 0;
+}
+
+
+// Breakpoints
+@media only screen and (min-width: @typro-textContent-breakpoint) {
+	.textContent {
+		font-size: @typro-textContent-sizes-big[text];
+
+		h1 {
+			#typro.verticalRhythm(
+				#typro.percentageToUnit(@typro-textContent-sizes-big[h1], @typro-textContent-baselineUnit)[],
+				@typro-textContent-baseline
+			);
+		}
+
+		h2 {
+			#typro.verticalRhythm(
+				#typro.percentageToUnit(@typro-textContent-sizes-big[h2], @typro-textContent-baselineUnit)[],
+				@typro-textContent-baseline
+			);
+		}
+
+		h3 {
+			#typro.verticalRhythm(
+				#typro.percentageToUnit(@typro-textContent-sizes-big[h3], @typro-textContent-baselineUnit)[],
+				@typro-textContent-baseline
+			);
+		}
+
+		h4 {
+			#typro.verticalRhythm(
+				#typro.percentageToUnit(@typro-textContent-sizes-big[h4], @typro-textContent-baselineUnit)[],
+				@typro-textContent-baseline
+			);
+		}
+
+		h5 {
+			#typro.verticalRhythm(
+				#typro.percentageToUnit(@typro-textContent-sizes-big[h5], @typro-textContent-baselineUnit)[],
+				@typro-textContent-baseline
+			);
+		}
+
+		h6 {
+			#typro.verticalRhythm(
+				#typro.percentageToUnit(@typro-textContent-sizes-big[h6], @typro-textContent-baselineUnit)[],
+				@typro-textContent-baseline
+			);
+		}
+	}
+}
