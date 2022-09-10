@@ -60,6 +60,29 @@
 }
 
 
+.button__label,
+.button__icon {
+	display: inline-block;
+}
+
+
+.button__label {
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
+
+
+.button:has(>.button__icon),
+.button:has(>.button__label),
+.button--withIcon {
+	padding-top: 0.125em;
+	padding-bottom: 0.125em;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.375em;
+}
+
+
 // Colors
 .button--primary {
 	background-color: @typro-button-primaryColor;
