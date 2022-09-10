@@ -9,7 +9,6 @@
 	font-size: 81.25%;
 	display: inline-block;
 	background: @typro-label-default;
-	color: contrast(@typro-label-default);
 	line-height: 1;
 	border-radius: @typro-borderRadius;
 	padding: 0.25em 0.5em;
@@ -19,12 +18,23 @@
 	& when (@typro-featureToggles-componentsNoSpace = false) {
 		margin-bottom: 1px;
 	}
+
+	#typro.anchors(
+		contrast(@typro-label-default),
+		contrast(@typro-label-default),
+		contrast(@typro-label-default),
+	);
 }
 
 
 .label--warning {
 	background-color: @typro-label-warning;
-	color: contrast(@typro-label-warning);
+
+	#typro.anchors(
+		contrast(@typro-label-warning),
+		contrast(@typro-label-warning),
+		contrast(@typro-label-warning),
+	);
 }
 
 
@@ -32,12 +42,22 @@
 .label--danger,
 .label--inactive {
 	background-color: @typro-label-danger;
-	color: contrast(@typro-label-danger);
+
+	#typro.anchors(
+		contrast(@typro-label-danger),
+		contrast(@typro-label-danger),
+		contrast(@typro-label-danger),
+	);
 }
 
 
 .label--active,
 .label--success {
 	background-color: @typro-label-success;
-	color: contrast(@typro-label-success);
+
+	#typro.anchors(
+		contrast(@typro-label-success),
+		contrast(@typro-label-success),
+		contrast(@typro-label-success),
+	);
 }
