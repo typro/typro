@@ -1,17 +1,22 @@
 @import '../01-settings/fontSizes';
 @import '../01-settings/variables';
 
-@typro-button-baseColor: #f2f2f2;
-@typro-button-baseHoverColor: #f8f8f8;
+@typro-button-baseColor: #fafafa;
+@typro-button-baseHoverColor: #fff;
+@typro-button-baseBorderColor: #ddd;
 
 @typro-button-primaryColor: @typro-info;
 @typro-button-primaryHoverColor: @typro-info-hover;
+@typro-button-primaryBorderColor: @typro-info-hover;
 
 @typro-button-dangerColor: @typro-danger;
 @typro-button-dangerHoverColor: @typro-danger-hover;
+@typro-button-dangerBorderColor: @typro-danger-hover;
 
 @typro-button-successColor: @typro-success;
 @typro-button-successHoverColor: @typro-success-hover;
+@typro-button-successBorderColor: @typro-success-hover;
+
 
 .button {
 	display: inline-block;
@@ -25,13 +30,14 @@
 	font: inherit;
 	font-weight: normal;
 	background-color: @typro-button-baseColor;
-	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), transparent);
+	background-image: linear-gradient(0deg, rgba(50, 50, 50, 0.1), transparent);
 	font-size: @typro-fontSize-medium;
 	border-radius: @typro-borderRadius;
 	border: none;
 	cursor: pointer;
 	text-decoration: none;
 	box-shadow: 0 -0.125rem 0 rgba(0,0,0,0.1) inset;
+	border: 0.0625em solid @typro-button-baseBorderColor;
 
 	&,
 	&:hover,
@@ -49,6 +55,7 @@
 
 	&:active {
 		box-shadow: none;
+		background-image: linear-gradient(180deg, rgba(50, 50, 50, 0.1), rgba(50, 50, 50, 0.025));
 	}
 }
 
@@ -56,6 +63,7 @@
 // Colors
 .button--primary {
 	background-color: @typro-button-primaryColor;
+	border-color: @typro-button-primaryBorderColor;
 
 	&,
 	&:hover,
@@ -76,6 +84,7 @@
 .button--inactive,
 .button--danger {
 	background-color: @typro-button-dangerColor;
+	border-color: @typro-button-dangerBorderColor;
 
 	&,
 	&:hover,
@@ -96,6 +105,7 @@
 .button--active,
 .button--success {
 	background-color: @typro-button-successColor;
+	border-color: @typro-button-successBorderColor;
 
 	&,
 	&:hover,
