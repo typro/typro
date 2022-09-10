@@ -1,6 +1,18 @@
 @import '../01-settings/fontSizes';
 @import '../01-settings/variables';
 
+@typro-button-baseColor: #f2f2f2;
+@typro-button-baseHoverColor: #f8f8f8;
+
+@typro-button-primaryColor: @typro-info;
+@typro-button-primaryHoverColor: @typro-info-hover;
+
+@typro-button-dangerColor: @typro-danger;
+@typro-button-dangerHoverColor: @typro-danger-hover;
+
+@typro-button-successColor: @typro-success;
+@typro-button-successHoverColor: @typro-success-hover;
+
 .button {
 	display: inline-block;
 	padding: 0.375em 1em;
@@ -12,26 +24,27 @@
 
 	font: inherit;
 	font-weight: normal;
-	background-color: @typro-info;
+	background-color: @typro-button-baseColor;
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), transparent);
 	font-size: @typro-fontSize-medium;
 	border-radius: 0.25em;
 	border: none;
 	cursor: pointer;
 	text-decoration: none;
-	box-shadow: 0 -0.125rem 0 rgba(0,0,0,0.2) inset;
+	box-shadow: 0 -0.125rem 0 rgba(0,0,0,0.1) inset;
 
 	&,
 	&:hover,
 	&:focus,
 	&:active,
 	&:visited {
-		color: contrast(@typro-info);
+		color: contrast(@typro-button-baseColor);
 	}
 
 	&:hover,
 	&:focus,
 	&:active {
-		background-color: @typro-info-hover;
+		background-color: @typro-button-baseHoverColor;
 	}
 
 	&:active {
@@ -41,26 +54,61 @@
 
 
 // Colors
-.button--inactive,
-.button--danger {
-	background: @typro-danger;
+.button--primary {
+	background-color: @typro-button-primaryColor;
+
+	&,
+	&:hover,
+	&:focus,
+	&:active,
+	&:visited {
+		color: contrast(@typro-button-primaryColor);
+	}
 
 	&:hover,
 	&:focus,
 	&:active {
-		background-color: @typro-danger-hover;
+		background-color: @typro-button-primaryHoverColor;
+	}
+}
+
+
+.button--inactive,
+.button--danger {
+	background-color: @typro-button-dangerColor;
+
+	&,
+	&:hover,
+	&:focus,
+	&:active,
+	&:visited {
+		color: contrast(@typro-button-dangerColor);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: @typro-button-dangerHoverColor;
 	}
 }
 
 
 .button--active,
 .button--success {
-	background: @typro-success;
+	background-color: @typro-button-successColor;
+
+	&,
+	&:hover,
+	&:focus,
+	&:active,
+	&:visited {
+		color: contrast(@typro-button-successColor);
+	}
 
 	&:hover,
 	&:focus,
 	&:active {
-		background-color: @typro-success-hover;
+		background-color: @typro-button-successHoverColor;
 	}
 }
 
