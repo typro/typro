@@ -4,10 +4,15 @@
 	}
 
 
-	.verticalRhythm(@fontSize, @baseline) {
-		@baselineCount: ceil((@fontSize / @baseline));
+	// web-based vertical rhythm
+	// see: https://twitter.com/geekovo/status/1568182860229615619
+	// see: https://twitter.com/geekovo/status/1568191109821566978
+	.verticalRhythm(@baseFontSize, @fontSize, @baseline) {
+		@baselineGap: ((@baseline - @baseFontSize) / @fontSize);
+		@baselineRatio: unit((@baseline / @baseFontSize));
 		font-size: percentage(unit(@fontSize));
-		line-height: ((@baselineCount * @baseline) / @fontSize);
+		// line-height: ~"min(1.5em, 1em + 0.5rem)";
+		line-height: min((@baseFontSize * @baselineRatio), (@baseFontSize + @baselineGap));
 		margin-bottom: (@baseline / @fontSize);
 	}
 
