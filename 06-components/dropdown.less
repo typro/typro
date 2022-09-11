@@ -1,5 +1,15 @@
 @import '../01-settings/fontSizes';
 
+@typro-dropdown-buttonColor: #fafafa;
+@typro-dropdown-buttonHoverColor: #fff;
+@typro-dropdown-buttonActiveColor: #eee;
+@typro-dropdown-buttonBorderColor: #ddd;
+@typro-dropdown-buttonActive: {
+	background-color: @typro-dropdown-buttonActiveColor;
+	box-shadow: 0 0.0625em 0 rgba(0,0,0,0.1) inset;
+	background-image: linear-gradient(180deg, rgba(50, 50, 50, 0.1), transparent 50%);
+}
+
 .dropdown__button,
 .dropdown__menu,
 .dropdown__menu-item,
@@ -29,19 +39,33 @@
 
 	font: inherit;
 	font-weight: normal;
-	font-size: 100%;
+	background-color: @typro-dropdown-buttonColor;
+	background-image: linear-gradient(0deg, rgba(50, 50, 50, 0.1), transparent);
+	font-size: @typro-fontSize-medium;
 	border-radius: @typro-borderRadius;
 	border: none;
 	cursor: pointer;
 	text-decoration: none;
-	box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2) inset;
+	box-shadow: 0 -0.0625em 0 rgba(0,0,0,0.1) inset;
+	border: 0.0625em solid @typro-dropdown-buttonBorderColor;
+	vertical-align: middle;
 
-	border: 1px solid #ddd;
-	background: #f8f8f8;
+	&,
+	&:hover,
+	&:focus,
+	&:active,
+	&:visited {
+		color: contrast(@typro-dropdown-buttonColor);
+	}
 
 	&:hover,
-	&:focus {
-		background: #fcfcfc;
+	&:focus,
+	&:active {
+		background-color: @typro-dropdown-buttonHoverColor;
+	}
+
+	&:active {
+		@typro-dropdown-buttonActive();
 	}
 }
 
@@ -122,13 +146,7 @@
 
 .dropdown--active {
 	.dropdown__button {
-		background: #e6e6e6;
-		box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
-
-		&:hover,
-		&:focus {
-			background: #ebebeb;
-		}
+		@typro-dropdown-buttonActive();
 	}
 
 	.dropdown__menu {
